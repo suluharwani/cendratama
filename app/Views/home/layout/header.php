@@ -19,7 +19,7 @@
 								<div class="header-column justify-content-end">
 									<ul class="nav">
 										<li class="nav-item">
-											<a class="nav-link" href="contact-us-1.html">Contact Us</a>
+											<a class="nav-link" href="<?=base_url('contact')?>">Contact Us</a>
 										</li>
 										<li class="nav-item">
 											<a href="#" class="nav-link dropdown-menu-toggle py-2" id="dropdownLanguage" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -127,8 +127,8 @@
 													</ul>
 												</li>
 												<li class="order-3 dropdown">
-													<a class="dropdown-item dropdown-toggle" href="#">
-														Informasi
+													<a class="dropdown-item dropdown-toggle" href="<?=base_url('informations')?>">
+														Informations
 													</a>
 													<ul class="dropdown-menu">
 														<li class="dropdown-submenu">
@@ -244,7 +244,7 @@
 																<li><a class="dropdown-item" href="">Code of Conduct</a></li>
 															</ul>
 														</li>
-														<li><a class="dropdown-item" href="">Contact Us</a></li>
+														<li><a class="dropdown-item" href="<?=base_url('contact')?>">Contact Us</a></li>
 														<li><a class="dropdown-item" href="">Team</a></li>
 														<li><a class="dropdown-item" href="">Services</a></li>
 														<li><a class="dropdown-item" href="">Careers</a></li>
@@ -334,7 +334,7 @@
 													</ul>
 												</li>
 												<li class="order-6 dropdown dropdown-mega dropdown-mega-style-2">
-													<a class="dropdown-item dropdown-toggle" href="#">
+													<a class="dropdown-item dropdown-toggle" href="<?=base_url('blog')?>">
 														Blog
 													</a>
 											
