@@ -1,9 +1,17 @@
+<style>
+.cropped {
+	width:600px;
+  height:600px;
+  object-fit:cover;
+/* overflow: hidden; */
+}
+</style>
 <div role="main" class="main">
 				<div class="slider-container slider-container-height-800 rev_slider_wrapper">
 					<div id="revolutionSlider" class="slider rev_slider" data-version="5.4.8" data-plugin-revolution-slider data-plugin-options="{'delay': 9000, 'gridwidth': [1140,960,720,540], 'gridheight': [800,800,800,600], 'disableProgressBar': 'on', 'responsiveLevels': [4096,1200,992,576], 'navigation' : {'arrows': { 'enable': true, 'hide_under': 767, 'style': 'slider-arrows-style-1' }, 'bullets': {'enable': true, 'hide_under': 767, 'hide_onleave': false, 'style': 'bullets-style-1', 'h_align': 'center', 'v_align': 'bottom', 'space': 7, 'v_offset': 110, 'h_offset': 0}}}">
 						<ul>
 							<li data-transition="slidingoverlayhorizontal" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-rotate="0" data-saveperformance="off">
-								<img src="<?=base_url('assets/pantai')?>/1.jpg"  
+								<img src="<?=base_url('assets/pantai/free')?>/pexels-mustofa-rizky-3334654.jpg"  
 									alt=""
 									data-bgposition="center center" 
 									data-bgfit="cover" 
@@ -31,7 +39,7 @@
 
 							</li>
 							<li data-transition="slidingoverlayhorizontal" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-rotate="0" data-saveperformance="off">
-                                <img src="<?=base_url('assets/pantai')?>/2.jpg"   
+                                <img src="<?=base_url('assets/pantai/free')?>/pexels-jeffry-surianto-11579902.jpg"   
 									alt=""
 									data-bgposition="center center" 
 									data-bgfit="cover" 
@@ -82,7 +90,8 @@
 								<div class="card border-0 appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="300">
 									<div class="card-body p-0">
 										<div class="image-frame image-frame-style-3">
-											<img src="<?=base_url('assets/HTML')?>/img/generic/generic-wide-1.jpg" class="img-fluid" alt="">
+										<img src="<?=base_url('assets/pantai')?>/layanan/Visit PNG Brochure Promo - MPU.jpg" class="img-fluid" alt="">
+
 										</div>
 										<div class="icon-box icon-box-style-8 icon-box-pull-top position-relative">
 											<div class="icon-box-icon bg-light border-0 border-radius-0 w-50 mb-1">
@@ -90,7 +99,7 @@
 											</div>
 											<div class="icon-box-info">
 												<div class="icon-box-info-title">
-													<h2 class="text-4">Brand Solutions</h2>
+													<h2 class="text-4">Tour Guide</h2>
 												</div>
 												<p>Phasellus blandit massa enim. Nullam id varius nunc. Lorem ipsum dolor sit amet, consectetur adipiscing...</p>
 												<a href="#" class="btn btn-link font-weight-semibold text-decoration-none align-items-center text-0 d-inline-flex">VIEW MORE <i class="fas fa-angle-right text-3 ms-3"></i></a>
@@ -103,15 +112,15 @@
 								<div class="card border-0 appear-animation" data-appear-animation="fadeInUpShorter">
 									<div class="card-body p-0">
 										<div class="image-frame image-frame-style-3">
-											<img src="<?=base_url('assets/HTML')?>/img/generic/generic-wide-2.jpg" class="img-fluid" alt="">
+											<img src="<?=base_url('assets/pantai')?>/layanan/Visit PNG Brochure Promo - MPU.jpg" class="img-fluid" alt="">
 										</div>
 										<div class="icon-box icon-box-style-8 icon-box-pull-top position-relative">
 											<div class="icon-box-icon bg-light border-0 border-radius-0 w-50 mb-1">
-												<img width="42" height="42" src="<?=base_url('assets/HTML')?>/vendor/linear-icons/tablet.svg" alt="" data-icon data-plugin-options="{'color': '#2388ED', 'animated': true, 'delay': 700}" />
+												<img width="42" height="42" src="<?=base_url('assets/HTML')?>/vendor/linear-icons/map.svg" alt="" data-icon data-plugin-options="{'color': '#2388ED', 'animated': true, 'delay': 700}" />
 											</div>
 											<div class="icon-box-info">
 												<div class="icon-box-info-title">
-													<h2 class="text-4">Mobile Apps</h2>
+													<h2 class="text-4">Boat</h2>
 												</div>
 												<p>Phasellus blandit massa enim. Nullam id varius nunc. Lorem ipsum dolor sit amet, consectetur adipiscing...</p>
 												<a href="#" class="btn btn-link font-weight-semibold text-decoration-none align-items-center text-0 d-inline-flex">VIEW MORE <i class="fas fa-angle-right text-3 ms-3"></i></a>
@@ -124,15 +133,17 @@
 								<div class="card border-0 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="300">
 									<div class="card-body p-0">
 										<div class="image-frame image-frame-style-3">
-											<img src="<?=base_url('assets/HTML')?>/img/generic/generic-wide-3.jpg" class="img-fluid" alt="">
+										<img src="<?=base_url('assets/pantai')?>/layanan/Visit PNG Brochure Promo - MPU.jpg" class="img-fluid" alt="">
+
 										</div>
 										<div class="icon-box icon-box-style-8 icon-box-pull-top position-relative">
 											<div class="icon-box-icon bg-light border-0 border-radius-0 w-50 mb-1">
-												<img width="42" height="42" src="<?=base_url('assets/HTML')?>/vendor/linear-icons/magnifier.svg" alt="" data-icon data-plugin-options="{'color': '#2388ED', 'animated': true, 'delay': 1000}" />
+											<img width="42" height="42" src="<?=base_url('assets/HTML')?>/vendor/linear-icons/bus.svg" alt="" data-icon data-plugin-options="{'color': '#2388ED', 'animated': true, 'delay': 700}" />
+
 											</div>
 											<div class="icon-box-info">
 												<div class="icon-box-info-title">
-													<h2 class="text-4">SEO Optimization</h2>
+													<h2 class="text-4">Transportation</h2>
 												</div>
 												<p>Phasellus blandit massa enim. Nullam id varius nunc. Lorem ipsum dolor sit amet, consectetur adipiscing...</p>
 												<a href="#" class="btn btn-link font-weight-semibold text-decoration-none align-items-center text-0 d-inline-flex">VIEW MORE <i class="fas fa-angle-right text-3 ms-3"></i></a>
@@ -215,8 +226,8 @@
 											<div class="portfolio-item m-0">
 												<a href="portfolio-detail-1.html">
 													<span class="image-frame image-frame-style-1 image-frame-effect-1">
-														<span class="image-frame-wrapper">
-															<img src="<?=base_url('assets/HTML')?>/img/projects/generic/project-22-square.jpg" class="img-fluid" alt="">
+														<span class="image-frame-wrapper ">
+															<img  src="<?=base_url('assets/pantai')?>/1.jpg"  class="img-fluid" alt="">
 															<span class="image-frame-inner-border"></span>
 															<span class="image-frame-action">
 																<span class="image-frame-action-icon">
@@ -231,10 +242,10 @@
 
 										<div class="col-sm-6 col-lg-3 p-0 isotope-item ads">
 											<div class="portfolio-item m-0">
-												<a href="portfolio-detail-1.html">
+												<a href="portfolio-detail-1.html ">
 													<span class="image-frame image-frame-style-1 image-frame-effect-1">
 														<span class="image-frame-wrapper">
-															<img src="<?=base_url('assets/HTML')?>/img/projects/generic/project-21-square.jpg" class="img-fluid" alt="">
+														<img src="<?=base_url('assets/pantai')?>/2.jpg"  class="img-fluid" alt="">
 															<span class="image-frame-inner-border"></span>
 															<span class="image-frame-action">
 																<span class="image-frame-action-icon">

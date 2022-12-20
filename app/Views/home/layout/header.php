@@ -3,7 +3,7 @@
 
 			<header id="header" class="header-effect-shrink" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 120, 'stickySetTop': 0}">
 				<div class="header-body">
-					<div class="header-top header-top-dark">
+					<div class="header-top header-top-light">
 						<div class="header-top-container container">
 							<div class="header-row">
 								<div class="header-column justify-content-start">
@@ -63,7 +63,7 @@
 										<nav class="collapse">
 											<ul class="nav flex-column flex-lg-row" id="mainNav">
 												<li class="order-1 dropdown dropdown-mega">
-													<a class="dropdown-item dropdown-toggle active" href="">
+													<a class="dropdown-item dropdown-toggle active" href="<?=base_url()?>">
 														Welcome
 													</a>
 								
@@ -230,8 +230,8 @@
 													</ul>
 												</li>
 												<li class="order-4 dropdown">
-													<a class="dropdown-item dropdown-toggle" href="#">
-                                                    Halaman
+													<a class="dropdown-item dropdown-toggle" href="<?=base_url('pages')?>">
+                                                    Pages
 													</a>
 													<ul class="dropdown-menu">
 														<li class="dropdown-submenu">

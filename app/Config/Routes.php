@@ -41,6 +41,7 @@ $routes->get('/blog', 'Blog::index');
 $routes->get('/blog/(:any)', 'Blog::content/$1');
 $routes->get('/informations', 'Informations::index');
 $routes->get('/informations/(:any)', 'Informations::info/$1');
+$routes->get('/pages', 'Pages::index');
 
 
 /*
