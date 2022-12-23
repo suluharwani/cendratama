@@ -132,10 +132,10 @@
 													</a>
 													<ul class="dropdown-menu">
 														<li class="dropdown-submenu">
-															<a class="dropdown-item dropdown-toggle" href="#">Cara ke lokasi</a>
+															<a class="dropdown-item dropdown-toggle" href="#">How to get there</a>
 															<ul class="dropdown-menu">
 																<li class="dropdown-submenu">
-																	<a class="dropdown-item dropdown-toggle" href="#">Penerbangan</a>
+																	<a class="dropdown-item dropdown-toggle" href="#">Flights</a>
 																	<ul class="dropdown-menu">
 																		<li><a class="dropdown-item" href="">Garuda Indonesia</a></li>
 																		<li><a class="dropdown-item" href="">Lion Air</a></li>
@@ -144,7 +144,7 @@
 																	</ul>
 																</li>
 																<li class="dropdown-submenu">
-																	<a class="dropdown-item dropdown-toggle" href="#">Kapal Pelni</a>
+																	<a class="dropdown-item dropdown-toggle" href="#">PELNI ships</a>
 																	<ul class="dropdown-menu">
 																		<li><a class="dropdown-item" href="">KM AWU</a></li>
 																		<li><a class="dropdown-item" href="">KM TILONGKABILA</a></li>
@@ -179,17 +179,17 @@
 															</ul>
 														</li>
 														<li class="dropdown-submenu">
-															<a class="dropdown-item dropdown-toggle" href="#">Barang Bawaan</a>
+															<a class="dropdown-item dropdown-toggle" href="#">What to bring</a>
 															<ul class="dropdown-menu">
-																<li><a class="dropdown-item" href="">Umum</a></li>
-																<li><a class="dropdown-item" href="index-navigation-top-line.html">Bawaan extra area tertentu</a></li>
+																<li><a class="dropdown-item" href="">General</a></li>
+																<li><a class="dropdown-item" href="index-navigation-top-line.html">Extra needs for certain areas</a></li>
 															</ul>
 														</li>
                                                         <li class="dropdown-submenu">
-															<a class="dropdown-item dropdown-toggle" href="#">Iklim dan Cuaca</a>
+															<a class="dropdown-item dropdown-toggle" href="#">Climate</a>
 															<ul class="dropdown-menu">
-																<li><a class="dropdown-item" href="">Temperatur</a></li>
-																<li><a class="dropdown-item" href="">Musim</a></li>
+																<li><a class="dropdown-item" href="">Temperatures</a></li>
+																<li><a class="dropdown-item" href="">Seasons</a></li>
 																<li><a class="dropdown-item" href="">Best Time to visit Raja Ampat</a></li>
 															</ul>
 														</li>

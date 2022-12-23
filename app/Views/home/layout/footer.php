@@ -1,4 +1,4 @@
-<footer id="footer" class="footer-hover-links-light mt-0" data-plugin-image-background data-plugin-options="{'imageUrl': 'img/footer/background-1.png', 'bgPosition': 'center 0'}">
+<footer id="footer" class="footer-hover-links-light mt-0" data-plugin-image-background data-plugin-options="{'imageUrl': '<?=base_url('assets/HTML')?>/img/footer/background-1.png', 'bgPosition': 'center 0'}">
 				<div class="container">
 
 					<div class="row">

@@ -1,11 +1,4 @@
-<style>
-.cropped {
-	width:600px;
-  height:600px;
-  object-fit:cover;
-/* overflow: hidden; */
-}
-</style>
+
 <div role="main" class="main">
 				<div class="slider-container slider-container-height-800 rev_slider_wrapper">
 					<div id="revolutionSlider" class="slider rev_slider" data-version="5.4.8" data-plugin-revolution-slider data-plugin-options="{'delay': 9000, 'gridwidth': [1140,960,720,540], 'gridheight': [800,800,800,600], 'disableProgressBar': 'on', 'responsiveLevels': [4096,1200,992,576], 'navigation' : {'arrows': { 'enable': true, 'hide_under': 767, 'style': 'slider-arrows-style-1' }, 'bullets': {'enable': true, 'hide_under': 767, 'hide_onleave': false, 'style': 'bullets-style-1', 'h_align': 'center', 'v_align': 'bottom', 'space': 7, 'v_offset': 110, 'h_offset': 0}}}">
@@ -227,7 +220,7 @@
 												<a href="portfolio-detail-1.html">
 													<span class="image-frame image-frame-style-1 image-frame-effect-1">
 														<span class="image-frame-wrapper ">
-															<img  src="<?=base_url('assets/pantai')?>/1.jpg"  class="img-fluid" alt="">
+															<img  src="<?=base_url('assets/pantai')?>/free/1.jpg"  class="img-fluid" alt="">
 															<span class="image-frame-inner-border"></span>
 															<span class="image-frame-action">
 																<span class="image-frame-action-icon">
@@ -245,7 +238,7 @@
 												<a href="portfolio-detail-1.html ">
 													<span class="image-frame image-frame-style-1 image-frame-effect-1">
 														<span class="image-frame-wrapper">
-														<img src="<?=base_url('assets/pantai')?>/2.jpg"  class="img-fluid" alt="">
+														<img src="<?=base_url('assets/pantai')?>/free/2.jpg"  class="img-fluid" alt="">
 															<span class="image-frame-inner-border"></span>
 															<span class="image-frame-action">
 																<span class="image-frame-action-icon">
@@ -263,7 +256,8 @@
 												<a href="portfolio-detail-1.html">
 													<span class="image-frame image-frame-style-1 image-frame-effect-1">
 														<span class="image-frame-wrapper">
-															<img src="<?=base_url('assets/HTML')?>/img/projects/generic/project-17-square.jpg" class="img-fluid" alt="">
+														<img src="<?=base_url('assets/pantai')?>/free/3.jpg"  class="img-fluid" alt="">
+
 															<span class="image-frame-inner-border"></span>
 															<span class="image-frame-action">
 																<span class="image-frame-action-icon">
@@ -281,7 +275,7 @@
 												<a href="portfolio-detail-1.html">
 													<span class="image-frame image-frame-style-1 image-frame-effect-1">
 														<span class="image-frame-wrapper">
-															<img src="<?=base_url('assets/HTML')?>/img/projects/generic/project-16-square.jpg" class="img-fluid" alt="">
+														<img src="<?=base_url('assets/pantai')?>/free/1.jpg"  class="img-fluid" alt="">
 															<span class="image-frame-inner-border"></span>
 															<span class="image-frame-action">
 																<span class="image-frame-action-icon">
@@ -299,7 +293,7 @@
 												<a href="portfolio-detail-1.html">
 													<span class="image-frame image-frame-style-1 image-frame-effect-1">
 														<span class="image-frame-wrapper">
-															<img src="<?=base_url('assets/HTML')?>/img/projects/generic/project-3-square.jpg" class="img-fluid" alt="">
+														<img src="<?=base_url('assets/pantai')?>/free/8.jpg"  class="img-fluid" alt="">
 															<span class="image-frame-inner-border"></span>
 															<span class="image-frame-action">
 																<span class="image-frame-action-icon">
@@ -317,7 +311,7 @@
 												<a href="portfolio-detail-1.html">
 													<span class="image-frame image-frame-style-1 image-frame-effect-1">
 														<span class="image-frame-wrapper">
-															<img src="<?=base_url('assets/HTML')?>/img/projects/generic/project-18-square.jpg" class="img-fluid" alt="">
+														<img src="<?=base_url('assets/pantai')?>/free/7.webp"  class="img-fluid" alt="">
 															<span class="image-frame-inner-border"></span>
 															<span class="image-frame-action">
 																<span class="image-frame-action-icon">
@@ -335,7 +329,7 @@
 												<a href="portfolio-detail-1.html">
 													<span class="image-frame image-frame-style-1 image-frame-effect-1">
 														<span class="image-frame-wrapper">
-															<img src="<?=base_url('assets/HTML')?>/img/projects/photos/project-12-square.jpg" class="img-fluid" alt="">
+														<img src="<?=base_url('assets/pantai')?>/free/6.webp"  class="img-fluid" alt="">
 															<span class="image-frame-inner-border"></span>
 															<span class="image-frame-action">
 																<span class="image-frame-action-icon">
@@ -353,7 +347,7 @@
 												<a href="portfolio-detail-1.html">
 													<span class="image-frame image-frame-style-1 image-frame-effect-1">
 														<span class="image-frame-wrapper">
-															<img src="<?=base_url('assets/HTML')?>/img/projects/generic/project-6-square.jpg" class="img-fluid" alt="">
+														<img src="<?=base_url('assets/pantai')?>/free/5.jpg"  class="img-fluid" alt="">
 															<span class="image-frame-inner-border"></span>
 															<span class="image-frame-action">
 																<span class="image-frame-action-icon">
@@ -380,7 +374,7 @@
 									<span class="top-sub-title text-color-primary d-block appear-animation" data-appear-animation="maskUp">LOREM IPSUM DOLOR SIT</span>
 								</div>
 								<div class="overflow-hidden">
-									<h2 class="font-weight-bold appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="200">Services & Features</h2>
+									<h2 class="font-weight-bold appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="200">Our Services</h2>
 								</div>
 								<div class="overflow-hidden">
 									<p class="lead appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="300">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -391,40 +385,40 @@
 							<div class="col-9 col-sm-6 col-md-5 col-lg-4 col-xl-1-5 mb-4">
 								<div class="card card-style-2 card-style-3 bg-light-5 border-0 text-center appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="200">
 									<div class="card-body p-4">
-										<i class="lnr lnr-database text-color-dark text-10"></i>
-										<h3 class="font-weight-bold text-2 mt-2">DATABASE</h3>
+										<i class="lnr lnr-camera text-color-dark text-10"></i>
+										<h3 class="font-weight-bold text-2 mt-2">Documentation</h3>
 									</div>
 								</div>
 							</div>
 							<div class="col-9 col-sm-6 col-md-5 col-lg-4 col-xl-1-5 mb-4">
 								<div class="card card-style-2 card-style-3 bg-light-5 border-0 text-center appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="200">
 									<div class="card-body p-4">
-										<i class="lnr lnr-earth text-color-dark text-10"></i>
-										<h3 class="font-weight-bold text-2 ws-nowrap mt-2">GLOBALIZATION</h3>
+										<i class="lnr lnr-apartment text-color-dark text-10"></i>
+										<h3 class="font-weight-bold text-2 ws-nowrap mt-2">Hotel</h3>
 									</div>
 								</div>
 							</div>
 							<div class="col-9 col-sm-6 col-md-5 col-lg-4 col-xl-1-5 mb-4">
 								<div class="card card-style-2 card-style-3 bg-light-5 border-0 text-center appear-animation" data-appear-animation="fadeInUpShorter">
 									<div class="card-body p-4">
-										<i class="lnr lnr-bug text-color-dark text-10"></i>
-										<h3 class="font-weight-bold text-2 mt-2">BUG FIXES</h3>
+										<i class="lnr lnr-map text-color-dark text-10"></i>
+										<h3 class="font-weight-bold text-2 mt-2">Tour Guide</h3>
 									</div>
 								</div>
 							</div>
 							<div class="col-9 col-sm-6 col-md-5 col-lg-4 col-xl-1-5 mb-4 mb-md-0">
 								<div class="card card-style-2 card-style-3 bg-light-5 border-0 text-center appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200">
 									<div class="card-body p-4">
-										<i class="lnr lnr-heart text-color-dark text-10"></i>
-										<h3 class="font-weight-bold text-2 mt-2">PERFORMANCE</h3>
+										<i class="lnr lnr-car text-color-dark text-10"></i>
+										<h3 class="font-weight-bold text-2 mt-2">Transportation</h3>
 									</div>
 								</div>
 							</div>
 							<div class="col-9 col-sm-6 col-md-5 col-lg-4 col-xl-1-5">
 								<div class="card card-style-2 card-style-3 bg-light-5 border-0 text-center appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200">
 									<div class="card-body p-4">
-										<i class="lnr lnr-cloud text-color-dark text-10"></i>
-										<h3 class="font-weight-bold text-2 mt-2">CLOUD</h3>
+										<i class="lnr lnr-store text-color-dark text-10"></i>
+										<h3 class="font-weight-bold text-2 mt-2">Souvenir</h3>
 									</div>
 								</div>
 							</div>
@@ -433,11 +427,11 @@
 							<div class="col-md-6 col-lg-4">
 								<div class="icon-box icon-box-style-4 mb-4 mb-lg-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">
 									<div class="icon-box-icon bg-primary">
-										<i class="lnr lnr-tablet"></i>
+										<i class="lnr lnr-bubble"></i>
 									</div>
 									<div class="icon-box-info">
 										<div class="icon-box-info-title">
-											<h4 class="text-2">RESPONSIVE DESIGN</h4>
+											<h4 class="text-2">FAST RESPONS CUSTOMER SERVICE</h4>
 										</div>
 										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc. </p>
 									</div>
@@ -448,7 +442,7 @@
 									</div>
 									<div class="icon-box-info">
 										<div class="icon-box-info-title">
-											<h4 class="text-2">FULLY CUSTOMIZABLE</h4>
+											<h4 class="text-2">EASY TO TRIP</h4>
 										</div>
 										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc. </p>
 									</div>
@@ -457,11 +451,11 @@
 							<div class="col-md-6 col-lg-4">
 								<div class="icon-box icon-box-style-4 mb-4 mb-lg-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">
 									<div class="icon-box-icon bg-primary">
-										<i class="lnr lnr-layers"></i>
+										<i class="lnr lnr-smile"></i>
 									</div>
 									<div class="icon-box-info">
 										<div class="icon-box-info-title">
-											<h4 class="text-2">PARALLAX EFFECTS</h4>
+											<h4 class="text-2">Happy Guarantee</h4>
 										</div>
 										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc. </p>
 									</div>
@@ -472,7 +466,7 @@
 									</div>
 									<div class="icon-box-info">
 										<div class="icon-box-info-title">
-											<h4 class="text-2">PORTFOLIO LAYOUTS</h4>
+											<h4 class="text-2">Partner Program</h4>
 										</div>
 										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc. </p>
 									</div>
@@ -645,7 +639,7 @@
 									<span class="top-sub-title text-color-primary d-block appear-animation" data-appear-animation="maskUp">OUR ROCKSTARS</span>
 								</div>
 								<div class="overflow-hidden">
-									<h2 class="font-weight-bold appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="200">Our Team</h2>
+									<h2 class="font-weight-bold appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="200">Our Partners</h2>
 								</div>
 							</div>
 						</div>
