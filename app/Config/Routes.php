@@ -25,7 +25,7 @@ $routes->set404Override();
 // where controller filters or CSRF protection are bypassed.
 // If you don't want to define all routes, please use the Auto Routing (Improved).
 // Set `$autoRoutesImproved` to true in `app/Config/Feature.php` and set the following to true.
-$routes->setAutoRoute(true);
+// $routes->setAutoRoute(true);
 
 /*
  * --------------------------------------------------------------------
@@ -35,6 +35,7 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
+//home
 $routes->get('/', 'Home::index');
 $routes->get('/contact', 'Contact::index');
 $routes->get('/blog', 'Blog::index');
@@ -42,7 +43,18 @@ $routes->get('/blog/(:any)', 'Blog::content/$1');
 $routes->get('/informations', 'Informations::index');
 $routes->get('/informations/(:any)', 'Informations::info/$1');
 $routes->get('/pages', 'Pages::index');
+//admin
+$routes->get('/admin', 'Admin::index' , ['as' => 'admin']);
+$routes->get('/admin/manage/pages', 'Pages::manage');
+$routes->get('/admin/login', 'Login::index');
+$routes->post('/admin/login', 'Login::index');
+$routes->get('/admin/register', 'Login::register');
+$routes->get('/logout', 'Login::logout');
+$routes->get('/admin/user/(:any)', 'User::user/$1');
+//datatables post
+$routes->post('/admin/listdata_user', 'User::listdata_user');
 
+// $routes->post('/login/test', 'Login::test');
 
 /*
  * --------------------------------------------------------------------
