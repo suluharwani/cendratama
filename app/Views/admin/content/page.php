@@ -6,7 +6,7 @@
     <div class="page-title">
         <div class="row">
             <div class="col-12 col-md-6 order-md-1 order-last">
-                <h3>DataTable Jquery</h3>
+                <h3>Pages</h3>
                 <p class="text-subtitle text-muted">Powerful interactive tables with datatables (jQuery required)</p>
             </div>
             <div class="col-12 col-md-6 order-md-2 order-first">
@@ -24,7 +24,7 @@
     <section class="section">
         <div class="card">
             <div class="card-header">
-                <button type="button" class="btn btn-primary tambah_user">Tambah user</button>
+                <button type="button" class="btn btn-primary tambah_data">Tambah Page</button>
             </div>
             <div class="card-body">
                           <!-- table -->
@@ -33,20 +33,16 @@
               <thead>
                 <tr  class="text-center">
                   <th style="width: 5%; text-align: center;">NO</th>
-                  <th style="width: 20%;">NAMA/EMAIL</th>
-                  <th style="width: 5%; ">FOTO</th>
-                  <th style="width: 15%;">LEVEL USER</th>
-                  <th style="width: 15%;">STATUS</th>
+                  <th style="width: 20%;">Page</th>
+                  <th style="width: 5%; ">Detail</th>
                   <th style="width: 40%; text-align: center;">ACTION</th>
                 </tr>
               </thead>
               <tfoot>
                 <tr class="text-center">
                   <th style="width: 5%; text-align: center;">NO</th>
-                  <th style="width: 20%;">NAMA/EMAIL</th>
-                  <th  style="width: 5%;">FOTO</th>
-                  <th style="width: 15%;">LEVEL USER</th>
-                  <th style="width: 15%;">STATUS</th>
+                  <th style="width: 20%;">Page</th>
+                  <th style="width: 5%; ">Detail</th>
                   <th style="width: 40%; text-align: center;">ACTION</th>
                 </tr>
               </tr>
@@ -63,5 +59,5 @@
 
  
 <script type="text/javascript" src="<?=base_url('assets')?>/datatables/datatables.min.js"></script>
-<script type="text/javascript" src="<?=base_url()?>/assets/js/user.js"></script>
+<script type="text/javascript" src="<?=base_url()?>/assets/js/pages.js"></script>
  

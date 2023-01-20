@@ -25,17 +25,10 @@ class Admin extends BaseController
       $this->form_validation = \Config\Services::validation();
       $this->userValidation = new \App\Controllers\LoginValidation();
       //if sesion habis
-
-      if (isset($_SESSION['logged']))
-        {
-         
-        }
-        else
-        {
-            header('Location: '.base_url('/admin/login'));
-            exit(); 
-
-        }   
+      //check login
+      $check = new \App\Controllers\CheckAccess();
+      $check->logged();
+ 
     }
     public function index()
     {

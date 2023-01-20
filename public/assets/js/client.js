@@ -12,24 +12,24 @@ var base_url = loc.protocol + "//" + loc.hostname + (loc.port? ":"+loc.port : ""
 // });
 
 
-select_level();
-function select_level(){
-  let selOpts = '<option value="all">All data</option>'+
-  "<option value='1'>Administrator</option>"+
-  "<option value='2'>Operator</option>"+
-  "<option value='3'>Dosen</option>"+
-  "<option value='4'>Karyawan</option>"+
-  "<option value='5'>Mahasiswa</option>";
+// select_level();
+// function select_level(){
+//   let selOpts = '<option value="all">All data</option>'+
+//   "<option value='1'>Administrator</option>"+
+//   "<option value='2'>Operator</option>"+
+//   "<option value='3'>Dosen</option>"+
+//   "<option value='4'>Karyawan</option>"+
+//   "<option value='5'>Mahasiswa</option>";
 
-  $('#select_level_user').html(selOpts);
-}
-$("#select_level_user").change(function(){
-  $('#tabel_serverside').dataTable().fnDestroy();
-  tabel();
-});
+//   $('#select_level_user').html(selOpts);
+// }
+// $("#select_level_user").change(function(){
+//   $('#tabel_serverside').dataTable().fnDestroy();
+//   tabel();
+// });
 tabel();
 function tabel(){
-  var level = $('#select_level_user').val();
+  // var level = $('#select_level_user').val();
   var dataTable = $('#tabel_serverside').DataTable( {
     "processing" : true,
     "oLanguage": {
@@ -57,9 +57,9 @@ function tabel(){
     "stateSave" : true,
     "scrollX": true,
     "ajax":{
-      "url" :base_url+"admin/listdata_user" , // json datasource 
+      "url" :base_url+"admin/listdata_client" , // json datasource 
       "type": "post",  // method  , by default get
-      "data":{level:level},
+      "data":{},
     },
     columns: [
     {},
@@ -70,20 +70,8 @@ function tabel(){
       return  `<img  src="${row[7]}" class="rounded-circle img-responsive" height = 60px;>`;
     }},
     {mRender: function (data, type, row) {
-      if (row[5] == 1) {
-        return  `Administrator`;
 
-      }else if (row[5] == 2) {
-        return  `Operator`;
-      }else if (row[5] == 3){
-        return 'Dosen'
-      }else if (row[5] == 4){
-        return 'Karyawan'
-      }else if (row[5] == 5){
-        return 'Mahasiswa'
-      }else{
-        return 'Belum Ada'
-      }
+        return 'Client'
     }},
     {mRender: function (data, type, row) {
       if (row[6] == 1) {
@@ -101,13 +89,13 @@ function tabel(){
         if (row[5] == 5) {
           return   '<a href="javascript:void(0);" class="btn btn-info btn-sm resetPassword"  id="'+row[4]+'" >Reset Password</a> <a href="javascript:void(0);" class="btn btn-warning btn-sm nonaktifkanstatus"  id="'+row[4]+'" >Nonaktifkan</a> <a href="javascript:void(0);" class="btn btn-danger btn-sm btn_hapus_user" id="'+row[4]+'" nama = "'+row[1]+' '+row[2]+'">Hapus</a>';
         }else{
-          return   '<a href="javascript:void(0);" class="btn btn-info btn-sm resetPassword"  id="'+row[4]+'" >Reset Password</a> <a href="javascript:void(0);" class="btn btn-warning btn-sm nonaktifkanstatus"  id="'+row[4]+'" >Nonaktifkan</a> <a href="javascript:void(0);" class="btn btn-info btn-sm ubah_level_user"  id="'+row[4]+'" nama = "'+row[1]+' '+row[2]+'">Ubah Level</a> <a href="javascript:void(0);" class="btn btn-danger btn-sm btn_hapus_user" id="'+row[4]+'" nama = "'+row[1]+' '+row[2]+'">Hapus</a>';
+          return   '<a href="javascript:void(0);" class="btn btn-info btn-sm resetPassword"  id="'+row[4]+'" >Reset Password</a> <a href="javascript:void(0);" class="btn btn-warning btn-sm nonaktifkanstatus"  id="'+row[4]+'" >Nonaktifkan</a>  <a href="javascript:void(0);" class="btn btn-danger btn-sm btn_hapus_user" id="'+row[4]+'" nama = "'+row[1]+' '+row[2]+'">Hapus</a>';
         }
       }else{
         if (row[5] == 5) {
           return   '<a href="javascript:void(0);" class="btn btn-info btn-sm resetPassword"  id="'+row[4]+'" >Reset Password</a> <a href="javascript:void(0);" class="btn btn-success btn-sm aktifkanstatus"  id="'+row[4]+'" >Aktifkan</a> <a href="javascript:void(0);" class="btn btn-danger btn-sm btn_hapus_user"  id="'+row[4]+'" nama = "'+row[1]+' '+row[2]+'">Hapus</a>';
         }else{
-          return   '<a href="javascript:void(0);" class="btn btn-info btn-sm resetPassword"  id="'+row[4]+'" >Reset Password</a> <a href="javascript:void(0);" class="btn btn-success btn-sm aktifkanstatus"  id="'+row[4]+'" >Aktifkan</a> <a href="javascript:void(0);" class="btn btn-info btn-sm ubah_level_user"  id="'+row[4]+'" nama = "'+row[1]+' '+row[2]+'">Ubah Level</a> <a href="javascript:void(0);" class="btn btn-danger btn-sm btn_hapus_user"  id="'+row[4]+'" nama = "'+row[1]+' '+row[2]+'">Hapus</a>';
+          return   '<a href="javascript:void(0);" class="btn btn-info btn-sm resetPassword"  id="'+row[4]+'" >Reset Password</a> <a href="javascript:void(0);" class="btn btn-success btn-sm aktifkanstatus"  id="'+row[4]+'" >Aktifkan</a>  <a href="javascript:void(0);" class="btn btn-danger btn-sm btn_hapus_user"  id="'+row[4]+'" nama = "'+row[1]+' '+row[2]+'">Hapus</a>';
 
         }
       }
@@ -147,7 +135,7 @@ $('#tabel_serverside').on('click','.resetPassword',function(){
   }).then((result) => {
     $.ajax({
       type : "POST",
-      url  : base_url+'/admin/user/reset_password',
+      url  : base_url+'/admin/user/reset_password_client',
       async : false,
       // dataType : "JSON",
       data : {id:id,password:result.value.password},
@@ -180,7 +168,7 @@ $('#tabel_serverside').on('click','.aktifkanstatus',function(){
   let status = 1;
   $.ajax({
     type : "POST",
-    url  : base_url+"admin/user/ubah_status_user",
+    url  : base_url+"admin/user/ubah_status_client",
     async : false,
     data:{id:id,status:status},
     success: function(data){
@@ -202,7 +190,7 @@ $('#tabel_serverside').on('click','.nonaktifkanstatus',function(){
   let status = 0;
   $.ajax({
     type : "POST",
-    url  : base_url+"admin/user/ubah_status_user",
+    url  : base_url+"admin/user/ubah_status_client",
     async : false,
     data:{id:id,status:status},
     success: function(data){
@@ -229,62 +217,7 @@ function valueChecked(a){
   }
 
 }
-$('#tabel_serverside').on('click','.ubah_level_user',function(){
-  let id = $(this).attr('id');
-  let nama = $(this).attr('nama');
 
-  Swal.fire({
-    title: `Ubah level ${nama}`,
-    // html: `<input type="text" id="password" class="swal2-input" placeholder="Password baru">`,
-    html:`<div class="btn-group btn-group-toggle" data-toggle="buttons">
-    <label class="btn btn-success active">
-    <input type="radio" name="options" onclick="valueChecked(1)" value = "1" class = "level_user" autocomplete="off"> Administrator
-    </label>
-    &nbsp;
-    <label class="btn btn-primary">
-    <input type="radio" name="options" onclick="valueChecked(2)"  value = "2" class = "level_user" autocomplete="off"> Operator
-    </label>
-    </div>
-    <div>
-    <span id = "valueChecked">
-    </div>`,
-    confirmButtonText: 'Confirm',
-    focusConfirm: false,
-    preConfirm: () => {
-      const level = Swal.getPopup().querySelector('input[name="options"]:checked').value
-
-      return {level:level}
-    }
-  }).then((result) => {
-    $.ajax({
-      type : "POST",
-      url  : base_url+'/admin/user/ubah_level_user',
-      async : false,
-      // dataType : "JSON",
-      data : {level:result.value.level,id:id},
-      success: function(data){
-        $('#tabel_serverside').DataTable().ajax.reload();
-        Swal.fire({
-          position: 'center',
-          icon: 'success',
-          title: `Level ${nama} berhasil diubah.`,
-          showConfirmButton: false,
-          timer: 1500
-        })
-      },
-      error: function(xhr){
-        let d = JSON.parse(xhr.responseText);
-        Swal.fire({
-          icon: 'error',
-          title: 'Oops...',
-          text: `${d.message}`,
-          footer: '<a href="">Why do I have this issue?</a>'
-        })
-      }
-    });
-
-  })
-})
 $('#tabel_serverside').on('click','.btn_hapus_user',function(){
   id = $(this).attr('id');
   nama = $(this).attr('nama');
@@ -300,7 +233,7 @@ $('#tabel_serverside').on('click','.btn_hapus_user',function(){
     if (result.isConfirmed) {
       $.ajax({
         type  : 'post',
-        url   : base_url+'/admin/user/hapus_user',
+        url   : base_url+'/admin/user/hapus_client',
         async : false,
         // dataType : 'json',
         data:{id:id, nama:nama},
@@ -354,7 +287,7 @@ $('.tambah_user').on('click',function(){
   }).then((result) => {
     $.ajax({
       type : "POST",
-      url  : base_url+'/admin/user/tambah_admin',
+      url  : base_url+'/admin/user/tambah_client',
       async : false,
       // dataType : "JSON",
       data : {email:result.value.email,password:result.value.password},

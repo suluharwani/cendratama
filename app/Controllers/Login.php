@@ -130,6 +130,7 @@ class Login extends BaseController
                 $data_user = [
                   'id' => $user['id'],
                   'nama_depan'=> $user['nama_depan'],
+                  'level'=> $user['level'],
                   'nama_belakang'=> $user['nama_belakang'],
                   'name'=> $user['nama_depan']." ".$user['nama_belakang'],
                   'email'=> $user['email'],
@@ -172,7 +173,7 @@ class Login extends BaseController
       
       $google_client->setClientId($_ENV['ClientID']); //Define ClientID
       $google_client->setClientSecret($_ENV['ClientSecret']); //Define Client Secret Key
-      $google_client->setRedirectUri($_ENV['halamanAdmin']); //Define Redirect Uri
+      $google_client->setRedirectUri(site_url('admin/login')); //Define Redirect Uri
       $google_client->addScope('email');
 
       $google_client->addScope('profile');
@@ -221,10 +222,11 @@ class Login extends BaseController
               if ($userModel->affectedRows() > 0) {
                 $riwayat = "User " . $userInfo['name'] . " berhasil terdaftar sebagai Administrator";
                 $this->changelog->riwayat($riwayat);
-                $this->session->set('profile', $data_baru);
-
+                $profile = $userModel->where(array('email' => $userInfo['email'], 'deleted_at'=>NULL))->get()->getResultArray();
+                $this->session->set('profile', $profile);
                 $this->session->set('logged', true);
-                $this->session->set('auth', $data_baru);
+                $datareg = $userModel->where(array('email' => $userInfo['email'], 'deleted_at'=>NULL))->get()->getResultArray()[0];
+                $this->session->set('auth', $datareg);
               }else{
                 $riwayat = "User ".$userInfo['name']." - ".$userInfo['email']." Register gagal, (user tidak terdaftar)";
                 $this->changelog->riwayat($riwayat);

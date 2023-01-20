@@ -51,9 +51,22 @@ $routes->post('/admin/login', 'Login::index');
 $routes->get('/admin/register', 'Login::register');
 $routes->get('/logout', 'Login::logout');
 $routes->get('/admin/user/(:any)', 'User::user/$1');
-//datatables post
+//datatables post user admin
 $routes->post('/admin/listdata_user', 'User::listdata_user');
-
+$routes->post('/admin/user/tambah_admin', 'User::tambah_admin');
+$routes->post('/admin/user/hapus_user', 'User::hapus_user');
+$routes->post('/admin/user/reset_password', 'User::reset_password');
+$routes->post('/admin/user/ubah_status_user', 'User::ubah_status_user');
+$routes->post('/admin/user/ubah_level_user', 'User::ubah_level_user');
+//datatables post client
+$routes->post('/admin/listdata_client', 'User::listdata_client');
+$routes->post('/admin/user/tambah_client', 'User::tambah_client');
+$routes->post('/admin/user/hapus_client', 'User::hapus_client');
+$routes->post('/admin/user/reset_password_client', 'User::reset_password_client');
+$routes->post('/admin/user/ubah_status_client', 'User::ubah_status_client');
+//datatables post user pages
+$routes->post('/pages/listdata_pages', 'Pages::listdata_pages');
+$routes->post('/admin/page/tambah_page', 'Pages::tambah_page');
 // $routes->post('/login/test', 'Login::test');
 
 /*

@@ -1,35 +1,8 @@
 var loc = window.location;
 var base_url = loc.protocol + "//" + loc.hostname + (loc.port? ":"+loc.port : "") + "/";
-// $(document).on('focusin', function(e) {
-//   if ($(e.target).closest(".tox-dialog").length) {
-//     e.stopImmediatePropagation();
-//   }
-// });
 
- 
-// $(window).focus(function () {
-//   var input = document.getElementById("myTextId").focus();
-// });
-
-
-select_level();
-function select_level(){
-  let selOpts = '<option value="all">All data</option>'+
-  "<option value='1'>Administrator</option>"+
-  "<option value='2'>Operator</option>"+
-  "<option value='3'>Dosen</option>"+
-  "<option value='4'>Karyawan</option>"+
-  "<option value='5'>Mahasiswa</option>";
-
-  $('#select_level_user').html(selOpts);
-}
-$("#select_level_user").change(function(){
-  $('#tabel_serverside').dataTable().fnDestroy();
-  tabel();
-});
 tabel();
 function tabel(){
-  var level = $('#select_level_user').val();
   var dataTable = $('#tabel_serverside').DataTable( {
     "processing" : true,
     "oLanguage": {
@@ -57,60 +30,23 @@ function tabel(){
     "stateSave" : true,
     "scrollX": true,
     "ajax":{
-      "url" :base_url+"admin/listdata_user" , // json datasource 
+      "url" :base_url+"pages/listdata_pages" , // json datasource 
       "type": "post",  // method  , by default get
-      "data":{level:level},
+      "data":{},
     },
     columns: [
     {},
     {mRender: function (data, type, row) {
-      return  row[1]+" "+row[2]+"</br>"+"<a href=mailto:"+row[3]+">"+row[3]+"</a>";
+      return  row[2];
     }},
     {mRender: function (data, type, row) {
-      return  `<img  src="${row[7]}" class="rounded-circle img-responsive" height = 60px;>`;
+      return  row[1];
     }},
-    {mRender: function (data, type, row) {
-      if (row[5] == 1) {
-        return  `Administrator`;
-
-      }else if (row[5] == 2) {
-        return  `Operator`;
-      }else if (row[5] == 3){
-        return 'Dosen'
-      }else if (row[5] == 4){
-        return 'Karyawan'
-      }else if (row[5] == 5){
-        return 'Mahasiswa'
-      }else{
-        return 'Belum Ada'
-      }
-    }},
-    {mRender: function (data, type, row) {
-      if (row[6] == 1) {
-        return  `Aktif`;
-
-      }else if (row[6] == 0) {
-        return  `Tidak Aktif`;
-      }else{
-        return 'Belum Ada'
-      }
-    }},
+   
 
     {mRender: function (data, type, row) {
-      if (row[6] == 1) {
-        if (row[5] == 5) {
-          return   '<a href="javascript:void(0);" class="btn btn-info btn-sm resetPassword"  id="'+row[4]+'" >Reset Password</a> <a href="javascript:void(0);" class="btn btn-warning btn-sm nonaktifkanstatus"  id="'+row[4]+'" >Nonaktifkan</a> <a href="javascript:void(0);" class="btn btn-danger btn-sm btn_hapus_user" id="'+row[4]+'" nama = "'+row[1]+' '+row[2]+'">Hapus</a>';
-        }else{
-          return   '<a href="javascript:void(0);" class="btn btn-info btn-sm resetPassword"  id="'+row[4]+'" >Reset Password</a> <a href="javascript:void(0);" class="btn btn-warning btn-sm nonaktifkanstatus"  id="'+row[4]+'" >Nonaktifkan</a> <a href="javascript:void(0);" class="btn btn-info btn-sm ubah_level_user"  id="'+row[4]+'" nama = "'+row[1]+' '+row[2]+'">Ubah Level</a> <a href="javascript:void(0);" class="btn btn-danger btn-sm btn_hapus_user" id="'+row[4]+'" nama = "'+row[1]+' '+row[2]+'">Hapus</a>';
-        }
-      }else{
-        if (row[5] == 5) {
-          return   '<a href="javascript:void(0);" class="btn btn-info btn-sm resetPassword"  id="'+row[4]+'" >Reset Password</a> <a href="javascript:void(0);" class="btn btn-success btn-sm aktifkanstatus"  id="'+row[4]+'" >Aktifkan</a> <a href="javascript:void(0);" class="btn btn-danger btn-sm btn_hapus_user"  id="'+row[4]+'" nama = "'+row[1]+' '+row[2]+'">Hapus</a>';
-        }else{
-          return   '<a href="javascript:void(0);" class="btn btn-info btn-sm resetPassword"  id="'+row[4]+'" >Reset Password</a> <a href="javascript:void(0);" class="btn btn-success btn-sm aktifkanstatus"  id="'+row[4]+'" >Aktifkan</a> <a href="javascript:void(0);" class="btn btn-info btn-sm ubah_level_user"  id="'+row[4]+'" nama = "'+row[1]+' '+row[2]+'">Ubah Level</a> <a href="javascript:void(0);" class="btn btn-danger btn-sm btn_hapus_user"  id="'+row[4]+'" nama = "'+row[1]+' '+row[2]+'">Hapus</a>';
+    return   '<a href="javascript:void(0);" class="btn btn-info btn-sm resetPassword"  id="'+row[1]+'" >Reset Password</a> <a href="javascript:void(0);" class="btn btn-warning btn-sm nonaktifkanstatus"  id="'+row[4]+'" >Nonaktifkan</a> <a href="javascript:void(0);" class="btn btn-danger btn-sm btn_hapus_user" id="'+row[1]+'" nama = "'+row[1]+' '+row[2]+'">Hapus</a>';
 
-        }
-      }
     }
   }
   ],
@@ -326,44 +262,39 @@ $('#tabel_serverside').on('click','.btn_hapus_user',function(){
     }
   })
 })
-$('.tambah_user').on('click',function(){
+$('.tambah_data').on('click',function(){
 
   Swal.fire({
-    title: `Tambah admin `,
+    title: `Tambah Page `,
     // html: `<input type="text" id="password" class="swal2-input" placeholder="Password baru">`,
     html:`<form id="form_add_data">
     <div class="form-group">
-    <label for="email">Email address</label>
-    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
-    </div>
-    <div class="form-group">
-    <label for="password">Password</label>
-    <input type="text" class="form-control" id="password" placeholder="Password">
+    <label for="email">Nama</label>
+    <input type="email" class="form-control" id="page" aria-describedby="emailHelp" placeholder="Enter Nama Halaman">
     </div>
     </form>`,
     confirmButtonText: 'Confirm',
     focusConfirm: false,
     preConfirm: () => {
-      const email = Swal.getPopup().querySelector('#email').value
-      const password = Swal.getPopup().querySelector('#password').value
-      if (!email || !password) {
+      const page = Swal.getPopup().querySelector('#page').value
+      if (!page) {
         Swal.showValidationMessage('Silakan lengkapi data')
       }
-      return {email:email, password: password }
+      return {page:page}
     }
   }).then((result) => {
     $.ajax({
       type : "POST",
-      url  : base_url+'/admin/user/tambah_admin',
+      url  : base_url+'/admin/page/tambah_page',
       async : false,
       // dataType : "JSON",
-      data : {email:result.value.email,password:result.value.password},
+      data : {page:result.value.page},
       success: function(data){
         $('#tabel_serverside').DataTable().ajax.reload();
         Swal.fire({
           position: 'center',
           icon: 'success',
-          title: `Admin berhasil ditambahkan.`,
+          title: `Halaman berhasil ditambahkan.`,
           showConfirmButton: false,
           timer: 1500
         })

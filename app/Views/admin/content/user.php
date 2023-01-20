@@ -1,3 +1,7 @@
+<link rel="stylesheet" type="text/css" href="<?=base_url('assets')?>/datatables/datatables.min.css"/>
+
+
+
 <div class="page-heading">
     <div class="page-title">
         <div class="row">
@@ -20,7 +24,7 @@
     <section class="section">
         <div class="card">
             <div class="card-header">
-                Jquery Datatable
+                <button type="button" class="btn btn-primary tambah_user">Tambah user</button>
             </div>
             <div class="card-body">
                           <!-- table -->
@@ -56,4 +60,8 @@
     </section>
     <!-- Basic Tables end -->
 </div>
-<script type="text/javascript" src="<?=base_url()?>/assets/js/user.js"></script>
+
+ 
+<script type="text/javascript" src="<?=base_url('assets')?>/datatables/datatables.min.js"></script>
+<script type="text/javascript" src="<?=base_url()?>/assets/js/client.js"></script>
+ 

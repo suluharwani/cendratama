@@ -21,7 +21,7 @@ class Changelog extends BaseController
     }
     function riwayat($riwayat){
         if (isset($_SESSION['auth'])) {
-            $nama_admin = $_SESSION['auth']['name'];
+            $nama_admin = $_SESSION['auth']['nama_depan']." ".$_SESSION['auth']['nama_belakang'];
             $id_admin = $_SESSION['auth']['id'];
           }else{
             $nama_admin = "Unknown user";

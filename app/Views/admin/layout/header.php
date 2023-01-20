@@ -11,7 +11,8 @@
     <link rel="shortcut icon" href="<?=base_url('assets/template/dist')?>/assets/images/logo/favicon.png" type="image/png">
     
 <link rel="stylesheet" href="<?=base_url('assets/template/dist')?>/assets/css/shared/iconly.css">
-
+<link rel="stylesheet" href="<?=base_url('assets')?>/template/dist/assets/extensions/sweetalert2/sweetalert2.min.css">
+<script src="<?=base_url('assets')?>/template/dist/assets/extensions/sweetalert2/sweetalert2.min.js"></script>
 </head>
 
 <body>
@@ -28,10 +29,10 @@
                             <div class="dropdown">
                                 <a href="#" id="topbarUserDropdown" class="user-dropdown d-flex align-items-center dropend dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">
                                     <div class="avatar avatar-md2" >
-                                        <img src="<?php echo ($_SESSION['profile'][0]['profile_picture'] != null ) ?  $_SESSION['profile'][0]['profile_picture'] :  base_url('assets/template/dist/assets/images/faces/2.jpg') ;?>" alt="Avatar">
+                                        <img src="<?php echo (isset($_SESSION['profile'][0]['profile_picture']) ) ?  $_SESSION['profile'][0]['profile_picture'] :  base_url('assets/template/dist/assets/images/faces/2.jpg') ;?>" alt="Avatar">
                                     </div>
                                     <div class="text">
-                                        <h6 class="user-dropdown-name"><?=$_SESSION['profile'][0]['nama_depan']?></h6>
+                                        <h6 class="user-dropdown-name"><?php echo (isset($_SESSION['profile'][0]['profile_picture']) ) ?  $_SESSION['profile'][0]['nama_depan'] : "" ;?></h6>
                                         <p class="user-dropdown-status text-sm text-muted">Member</p>
                                     </div>
                                 </a>

@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Controllers;
+use AllowDynamicProperties;
 
 class LoginValidation extends BaseController
 {
