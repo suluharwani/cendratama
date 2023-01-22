@@ -44,6 +44,10 @@
 		<link rel="stylesheet" href="<?=base_url('assets/HTML')?>/css/custom.css">
 
 		<!-- Head Libs -->
+<!-- <script type="text/javascript" src="<?=base_url()?>/assets/HTML/js/popover.js"></script> -->
+		
 		<script src="<?=base_url('assets/HTML')?>/vendor/modernizr/modernizr.min.js"></script>
+		<script src="<?=base_url('assets/HTML')?>/vendor/jquery/jquery.min.js"></script>
+		
 
 	</head>

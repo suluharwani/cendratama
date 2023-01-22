@@ -269,8 +269,8 @@ $('.tambah_data').on('click',function(){
     // html: `<input type="text" id="password" class="swal2-input" placeholder="Password baru">`,
     html:`<form id="form_add_data">
     <div class="form-group">
-    <label for="email">Nama</label>
-    <input type="email" class="form-control" id="page" aria-describedby="emailHelp" placeholder="Enter Nama Halaman">
+    <label for="page">Nama</label>
+    <input type="text" class="form-control" id="page" placeholder="Enter Nama Halaman">
     </div>
     </form>`,
     confirmButtonText: 'Confirm',

@@ -68,6 +68,10 @@ $routes->post('/admin/user/ubah_status_client', 'User::ubah_status_client');
 $routes->post('/pages/listdata_pages', 'Pages::listdata_pages');
 $routes->post('/admin/page/tambah_page', 'Pages::tambah_page');
 // $routes->post('/login/test', 'Login::test');
+//menu
+$routes->post('/home/menu', 'Home::menu');
+$routes->post('/home/menu_cat', 'Home::menu_cat');
+$routes->post('/home/menu_sub_cat', 'Home::menu_sub_cat');
 
 /*
  * --------------------------------------------------------------------

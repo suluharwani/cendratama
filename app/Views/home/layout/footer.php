@@ -81,7 +81,6 @@
 		</div>
 
 		<!-- Vendor -->
-		<script src="<?=base_url('assets/HTML')?>/vendor/jquery/jquery.min.js"></script>
 		<script src="<?=base_url('assets/HTML')?>/vendor/jquery.appear/jquery.appear.min.js"></script>
 		<script src="<?=base_url('assets/HTML')?>/vendor/jquery.easing/jquery.easing.min.js"></script>
 		<script src="<?=base_url('assets/HTML')?>/vendor/jquery.cookie/jquery.cookie.js"></script>
