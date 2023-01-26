@@ -20,6 +20,11 @@ class Page extends Migration
         'constraint' => 200,
         'null' => true,
       ],
+      'slug' => [
+        'type' => 'VARCHAR',
+        'constraint' => 200,
+        'null' => true,
+      ],
       'updated_at' => [
         'type' => 'datetime',
         'null' => true,

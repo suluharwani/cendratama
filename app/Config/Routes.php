@@ -67,6 +67,11 @@ $routes->post('/admin/user/ubah_status_client', 'User::ubah_status_client');
 //datatables post user pages
 $routes->post('/pages/listdata_pages', 'Pages::listdata_pages');
 $routes->post('/admin/page/tambah_page', 'Pages::tambah_page');
+$routes->post('/admin/page/hapus_page', 'Pages::hapus_page');
+$routes->post('/admin/page/detail', 'Pages::detail');
+$routes->post('/admin/page/deleted_page', 'Pages::deleted_page');
+$routes->post('/admin/page/restore_page', 'Pages::restore_page');
+$routes->post('/admin/page/update_page', 'Pages::update_page');
 // $routes->post('/login/test', 'Login::test');
 //menu
 $routes->post('/home/menu', 'Home::menu');

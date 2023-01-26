@@ -87,7 +87,8 @@ return json_encode($output);
       $userInfo = $_SESSION['auth'];
       $model = new \App\Models\MdlPages();
       $userdata = [
-        "page" =>  $_POST["page"]
+        "page" =>  $_POST["page"],
+        "slug" => $model->slugify($_POST["page"], "-")
       ];
       if ($model->insert($userdata)) {
         $riwayat = "User ".$userInfo['nama_depan']." ".$userInfo['nama_depan']." menambahkan halaman: ".$_POST['page']."";
@@ -99,6 +100,71 @@ return json_encode($output);
         die(json_encode(array('message' => 'User exist, gagal menambahkan data.', 'code' => 3)));
       }
       $this->changelog->riwayat($riwayat);
-    
   }
+    function detail(){
+      $this->access('operator');
+      $userInfo = $_SESSION['auth'];
+      $id = $_POST['id'];
+      $model = new \App\Models\MdlPages();
+      return json_encode($model->where('id',$id)->get()->getResultArray());
+  }
+    function hapus_page(){
+      $this->access('operator');
+      $id = $_POST['id'];
+      $nama = $_POST['nama'];
+      $mdl = new \App\Models\MdlPages();
+      $mdl->where('id',$id);
+      $mdl->delete();
+      if ($mdl->affectedRows()!=0) {
+        $riwayat = "Menghapus halaman $nama";
+        $this->changelog->riwayat($riwayat);
+        header('HTTP/1.1 200 OK');
+      }else {
+        header('HTTP/1.1 500 Internal Server Error');
+        header('Content-Type: application/json; charset=UTF-8');
+        die(json_encode(array('message' => 'Tidak ada perubahan pada data', 'code' => 1)));
+      }
+     } 
+      function deleted_page(){
+      $model = new \App\Models\MdlPages();
+      $where = ['id !=' => 0, 'deleted_at !='=>NULL];
+      return json_encode($model->where($where)->get()->getResult());
+    }
+    function restore_page(){
+      $this->access('operator');
+      $id = $_POST['id'];
+      $nama = $_POST['nama'];
+      $mdl = new \App\Models\MdlPages();
+      $mdl->set('deleted_at',NULL);
+      $mdl->where('id',$id);
+      $mdl->update();
+      if ($mdl->affectedRows()!=0) {
+        $riwayat = "Mengembalikan halaman $nama";
+        $this->changelog->riwayat($riwayat);
+        header('HTTP/1.1 200 OK');
+      }else {
+        header('HTTP/1.1 500 Internal Server Error');
+        header('Content-Type: application/json; charset=UTF-8');
+        die(json_encode(array('message' => 'Tidak ada perubahan pada data', 'code' => 1)));
+      }
+     } 
+    function update_page(){
+      $this->access('operator');
+      $id = $_POST['id'];
+      $page = $_POST['page'];
+      $nama_awal = $_POST['nama'];
+      $mdl = new \App\Models\MdlPages();
+      $mdl->set('page',$page);
+      $mdl->where('id',$id);
+      $mdl->update();
+      if ($mdl->affectedRows()!=0) {
+        $riwayat = "Mengubah halaman {$nama_awal} menjadi {$page}";
+        $this->changelog->riwayat($riwayat);
+        header('HTTP/1.1 200 OK');
+      }else {
+        header('HTTP/1.1 500 Internal Server Error');
+        header('Content-Type: application/json; charset=UTF-8');
+        die(json_encode(array('message' => 'Tidak ada perubahan pada data', 'code' => 1)));
+      }
+     } 
 }

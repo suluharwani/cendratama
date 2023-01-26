@@ -11,7 +11,8 @@ class Home extends BaseController
     }
   function menu(){
       $model = new \App\Models\MdlPages();
-      return json_encode($model->get()->getResult());
+      $where = ['id !=' => 0, 'deleted_at'=>NULL];
+      return json_encode($model->where($where)->get()->getResult());
     }
   function menu_cat(){
       $model = new \App\Models\MdlCategory();

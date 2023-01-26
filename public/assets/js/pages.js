@@ -45,7 +45,7 @@ function tabel(){
    
 
     {mRender: function (data, type, row) {
-    return   '<a href="javascript:void(0);" class="btn btn-info btn-sm resetPassword"  id="'+row[1]+'" >Reset Password</a> <a href="javascript:void(0);" class="btn btn-warning btn-sm nonaktifkanstatus"  id="'+row[4]+'" >Nonaktifkan</a> <a href="javascript:void(0);" class="btn btn-danger btn-sm btn_hapus_user" id="'+row[1]+'" nama = "'+row[1]+' '+row[2]+'">Hapus</a>';
+    return   '<a href="javascript:void(0);" class="btn btn-info btn-sm view_data_menu"  id="'+row[1]+'" >View Data</a> <a href="javascript:void(0);" class="btn btn-warning btn-sm editPage"  id="'+row[1]+'"  nama = "'+row[2]+'" >Edit</a> <a href="javascript:void(0);" class="btn btn-danger btn-sm btn_hapus_menu" id="'+row[1]+'"  nama = "'+row[2]+'" >Hapus</a>';
 
     }
   }
@@ -65,37 +65,51 @@ function tabel(){
 });
 };
 
-$('#tabel_serverside').on('click','.resetPassword',function(){
+$('#tabel_serverside').on('click','.view_data_menu',function(){
   let id = $(this).attr('id');
 
-  Swal.fire({
-    title: `Set Password `,
-    html: `<input type="text" id="password" class="swal2-input" placeholder="Password baru">`,
-    confirmButtonText: 'Confirm',
-    focusConfirm: false,
-    preConfirm: () => {
-      const password = Swal.getPopup().querySelector('#password').value
-      if (!password) {
-        Swal.showValidationMessage('Silakan lengkapi data')
-      }
-      return {password: password }
-    }
-  }).then((result) => {
     $.ajax({
       type : "POST",
-      url  : base_url+'/admin/user/reset_password',
+      url  : base_url+'/admin/page/detail',
       async : false,
-      // dataType : "JSON",
-      data : {id:id,password:result.value.password},
+      dataType : "JSON",
+      data : {id:id},
       success: function(data){
-        $('#tabel_serverside').DataTable().ajax.reload();
+        // $('#tabel_serverside').DataTable().ajax.reload();
+
         Swal.fire({
-          position: 'center',
-          icon: 'success',
-          title: `Password berhasil diubah menjadi ${result.value.password}.`,
-          showConfirmButton: false,
-          timer: 1500
-        })
+  title: `<strong>${data[0].page}</strong>`,
+  icon: 'info',
+  html:
+    `<table class="table">
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Link</td>
+      <td><a href = "${base_url+'page/'+data[0].slug}" target="_blank">${base_url+'page/'+data[0].slug}</a></td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Dibuat</td>
+      <td>${data[0].created_at}</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>status</td>
+      <td>status</td>
+    </tr>
+  </tbody>
+</table>`,
+  showCloseButton: true,
+  showCancelButton: true,
+  focusConfirm: false,
+  confirmButtonText:
+    '<i class="fa fa-thumbs-up"></i> Great!',
+  confirmButtonAriaLabel: 'Thumbs up, great!',
+  cancelButtonText:
+    '<i class="fa fa-thumbs-down"></i>',
+  cancelButtonAriaLabel: 'Thumbs down'
+})
       },
       error: function(xhr){
         let d = JSON.parse(xhr.responseText);
@@ -107,9 +121,9 @@ $('#tabel_serverside').on('click','.resetPassword',function(){
         })
       }
     });
+    });
 
-  })
-});
+
 
 $('#tabel_serverside').on('click','.aktifkanstatus',function(){
   let id = $(this).attr('id');
@@ -165,47 +179,37 @@ function valueChecked(a){
   }
 
 }
-$('#tabel_serverside').on('click','.ubah_level_user',function(){
+$('#tabel_serverside').on('click','.editPage',function(){
   let id = $(this).attr('id');
   let nama = $(this).attr('nama');
 
   Swal.fire({
-    title: `Ubah level ${nama}`,
-    // html: `<input type="text" id="password" class="swal2-input" placeholder="Password baru">`,
-    html:`<div class="btn-group btn-group-toggle" data-toggle="buttons">
-    <label class="btn btn-success active">
-    <input type="radio" name="options" onclick="valueChecked(1)" value = "1" class = "level_user" autocomplete="off"> Administrator
-    </label>
-    &nbsp;
-    <label class="btn btn-primary">
-    <input type="radio" name="options" onclick="valueChecked(2)"  value = "2" class = "level_user" autocomplete="off"> Operator
-    </label>
-    </div>
-    <div>
-    <span id = "valueChecked">
-    </div>`,
+    title: `Set Nama Halaman `,
+    html: `<input type="text" id="page" class="swal2-input" placeholder="nama halaman baru" value= "${nama}">`,
     confirmButtonText: 'Confirm',
     focusConfirm: false,
     preConfirm: () => {
-      const level = Swal.getPopup().querySelector('input[name="options"]:checked').value
-
-      return {level:level}
+      const page = Swal.getPopup().querySelector('#page').value
+      if (!page) {
+        Swal.showValidationMessage('Silakan lengkapi data')
+      }
+      return {page: page }
     }
   }).then((result) => {
     $.ajax({
       type : "POST",
-      url  : base_url+'/admin/user/ubah_level_user',
+      url  : base_url+'/admin/page/update_page',
       async : false,
       // dataType : "JSON",
-      data : {level:result.value.level,id:id},
+      data : {nama:nama,id:id,page:result.value.page},
       success: function(data){
         $('#tabel_serverside').DataTable().ajax.reload();
         Swal.fire({
           position: 'center',
           icon: 'success',
-          title: `Level ${nama} berhasil diubah.`,
+          title: `Halaman ${nama} berhasil diubah menjadi ${result.value.page}.`,
           showConfirmButton: false,
-          timer: 1500
+          timer: 2500
         })
       },
       error: function(xhr){
@@ -220,23 +224,23 @@ $('#tabel_serverside').on('click','.ubah_level_user',function(){
     });
 
   })
-})
-$('#tabel_serverside').on('click','.btn_hapus_user',function(){
+});
+$('#tabel_serverside').on('click','.btn_hapus_menu',function(){
   id = $(this).attr('id');
   nama = $(this).attr('nama');
   Swal.fire({
     title: 'Apakah anda yakin?',
-    text: "User "+nama+" akan dihapus!",
+    text: "Halaman "+nama+" akan dihapus!",
     icon: 'warning',
     showCancelButton: true,
     confirmButtonColor: '#3085d6',
     cancelButtonColor: '#d33',
-    confirmButtonText: 'Ya, hapus user!'
+    confirmButtonText: 'Ya, hapus halaman!'
   }).then((result) => {
     if (result.isConfirmed) {
       $.ajax({
         type  : 'post',
-        url   : base_url+'/admin/user/hapus_user',
+        url   : base_url+'/admin/page/hapus_page',
         async : false,
         // dataType : 'json',
         data:{id:id, nama:nama},
@@ -310,5 +314,89 @@ $('.tambah_data').on('click',function(){
       }
     });
 
+  })
+})
+$('.restore_data').on('click',function(){
+tableRestoreData()
+$('.modal_restore').modal('show')
+
+
+})
+
+function tableRestoreData(){
+$('#tabelRestore').trigger("reset");
+let isi = '' 
+$.ajax({
+    type : "POST",
+    url  : base_url+"admin/page/deleted_page",
+    async : false,
+    dataType : 'json',
+    data:{},
+    success: function(data){
+      let no = 1;
+      isi+='<thead>'+
+      '<tr>'+
+      '<th scope="col" align="center" width="5%">#</th>'+
+      '<th scope="col" align="center">Halaman</th>'+
+      '<th scope="col" align="center">Action</th>'+
+      '</tr>'+
+      '</thead>'+
+      '<tbody>';
+      $.each(data, function(k, v)
+      {
+        console.log(data[k].page)
+        isi +=  '<tr>'+
+        '<td scope="row" align="center">'+ no++ +'</td>'+
+        '<td align="left">'+data[k].page+'</td>'+
+        '<td align="left"><a href="javascript:void(0);" class="btn btn-info btn-sm restore_page"  id="'+data[k].id+'" nama = "'+data[k].page+'"  >Restore</a></td>'+
+        '</tr>';
+
+      });
+      isi+='</tbody>'
+
+    }
+  })
+$('#tabelRestore').html(isi)
+}
+$('#tabelRestore').on('click','.restore_page',function(){
+  id = $(this).attr('id');
+  nama = $(this).attr('nama');
+  Swal.fire({
+    title: 'Apakah anda yakin?',
+    text: "Halaman "+nama+" akan dikembalikan!",
+    icon: 'info',
+    showCancelButton: true,
+    confirmButtonColor: '#3085d6',
+    cancelButtonColor: '#d33',
+    confirmButtonText: 'Ya, restore halaman!'
+  }).then((result) => {
+    if (result.isConfirmed) {
+      $.ajax({
+        type  : 'post',
+        url   : base_url+'/admin/page/restore_page',
+        async : false,
+        // dataType : 'json',
+        data:{id:id, nama:nama},
+        success : function(data){
+          //reload table
+          tableRestoreData()
+          $('#tabel_serverside').DataTable().ajax.reload();
+          Swal.fire(
+            'Restored!',
+            'Halaman '+nama+' telah dikembalikan.',
+            'success'
+            )
+        },
+        error: function(xhr){
+          let d = JSON.parse(xhr.responseText);
+          Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: `${d.message}`,
+            footer: '<a href="">Why do I have this issue?</a>'
+          })
+        }
+      });
+    }
   })
 })
