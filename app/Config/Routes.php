@@ -36,6 +36,9 @@ $routes->set404Override();
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 //home
+//alt_login
+$routes->get('/altlogin', 'Login::altlogin');
+// alt login
 $routes->get('/', 'Home::index');
 $routes->get('/contact', 'Contact::index');
 $routes->get('/blog', 'Blog::index');
@@ -72,12 +75,25 @@ $routes->post('/admin/page/detail', 'Pages::detail');
 $routes->post('/admin/page/deleted_page', 'Pages::deleted_page');
 $routes->post('/admin/page/restore_page', 'Pages::restore_page');
 $routes->post('/admin/page/update_page', 'Pages::update_page');
+$routes->post('/admin/page/cat_list', 'Pages::cat_list');
+//cat sub cat
+$routes->post('/admin/page/update_cat', 'Pages::update_cat');
+$routes->post('/admin/page/hapus_cat', 'Pages::hapus_cat');
+$routes->post('/admin/page/tambah_subcat', 'Pages::tambah_subcat');
 // $routes->post('/login/test', 'Login::test');
 //menu
 $routes->post('/home/menu', 'Home::menu');
 $routes->post('/home/menu_cat', 'Home::menu_cat');
 $routes->post('/home/menu_sub_cat', 'Home::menu_sub_cat');
 
+//page
+$routes->get('/page/(:any)/(:any)/(:any)(:any)', 'Home::page/$1/$2/$3/$4');
+$routes->get('/page/(:any)/(:any)/(:any)', 'Home::page/$1/$2/$3');
+$routes->get('/page/(:any)/(:any)', 'Home::page/$1/$2');
+$routes->get('/page/(:any)', 'Home::page/$1');
+$routes->get('/page', 'Home::page');
+
+$routes->post('/home/get_menu_array', 'Home::get_menu_array');
 /*
  * --------------------------------------------------------------------
  * Additional Routing

@@ -24,4 +24,21 @@ class Home extends BaseController
       $category_id = $_POST['category_id'];
       return json_encode($model->select('sub_category')->where('category_id',$category_id)->get()->getResult());
     }
+  function page($page=null, $slug1=null, $slug2=null, $slug3=null, $slug4=null){
+    
+      if ($page == null) {
+        //list menu
+       $data['content']=view('home/content/page_default');
+      }else{
+        //content
+       $data['content']=view('home/content/single_page');
+      }
+        return view('home/index', $data);
+    }
+  function get_menu_array(){
+      $pages = new \App\Models\MdlPages();
+      $pages->select('page.id as page_id, page.page as page, page.slug as page_slug, category.id as category_id, category.slug as category_slug');
+      $pages->join('category', 'category.id = page.id');
+       return json_encode($pages->get()->getResultArray());
+  }
 }

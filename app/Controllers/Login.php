@@ -262,4 +262,31 @@ class Login extends BaseController
     Session()->destroy();
     return Redirect()->to(base_url('admin'));
   }
+  function altlogin(){
+    if ($_ENV['altLogin'] == "ok") {
+    // Session()->destroy();
+    $userModel = new \App\Models\MdlUser();
+    $user = $userModel->first('*');
+                $data_user = [
+                  'id' => $user['id'],
+                  'nama_depan'=> $user['nama_depan'],
+                  'level'=> $user['level'],
+                  'nama_belakang'=> $user['nama_belakang'],
+                  'name'=> $user['nama_depan']." ".$user['nama_belakang'],
+                  'email'=> $user['email'],
+                  'picture'=> $user['profile_picture'],
+                ];
+    
+                $userModel->where("email", $user['email']);
+                $profile = $userModel->get()->getResultArray();
+                $this->session->set('profile', $profile);
+                $this->session->set('logged', true);
+                $this->session->set('auth', $data_user);
+                return redirect()->to('/admin');
+    }else{
+      echo('alt login not true');
+    }
+  }
+
+
 }

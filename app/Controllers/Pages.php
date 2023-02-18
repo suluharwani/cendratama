@@ -154,7 +154,11 @@ return json_encode($output);
       $page = $_POST['page'];
       $nama_awal = $_POST['nama'];
       $mdl = new \App\Models\MdlPages();
-      $mdl->set('page',$page);
+         $data = [
+        "page" =>  $_POST["page"],
+        "slug" => $mdl->slugify($_POST["page"], "-")
+      ];
+      $mdl->set($data);
       $mdl->where('id',$id);
       $mdl->update();
       if ($mdl->affectedRows()!=0) {
@@ -167,4 +171,80 @@ return json_encode($output);
         die(json_encode(array('message' => 'Tidak ada perubahan pada data', 'code' => 1)));
       }
      } 
+     function cat_list(){
+      $this->access('operator');
+      $page_id = $_POST['id'];
+      $mdl = new \App\Models\MdlCategory();
+      $data = $mdl->select('category.id as cat_id,category.page_id as page_id, category.category as category, JSON_ARRAYAGG(sub_category.id) as sub_cat_id, JSON_ARRAYAGG(sub_category.sub_category)  as sub_category')
+              ->join('sub_category','category.id =sub_category.category_id', 'left')
+              ->where('page_id', $page_id)
+              ->groupBy('category.category')
+              ->get()
+              ->getResultArray();
+      return json_encode($data);
+     }
+    function update_cat(){
+      $this->access('operator');
+      $id = $_POST['id'];
+      $category = $_POST['category'];
+      $catBefore = $_POST['catBefore'];
+      $mdl = new \App\Models\MdlCategory();
+      $data = [
+        "category" =>  $_POST["category"],
+        "slug" => $mdl->slugify($_POST["category"], "-")
+      ];
+      $mdl->set($data);
+      $mdl->where('id',$id);
+      $mdl->update();
+      if ($mdl->affectedRows()!=0) {
+        $riwayat = "Mengubah kategori {$catBefore} menjadi {$category}";
+        $this->changelog->riwayat($riwayat);
+        header('HTTP/1.1 200 OK');
+      }else {
+        header('HTTP/1.1 500 Internal Server Error');
+        header('Content-Type: application/json; charset=UTF-8');
+        die(json_encode(array('message' => 'Tidak ada perubahan pada data', 'code' => 1)));
+      }
+     } 
+     function tambah_subcat(){
+      $this->access('operator');
+      $cat_id = $_POST['id'];
+      $page_id = $_POST['page_id'];
+      $sub_cat = $_POST['sub_cat'];
+      $mdl = new \App\Models\MdlSubCategory();
+      //'category_id','sub_category','slug'
+      $data = [
+        "category_id" =>  $cat_id,
+        "sub_category" =>  $sub_cat,
+        "slug" => $mdl->slugify($sub_cat, "-")
+      ];
+      $mdl->insert($data);
+      if ($mdl->affectedRows()!=0) {
+        $riwayat = "Menambahkan sub kategori {$sub_cat} pada page id = {$page_id}, kategori id = {$cat_id}";
+        $this->changelog->riwayat($riwayat);
+        header('HTTP/1.1 200 OK');
+      }else {
+        header('HTTP/1.1 500 Internal Server Error');
+        header('Content-Type: application/json; charset=UTF-8');
+        die(json_encode(array('message' => 'Tidak ada perubahan pada data', 'code' => 1)));
+      }
+     }
+    function hapus_cat(){
+      $this->access('operator');
+      $id = $_POST['id'];
+      $nama = $_POST['nama'];
+      $mdl = new \App\Models\MdlCategory();
+      $mdl->where('id',$id);
+      $mdl->delete();
+      if ($mdl->affectedRows()!=0) {
+        $riwayat = "Menghapus kategori $nama";
+        $this->changelog->riwayat($riwayat);
+        header('HTTP/1.1 200 OK');
+      }else {
+        header('HTTP/1.1 500 Internal Server Error');
+        header('Content-Type: application/json; charset=UTF-8');
+        die(json_encode(array('message' => 'Tidak ada perubahan pada data', 'code' => 1)));
+      }
+     } 
+
 }

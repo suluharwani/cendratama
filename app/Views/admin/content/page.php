@@ -77,6 +77,56 @@
     </div>
   </div>
 </div>
+    <div class="modal fade modalCat" id="modalCat" data-bs-focus="false"  tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Halaman: <span id = "nama_kategori"></span></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+                          <div class="table-responsive">
+            <table id="tabelKategori" class="table table-bordered display text-center" cellspacing="0" width="100%">
+              <thead>
+                <tr  class="text-center">
+  
+                    <th  style="width: auto;">No</th>
+                    <th  style="width: auto;">Kategori</th>
+                    <th  style="width: auto;">Action</th>
+                    <th  style="width: auto;">Sub Kategori</th>
+                    <th  style="width: auto;">Action</th>
+
+                    <!-- <th  style="width: 10%;">Action</th> -->
+
+                </tr>
+              </thead>
+                  <tbody id = isiCat>
+
+                  </tbody>
+
+              <tfoot>
+               <tr>
+                    <!-- <th  style="width: auto;">No</th> -->
+                    <th  style="width: auto;">No</th>
+                    <th  style="width: auto;">Kategori</th>
+                    <th  style="width: auto;">Action</th>
+                    <th  style="width: auto;">Sub Kategori</th>
+                    <th  style="width: auto;">Action</th>
+
+                    <!-- <th  style="width: 10%;">Action</th> -->
+                  </tr>
+              </tfoot>
+            </table>
+
+          </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
 <script type="text/javascript" src="<?=base_url('assets')?>/datatables/datatables.min.js"></script>
 <script type="text/javascript" src="<?=base_url()?>/assets/js/pages.js"></script>
  

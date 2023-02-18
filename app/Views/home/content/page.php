@@ -1,326 +1,412 @@
 <div role="main" class="main">
-
 				<section class="page-header">
 					<div class="container">
-						<div class="row">
-							<div class="col-md-12">
-								<ul class="breadcrumb">
-									<li><a href="index.html">Home</a></li>
-									<li class="active">Elements</li>
-								</ul>
+						<div class="row align-items-center">
+							<div class="col-md-8 text-start">
+								<span class="tob-sub-title text-color-primary d-block">OUR BLOG</span>
+								<h1 class="font-weight-bold">Default - Left Sidebar</h1>
+								<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<h1>Lists</h1>
-								<p class="lead">Check out all the Lists options.</p>
+							<div class="col-md-4">
+								<ul class="breadcrumb justify-content-start justify-content-md-end">
+									<li><a href="#">Home</a></li>
+									<li class="active">Blog</li>
+								</ul>
 							</div>
 						</div>
 					</div>
 				</section>
 
-				<div class="container mb-5 pb-3 pt-3">
+				<div class="container">
+					<div class="row">
+						<aside class="sidebar col-md-4 col-lg-3 order-2 order-md-1">
+							<div class="accordion accordion-default accordion-toggle accordion-style-1" role="tablist">
 
-					<div class="row mb-5 pb-3">
-
-						<div class="col-lg-4 mb-5 mb-md-0">
-
-							<h4 class="mb-4 font-weight-semibold">Unordered</h4>
-
-							<ul class="list">
-								<li>Lorem ipsum dolor sit amet</li>
-								<li>Consectetur adipiscing elit</li>
-								<li>
-									Nulla volutpat aliquam velit
-									<ul>
-										<li>Phasellus iaculis neque</li>
-										<li>Purus sodales ultricies</li>
-									</ul>
-								</li>
-								<li>Faucibus porta lacus fringilla vel</li>
-								<li>Aenean sit amet erat nunc</li>
-							</ul>
-
-						</div>
-						<div class="col-lg-4 mb-5 mb-md-0">
-
-							<h4 class="mb-4 font-weight-semibold">Unstyled</h4>
-
-							<ul class="list list-unstyled">
-								<li>Lorem ipsum dolor sit amet</li>
-								<li>Consectetur adipiscing elit</li>
-								<li>Integer molestie lorem at massa</li>
-								<li>Aenean sit amet erat nunc</li>
-								<li>Eget porttitor lorem</li>
-							</ul>
-
-						</div>
-						<div class="col-lg-4">
-
-							<h4 class="mb-4 font-weight-semibold">Description</h4>
-
-							<dl class="list">
-								<dt>Description lists</dt>
-								<dd>A description list is perfect for defining terms.</dd>
-								<dt>Euismod</dt>
-								<dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
-								<dd>Donec id elit non mi porta gravida at eget metus.</dd>
-								<dt>Malesuada porta</dt>
-								<dd>Etiam porta sem malesuada magna mollis euismod.</dd>
-							</dl>
-
-						</div>
-
-					</div>
-					<div class="row pb-3">
-						<div class="col">
-							<h4 class="mb-4 font-weight-semibold">Colors</h4>
-							<hr>
-						</div>
-					</div>
-					<div class="row pb-3">
-
-						<div class="col-md-4 mb-5 mb-md-0">
-							<ul class="list list-unstyled list-icons list-primary">
-								<li class="mb-2"><i class="fas fa-angle-right ms-1 me-1 pe-2"></i> Lorem ipsum dolor sit amet</li>
-							</ul>
-							<ul class="list list-unstyled list-icons list-secondary">
-								<li class="mb-2"><i class="fas fa-angle-right ms-1 me-1 pe-2"></i> Lorem ipsum dolor sit amet</li>
-							</ul>
-							<ul class="list list-unstyled list-icons list-tertiary">
-								<li class="mb-2"><i class="fas fa-angle-right ms-1 me-1 pe-2"></i> Lorem ipsum dolor sit amet</li>
-							</ul>
-							<ul class="list list-unstyled list-icons list-quaternary">
-								<li class="mb-2"><i class="fas fa-angle-right ms-1 me-1 pe-2"></i> Lorem ipsum dolor sit amet</li>
-							</ul>
-						</div>
-						<div class="col-md-4 mb-5 mb-md-0">							
-							<ul class="list list-unstyled list-icons list-icons-style-2 list-primary">
-								<li class="mb-2"><i class="fas fa-angle-right ms-1 me-1 pe-2"></i> Lorem ipsum dolor sit amet</li>
-							</ul>
-							<ul class="list list-unstyled list-icons list-icons-style-2 list-secondary">
-								<li class="mb-2"><i class="fas fa-angle-right ms-1 me-1 pe-2"></i> Lorem ipsum dolor sit amet</li>
-							</ul>
-							<ul class="list list-unstyled list-icons list-icons-style-2 list-tertiary">
-								<li class="mb-2"><i class="fas fa-angle-right ms-1 me-1 pe-2"></i> Lorem ipsum dolor sit amet</li>
-							</ul>
-							<ul class="list list-unstyled list-icons list-icons-style-2 list-quaternary">
-								<li class="mb-2"><i class="fas fa-angle-right ms-1 me-1 pe-2"></i> Lorem ipsum dolor sit amet</li>
-							</ul>
-						</div>
-						<div class="col-md-4 mb-5">							
-							<ul class="list list-unstyled list-icons list-icons-style-3 list-primary">
-								<li class="mb-2"><i class="fas fa-angle-right ms-1 me-1 pe-2"></i> Lorem ipsum dolor sit amet</li>
-							</ul>
-							<ul class="list list-unstyled list-icons list-icons-style-3 list-secondary">
-								<li class="mb-2"><i class="fas fa-angle-right ms-1 me-1 pe-2"></i> Lorem ipsum dolor sit amet</li>
-							</ul>
-							<ul class="list list-unstyled list-icons list-icons-style-3 list-tertiary">
-								<li class="mb-2"><i class="fas fa-angle-right ms-1 me-1 pe-2"></i> Lorem ipsum dolor sit amet</li>
-							</ul>
-							<ul class="list list-unstyled list-icons list-icons-style-3 list-quaternary">
-								<li class="mb-2"><i class="fas fa-angle-right ms-1 me-1 pe-2"></i> Lorem ipsum dolor sit amet</li>
-							</ul>
-						</div>
-
-					</div>
-					<div class="row pb-3">
-						<div class="col">
-							<h4 class="mb-4 font-weight-semibold">Sizes</h4>
-							<hr>
-						</div>
-					</div>
-					<div class="row pb-3">
-
-						<div class="col-md-4 mb-5 mb-md-0">
-							<ul class="list list-unstyled list-icons list-icons-sm list-primary">
-								<li class="mb-2"><i class="fas fa-angle-right ms-1 me-1 pe-2"></i> Lorem ipsum dolor sit amet</li>
-							</ul>
-							<ul class="list list-unstyled list-icons list-icons-sm list-secondary">
-								<li class="mb-2"><i class="fas fa-angle-right ms-1 me-1 pe-2"></i> Lorem ipsum dolor sit amet</li>
-							</ul>
-							<ul class="list list-unstyled list-icons list-icons-sm list-tertiary">
-								<li class="mb-2"><i class="fas fa-angle-right ms-1 me-1 pe-2"></i> Lorem ipsum dolor sit amet</li>
-							</ul>
-							<ul class="list list-unstyled list-icons list-icons-sm list-quaternary">
-								<li class="mb-2"><i class="fas fa-angle-right ms-1 me-1 pe-2"></i> Lorem ipsum dolor sit amet</li>
-							</ul>
-						</div>
-						<div class="col-md-4 mb-5 mb-md-0">							
-							<ul class="list list-unstyled list-icons list-icons-style-2 list-primary">
-								<li class="mb-2"><i class="fas fa-angle-right ms-1 me-1 pe-2"></i> Lorem ipsum dolor sit amet</li>
-							</ul>
-							<ul class="list list-unstyled list-icons list-icons-style-2 list-secondary">
-								<li class="mb-2"><i class="fas fa-angle-right ms-1 me-1 pe-2"></i> Lorem ipsum dolor sit amet</li>
-							</ul>
-							<ul class="list list-unstyled list-icons list-icons-style-2 list-tertiary">
-								<li class="mb-2"><i class="fas fa-angle-right ms-1 me-1 pe-2"></i> Lorem ipsum dolor sit amet</li>
-							</ul>
-							<ul class="list list-unstyled list-icons list-icons-style-2 list-quaternary">
-								<li class="mb-2"><i class="fas fa-angle-right ms-1 me-1 pe-2"></i> Lorem ipsum dolor sit amet</li>
-							</ul>
-						</div>
-						<div class="col-md-4 mb-5">							
-							<ul class="list list-unstyled list-icons list-icons-lg list-icons-style-3 list-primary">
-								<li class="mb-2"><i class="fas fa-angle-right ms-1 me-1 pe-2"></i> Lorem ipsum dolor sit amet</li>
-							</ul>
-							<ul class="list list-unstyled list-icons list-icons-lg list-icons-style-3 list-secondary">
-								<li class="mb-2"><i class="fas fa-angle-right ms-1 me-1 pe-2"></i> Lorem ipsum dolor sit amet</li>
-							</ul>
-							<ul class="list list-unstyled list-icons list-icons-lg list-icons-style-3 list-tertiary">
-								<li class="mb-2"><i class="fas fa-angle-right ms-1 me-1 pe-2"></i> Lorem ipsum dolor sit amet</li>
-							</ul>
-							<ul class="list list-unstyled list-icons list-icons-lg list-icons-style-3 list-quaternary">
-								<li class="mb-2"><i class="fas fa-angle-right ms-1 me-1 pe-2"></i> Lorem ipsum dolor sit amet</li>
-							</ul>
-						</div>
-
-					</div>
-					<div class="row pb-3">
-						<div class="col">
-							<h4 class="mb-4 font-weight-semibold">Ordered</h4>
-							<hr>
-						</div>
-					</div>
-					<div class="row mb-5 pb-3">
-
-						<div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
-							<ol class="list">
-								<li>Lorem ipsum dolor sit amet</li>
-								<li>Consectetur adipiscing elit</li>
-								<li>
-									Nulla volutpat aliquam velit
-									<ol class="mt-1">
-										<li>Phasellus iaculis neque</li>
-									</ol>
-								</li>
-								<li>Faucibus porta lacus fringilla vel</li>
-							</ol>
-
-						</div>
-						<div class="col-md-6 col-lg-3 mb-5 mb-lg-0">							
-							<ol class="list list-ordened">
-								<li>Lorem ipsum dolor sit amet</li>
-								<li>Consectetur adipiscing elit</li>
-								<li>Phasellus iaculis neque</li>
-								<li>Nulla volutpat aliquam velit</li>
-								<li>Faucibus porta lacus fringilla</li>
-							</ol>
-
-						</div>
-						<div class="col-md-6 col-lg-3 mb-5 mb-md-0">							
-							<ol class="list list-ordened list-ordened-style-2">
-								<li>Lorem ipsum dolor sit amet</li>
-								<li>Consectetur adipiscing elit</li>
-								<li>Phasellus iaculis neque</li>
-								<li>Nulla volutpat aliquam velit</li>
-								<li>Faucibus porta lacus</li>
-							</ol>
-
-						</div>
-						<div class="col-md-6 col-lg-3">							
-							<ol class="list list-ordened list-ordened-style-3">
-								<li>Lorem ipsum dolor sit amet</li>
-								<li>Consectetur adipiscing elit</li>
-								<li>Phasellus iaculis neque</li>
-								<li>Nulla volutpat aliquam velit</li>
-								<li>Faucibus porta lacus</li>
-							</ol>
-
-						</div>
-
-					</div>
-					<div class="row mb-5 pb-3">
-
-						<div class="col-lg-4 mb-5 mb-md-0">
-
-							<h4 class="mb-4 font-weight-semibold">Dash List</h4>
-
-							<ul class="list list-style-1">
-								<li>Lorem ipsum dolor sit amet</li>
-								<li>Consectetur adipiscing elit</li>
-								<li>Faucibus porta lacus fringilla vel</li>
-								<li>Aenean sit amet erat nunc</li>
-							</ul>
-
-						</div>
-
-						<div class="col-lg-4 mb-5 mb-md-0">
-
-							<h4 class="mb-4 font-weight-semibold">Inline List</h4>
-
-							<ul class="list list-inline">
-								<li class="list-inline-item">Item 1</li>
-								<li class="list-inline-item">Item 2</li>
-								<li class="list-inline-item">Item 3</li>
-								<li class="list-inline-item">Item 4</li>
-								<li class="list-inline-item">Item 5</li>
-							</ul>
-
-						</div>
-
-						<div class="col-lg-4">
-
-							<h4 class="mb-4 font-weight-semibold">List Group</h4>
-
-							<ul class="list list-group">
-								<li class="list-group-item d-flex justify-content-between align-items-center active">
-									Cras justo odio
-								</li>
-								<li class="list-group-item d-flex justify-content-between align-items-center">
-									Dapibus ac facilisis in
-									<span class="badge badge-primary badge-pill rounded-pill">2</span>
-								</li>
-								<li class="list-group-item d-flex justify-content-between align-items-center">
-									Morbi leo risus
-								</li>
-							</ul>
-
-						</div>
-
-					</div>
-					<div class="row pb-3">
-
-						<div class="col-lg-4 mb-5 mb-md-0">
-
-							<h4 class="mb-4 font-weight-semibold">Icons</h4>
-
-							<ul class="list list-unstyled">
-								<li class="mb-2"><i class="fas fa-angle-right ms-1 me-1 pe-2"></i> Lorem ipsum dolor sit amet</li>
-								<li class="mb-2"><i class="lnr lnr-sun me-2"></i> Nulla volutpat aliquam velit </li>
-								<li class="mb-2"><i class="icon-present me-2"></i> Consectetur adipiscing elit</li>
-							</ul>
-
-						</div>
-						<div class="col-lg-8">
-							<div class="row">
-								<div class="col-12">
-									<h4 class="mb-4 font-weight-semibold">Borders</h4>
+								<div class="card">
+									<div id="toggleSidebarSearch" class="accordion-body accordion-body-show-border-top collapse show p-0" role="tabpanel" aria-labelledby="sidebarSearchForm">
+										<div class="card-body pt-4">
+											<form id="sidebarSearchForm" class="sidebar-search" action="page-search-results.html" method="get">
+												<div class="input-group">
+													<input type="text" class="form-control line-height-1 bg-light-5" name="s" id="s" placeholder="Search..." required="">
+													<span class="input-group-btn">
+														<button class="btn btn-light" type="submit"><i class="fas fa-search text-color-primary"></i></button>
+													</span>
+												</div>
+											</form>
+										</div>
+									</div>
 								</div>
-								<div class="col-lg-6">
-
-									<ul class="list list-unstyled list-borders">
-										<li class="mb-2"><i class="fas fa-angle-right text-color-primary ms-1 me-1 pe-2"></i> Lorem ipsum dolor sit amet</li>
-										<li class="mb-2"><i class="fas fa-angle-right text-color-primary ms-1 me-1 pe-2"></i> Nulla volutpat aliquam velit </li>
-										<li class="mb-2"><i class="fas fa-angle-right text-color-primary ms-1 me-1 pe-2"></i> Consectetur adipiscing elit</li>
-									</ul>
-
+								<div class="card">
+									<div class="card-header accordion-header" role="tab" id="categories">
+										<h3 class="text-3 mb-0">
+											<a href="#" data-bs-toggle="collapse" data-bs-target="#toggleCategories" aria-expanded="false" aria-controls="toggleCategories">CATEGORIES</a>
+										</h3>
+									</div>
+									<div id="toggleCategories" class="accordion-body collapse show p-0" aria-labelledby="categories">
+										<div class="card-body">
+											<ul class="list list-unstyled">
+												<li class="mb-2">
+													<a href="#" class="font-weight-semibold"><i class="fas fa-angle-right ms-1 me-1"></i> Design</a>
+												</li>
+												<li class="mb-2">
+													<a href="#" class="font-weight-semibold text-color-primary"><i class="fas fa-angle-right ms-1 me-1" id="photos" data-bs-toggle="collapse" data-bs-target="#submenuPhotos" aria-expanded="true" aria-controls="submenuPhotos" role="list" onclick="return false;"></i> Photos (3)</a>
+													<ul class="list list-unstyled collapse show" id="submenuPhotos" aria-labelledby="photos">
+														<li>
+															<a href="#">Animals</a>
+														</li>
+														<li>
+															<a href="#">Business (4)</a>
+														</li>
+														<li>
+															<a href="#">Sports</a>
+														</li>
+													</ul>
+												</li>
+												<li class="mb-2">
+													<a href="#" class="font-weight-semibold"><i class="fas fa-angle-right ms-1 me-1"></i> Videos</a>
+												</li>
+												<li class="mb-2">
+													<a href="#" class="font-weight-semibold"><i class="fas fa-angle-right ms-1 me-1"></i> Lifestyle</a>
+												</li>
+												<li class="mb-2">
+													<a href="#" class="font-weight-semibold"><i class="fas fa-angle-right ms-1 me-1"></i> Technology</a>
+												</li>
+											</ul>
+										</div>
+									</div>
 								</div>
-								<div class="col-lg-6">
-
-									<ul class="list list-unstyled list-side-borders">
-										<li class="mb-2"><i class="fas fa-angle-right text-color-primary ms-1 me-1 pe-2"></i> Lorem ipsum dolor sit amet</li>
-										<li class="mb-2"><i class="fas fa-angle-right text-color-primary ms-1 me-1 pe-2"></i> Nulla volutpat aliquam velit </li>
-										<li class="mb-2"><i class="fas fa-angle-right text-color-primary ms-1 me-1 pe-2"></i> Consectetur adipiscing elit</li>
-										<li class="mb-2"><i class="fas fa-angle-right text-color-primary ms-1 me-1 pe-2"></i> Lorem ipsum dolor sit amet</li>
-									</ul>
-
+								<div class="card">
+									<div class="card-header accordion-header" role="tab" id="tags">
+										<h3 class="text-3 mb-0">
+											<a href="#" data-bs-toggle="collapse" data-bs-target="#toggleTags" aria-expanded="false" aria-controls="toggleTags">TAGS</a>
+										</h3>
+									</div>
+									<div id="toggleTags" class="accordion-body collapse show p-0" role="tabpanel" aria-labelledby="tags">
+										<div class="card-body">
+											<ul class="list-inline">
+												<li class="list-inline-item"><a href="#" class="badge bg-dark badge-sm badge-pill rounded-pill px-3 py-2 mb-2">NEWS</a></li>
+												<li class="list-inline-item"><a href="#" class="badge bg-dark badge-sm badge-pill rounded-pill px-3 py-2 mb-2">JOBS</a></li>
+												<li class="list-inline-item"><a href="#" class="badge bg-dark badge-sm badge-pill rounded-pill px-3 py-2 mb-2">POST</a></li>
+												<li class="list-inline-item"><a href="#" class="badge bg-dark badge-sm badge-pill rounded-pill px-3 py-2 mb-2">PHOTOS</a></li>
+												<li class="list-inline-item"><a href="#" class="badge bg-dark badge-sm badge-pill rounded-pill px-3 py-2 mb-2">INNOVATION</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</aside>
+						<div class="col-md-8 col-lg-9 order-1 order-md-2 mb-5 mb-md-0">
+							<article class="blog-post">
+								<header class="blog-post-header mb-4">
+									<a href="blog-single-post.html">
+										<img src="img/blog/posts/post-1-masonry.jpg" class="img-fluid" alt="" />
+									</a>
+									<i class="post-format-icon lnr lnr-picture bg-primary text-color-light text-7 p-3"></i>
+								</header>
+								<h2 class="text-5">
+									<a href="blog-single-post.html" class="link-color-dark">
+										This is a standard post with preview image
+									</a>
+								</h2>
+								<div class="d-flex mb-3">
+									<span class="post-date text-color-primary pe-3">MARCH 5, 2021</span>
+									<span class="post-likes d-flex align-items-center border border-top-0 border-bottom-0 px-3"><i class="lnr lnr-heart text-3 me-1" aria-label="3 users like this post"></i> 3</span>
+									<a href="blog-single-post.html#comments">
+										<span class="post-comments d-flex align-items-center px-3"><i class="lnr lnr-bubble text-3 me-1" aria-label="6 users comment this post"></i> 6</span>
+									</a>
+								</div>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam finibus vestibulum lacus non sodales. Aenean pretium augue tellus, dapibus molestie sapien vestibulum venenatis. Curabitur eulr...</p>
+								<a href="blog-single-post.html" class="text-color-primary font-weight-bold learn-more">READ MORE <i class="fas fa-angle-right text-2" aria-label="Read more"></i></a>
+							</article>
+							<hr class="my-5">
+							<article class="blog-post">
+								<header class="blog-post-header mb-4">
+									<div class="owl-carousel owl-theme dots-style-2 nav-style-2" data-plugin-options="{'autoplay': true, 'items': 1, 'dots': true, 'nav': false, 'animateIn': 'animate__fadeIn', 'animateOut': 'animate__fadeOut'}">
+										<div>
+											<a href="blog-single-post.html">
+												<img src="img/blog/posts/post-2-2-masonry.jpg" class="img-fluid" alt="" />
+											</a>
+										</div>
+										<div>
+											<a href="blog-single-post.html">
+												<img src="img/blog/posts/post-2-3-masonry.jpg" class="img-fluid" alt="" />
+											</a>
+										</div>
+										<div>
+											<a href="blog-single-post.html">
+												<img src="img/blog/posts/post-2-masonry.jpg" class="img-fluid" alt="" />
+											</a>
+										</div>
+									</div>
+									<i class="post-format-icon lnr lnr-picture bg-primary text-color-light text-7 p-3"></i>
+								</header>
+								<h2 class="text-5">
+									<a href="blog-single-post.html" class="link-color-dark">
+										This is a standard slider gallery post
+									</a>
+								</h2>
+								<div class="d-flex mb-3">
+									<span class="post-date text-color-primary pe-3">MARCH 4, 2021</span>
+									<span class="post-likes d-flex align-items-center border border-top-0 border-bottom-0 px-3"><i class="lnr lnr-heart text-3 me-1" aria-label="4 users like this post"></i> 4</span>
+									<a href="blog-single-post.html#comments">
+										<span class="post-comments d-flex align-items-center px-3"><i class="lnr lnr-bubble text-3 me-1" aria-label="2 users comment this post"></i> 2</span>
+									</a>
+								</div>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam finibus vestibulum lacus non sodales. Aenean pretium augue tellus, dapibus molestie sapien vestibulum venenatis. Curabitur eulr...</p>
+								<a href="blog-single-post.html" class="text-color-primary font-weight-bold learn-more">READ MORE <i class="fas fa-angle-right text-2" aria-label="Read more"></i></a>
+							</article>
+							<hr class="my-5">
+							<article class="blog-post">
+								<header class="blog-post-header mb-4">
+									<div class="lightbox" data-plugin-options="{'delegate': 'a', 'type': 'image', 'gallery': {'enabled': true}, 'mainClass': 'mfp-with-zoom', 'zoom': {'enabled': true, 'duration': 300}}">
+										<div class="row mx-0">
+											<div class="col-6 col-md-4 p-0">
+												<a href="img/blog/posts/post-3-square.jpg">
+													<span class="image-frame image-frame-style-1 image-frame-effect-1">
+														<span class="image-frame-wrapper">
+															<img src="img/blog/posts/post-3-square.jpg" class="img-fluid" alt="">
+															<span class="image-frame-inner-border"></span>
+															<span class="image-frame-action">
+																<span class="image-frame-action-icon">
+																	<i class="lnr lnr-magnifier text-color-light"></i>
+																</span>
+															</span>
+														</span>
+													</span>
+												</a>
+											</div>
+											<div class="col-6 col-md-4 p-0">
+												<a href="img/blog/posts/post-4-square.jpg">
+													<span class="image-frame image-frame-style-1 image-frame-effect-1">
+														<span class="image-frame-wrapper">
+															<img src="img/blog/posts/post-4-square.jpg" class="img-fluid" alt="">
+															<span class="image-frame-inner-border"></span>
+															<span class="image-frame-action">
+																<span class="image-frame-action-icon">
+																	<i class="lnr lnr-magnifier text-color-light"></i>
+																</span>
+															</span>
+														</span>
+													</span>
+												</a>
+											</div>
+											<div class="col-6 col-md-4 p-0">
+												<a href="img/blog/posts/post-9-square.jpg">
+													<span class="image-frame image-frame-style-1 image-frame-effect-1">
+														<span class="image-frame-wrapper">
+															<img src="img/blog/posts/post-9-square.jpg" class="img-fluid" alt="">
+															<span class="image-frame-inner-border"></span>
+															<span class="image-frame-action">
+																<span class="image-frame-action-icon">
+																	<i class="lnr lnr-magnifier text-color-light"></i>
+																</span>
+															</span>
+														</span>
+													</span>
+												</a>
+											</div>
+											<div class="col-6 col-md-4 p-0">
+												<a href="img/blog/posts/post-6-square.jpg">
+													<span class="image-frame image-frame-style-1 image-frame-effect-1">
+														<span class="image-frame-wrapper">
+															<img src="img/blog/posts/post-6-square.jpg" class="img-fluid" alt="">
+															<span class="image-frame-inner-border"></span>
+															<span class="image-frame-action">
+																<span class="image-frame-action-icon">
+																	<i class="lnr lnr-magnifier text-color-light"></i>
+																</span>
+															</span>
+														</span>
+													</span>
+												</a>
+											</div>
+											<div class="col-6 col-md-4 p-0">
+												<a href="img/blog/posts/post-7-square.jpg">
+													<span class="image-frame image-frame-style-1 image-frame-effect-1">
+														<span class="image-frame-wrapper">
+															<img src="img/blog/posts/post-7-square.jpg" class="img-fluid" alt="">
+															<span class="image-frame-inner-border"></span>
+															<span class="image-frame-action">
+																<span class="image-frame-action-icon">
+																	<i class="lnr lnr-magnifier text-color-light"></i>
+																</span>
+															</span>
+														</span>
+													</span>
+												</a>
+											</div>
+											<div class="col-6 col-md-4 p-0">
+												<a href="img/blog/posts/post-8-square.jpg">
+													<span class="image-frame image-frame-style-1 image-frame-effect-1">
+														<span class="image-frame-wrapper">
+															<img src="img/blog/posts/post-8-square.jpg" class="img-fluid" alt="">
+															<span class="image-frame-inner-border"></span>
+															<span class="image-frame-action">
+																<span class="image-frame-action-icon">
+																	<i class="lnr lnr-magnifier text-color-light"></i>
+																</span>
+															</span>
+														</span>
+													</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</header>
+								<h2 class="text-5">
+									<a href="blog-single-post.html" class="link-color-dark">
+										This is a standard image gallery thumbs post
+									</a>
+								</h2>
+								<div class="d-flex mb-3">
+									<span class="post-date text-color-primary pe-3">MARCH 3, 2021</span>
+									<span class="post-likes d-flex align-items-center border border-top-0 border-bottom-0 px-3"><i class="lnr lnr-heart text-3 me-1" aria-label="7 users like this post"></i> 7</span>
+									<a href="blog-single-post.html#comments">
+										<span class="post-comments d-flex align-items-center px-3"><i class="lnr lnr-bubble text-3 me-1" aria-label="8 users comment this post"></i> 8</span>
+									</a>
+								</div>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam finibus vestibulum lacus non sodales. Aenean pretium augue tellus, dapibus molestie sapien vestibulum venenatis. Curabitur eulr...</p>
+								<a href="blog-single-post.html" class="text-color-primary font-weight-bold learn-more">READ MORE <i class="fas fa-angle-right text-2" aria-label="Read more"></i></a>
+							</article>
+							<hr class="my-5">
+							<article class="blog-post">
+								<header class="blog-post-header mb-4">
+									<div class="ratio ratio-16x9">
+										<iframe class="embed-responsive-item" src="https://player.vimeo.com/video/45830194?color=ffffff&title=0&byline=0&portrait=0&badge=0" width="640" height="360" allowfullscreen></iframe>
+									</div>
+								</header>
+								<h2 class="text-5">
+									<a href="blog-single-post.html" class="link-color-dark">
+										This is a standard embedded video post
+									</a>
+								</h2>
+								<div class="d-flex mb-3">
+									<span class="post-date text-color-primary pe-3">MARCH 2, 2021</span>
+									<span class="post-likes d-flex align-items-center border border-top-0 border-bottom-0 px-3"><i class="lnr lnr-heart text-3 me-1" aria-label="3 users like this post"></i> 3</span>
+									<a href="blog-single-post.html#comments">
+										<span class="post-comments d-flex align-items-center px-3"><i class="lnr lnr-bubble text-3 me-1" aria-label="5 users comment this post"></i> 5</span>
+									</a>
+								</div>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam finibus vestibulum lacus non sodales. Aenean pretium augue tellus, dapibus molestie sapien vestibulum venenatis. Curabitur eulr...</p>
+								<a href="blog-single-post.html" class="text-color-primary font-weight-bold learn-more">READ MORE <i class="fas fa-angle-right text-2" aria-label="Read more"></i></a>
+							</article>
+							<hr class="my-5">
+							<article class="blog-post">
+								<header class="blog-post-header mb-4">
+									<div class="ratio ratio-16x9">
+										<video class="embed-responsive-item" autoplay="" muted="" loop="" controls="">
+											<source src="video/office.mp4" type="video/mp4">
+										</video>
+									</div>
+								</header>
+								<h2 class="text-5">
+									<a href="blog-single-post.html" class="link-color-dark">
+										This is a standard HTML5 video post
+									</a>
+								</h2>
+								<div class="d-flex mb-3">
+									<span class="post-date text-color-primary pe-3">MARCH 1, 2021</span>
+									<span class="post-likes d-flex align-items-center border border-top-0 border-bottom-0 px-3"><i class="lnr lnr-heart text-3 me-1" aria-label="2 users like this post"></i> 2</span>
+									<a href="blog-single-post.html#comments">
+										<span class="post-comments d-flex align-items-center px-3"><i class="lnr lnr-bubble text-3 me-1" aria-label="3 users comment this post"></i> 3</span>
+									</a>
+								</div>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam finibus vestibulum lacus non sodales. Aenean pretium augue tellus, dapibus molestie sapien vestibulum venenatis. Curabitur eulr...</p>
+								<a href="blog-single-post.html" class="text-color-primary font-weight-bold learn-more">READ MORE <i class="fas fa-angle-right text-2" aria-label="Read more"></i></a>
+							</article>
+							<hr class="my-5">
+							<article class="blog-post">
+								<header class="blog-post-header bg-light-5 p-5 mb-4">
+									<blockquote class="blockquote blockquote-style-1 blockquote-primary">
+										<p class="mb-4 font-tertiary font-italic">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla gravida ipsum a est iaculis, sit amet ullamcorper odio egestas.</p>
+									</blockquote>
+								</header>
+								<h2 class="text-5">
+									<a href="blog-single-post.html" class="link-color-dark">
+										This is a standard blockquote post
+									</a>
+								</h2>
+								<div class="d-flex mb-3">
+									<span class="post-date text-color-primary pe-3">FEBRUARY 26, 2021</span>
+									<span class="post-likes d-flex align-items-center border border-top-0 border-bottom-0 px-3"><i class="lnr lnr-heart text-3 me-1" aria-label="1 users like this post"></i> 1</span>
+									<a href="blog-single-post.html#comments">
+										<span class="post-comments d-flex align-items-center px-3"><i class="lnr lnr-bubble text-3 me-1" aria-label="2 users comment this post"></i> 2</span>
+									</a>
+								</div>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam finibus vestibulum lacus non sodales. Aenean pretium augue tellus, dapibus molestie sapien vestibulum venenatis. Curabitur eulr...</p>
+								<a href="blog-single-post.html" class="text-color-primary font-weight-bold learn-more">READ MORE <i class="fas fa-angle-right text-2" aria-label="Read more"></i></a>
+							</article>
+							<hr class="my-5">
+							<article class="blog-post">
+								<header class="blog-post-header mb-4">
+									<a href="http://www.themeforest.net/" class="d-block btn btn-primary btn-outline border-0 rounded-0 font-weight-bold text-center text-6 py-5" target="_blank">EZY ON THEMEFOREST</a>
+								</header>
+								<h2 class="text-5">
+									<a href="blog-single-post.html" class="link-color-dark">
+										This is a standard link post
+									</a>
+								</h2>
+								<div class="d-flex mb-3">
+									<span class="post-date text-color-primary pe-3">FEBRUARY 25, 2021</span>
+									<span class="post-likes d-flex align-items-center border border-top-0 border-bottom-0 px-3"><i class="lnr lnr-heart text-3 me-1" aria-label="1 users like this post"></i> 1</span>
+									<a href="blog-single-post.html#comments">
+										<span class="post-comments d-flex align-items-center px-3"><i class="lnr lnr-bubble text-3 me-1" aria-label="5 users comment this post"></i> 5</span>
+									</a>
+								</div>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam finibus vestibulum lacus non sodales. Aenean pretium augue tellus, dapibus molestie sapien vestibulum venenatis. Curabitur eulr...</p>
+								<a href="blog-single-post.html" class="text-color-primary font-weight-bold learn-more">READ MORE <i class="fas fa-angle-right text-2" aria-label="Read more"></i></a>
+							</article>
+							<hr class="my-5">
+							<article class="blog-post">
+								<header class="blog-post-header mb-4">
+									<div class="embed-responsive embed-soundcloud">
+										<iframe class="embed-responsive-item" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/341546259&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true"></iframe>
+									</div>
+								</header>
+								<h2 class="text-5">
+									<a href="blog-single-post.html" class="link-color-dark">
+										This is a standard audio post
+									</a>
+								</h2>
+								<div class="d-flex mb-3">
+									<span class="post-date text-color-primary pe-3">FEBRUARY 24, 2021</span>
+									<span class="post-likes d-flex align-items-center border border-top-0 border-bottom-0 px-3"><i class="lnr lnr-heart text-3 me-1" aria-label="1 users like this post"></i> 1</span>
+									<a href="blog-single-post.html#comments">
+										<span class="post-comments d-flex align-items-center px-3"><i class="lnr lnr-bubble text-3 me-1" aria-label="3 users comment this post"></i> 3</span>
+									</a>
+								</div>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam finibus vestibulum lacus non sodales. Aenean pretium augue tellus, dapibus molestie sapien vestibulum venenatis. Curabitur eulr...</p>
+								<a href="blog-single-post.html" class="text-color-primary font-weight-bold learn-more">READ MORE <i class="fas fa-angle-right text-2" aria-label="Read more"></i></a>
+							</article>
+							<hr class="mt-5 mb-4">
+							<div class="row align-items-center justify-content-between">
+								<div class="col-auto mb-3 mb-sm-0">
+									<span>Showing 1-9 of 60 results</span>
+								</div>
+								<div class="col-auto">
+									<nav aria-label="Page navigation example">
+									  	<ul class="pagination mb-0">
+									    	<li class="page-item">
+									      		<a class="page-link prev" href="#" aria-label="Previous">
+										        	<span><i class="fas fa-angle-left" aria-label="Previous"></i></span>
+										      	</a>
+									    	</li>
+										    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+										    <li class="page-item"><a class="page-link" href="#">2</a></li>
+										    <li class="page-item"><a class="page-link" href="#">3</a></li>
+										    <li class="page-item">...</li>
+										    <li class="page-item"><a class="page-link" href="#">15</a></li>
+										    <li class="page-item">
+										      	<a class="page-link next" href="#" aria-label="Next">
+										        	<span><i class="fas fa-angle-right" aria-label="Next"></i></span>
+										      	</a>
+										    </li>
+									  	</ul>
+									</nav>
 								</div>
 							</div>
 						</div>
-
 					</div>
-
 				</div>
 
 			</div>
