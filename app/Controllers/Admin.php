@@ -16,6 +16,7 @@ class Admin extends BaseController
     public function __construct()
     {
     //   parent::__construct();
+      $this->request = \Config\Services::request();
       $this->db      = \Config\Database::connect();
       $this->session = session();
       $this->bcrypt = new Bcrypt();

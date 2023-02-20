@@ -77,8 +77,11 @@ $routes->post('/admin/page/restore_page', 'Pages::restore_page');
 $routes->post('/admin/page/update_page', 'Pages::update_page');
 $routes->post('/admin/page/cat_list', 'Pages::cat_list');
 //cat sub cat
+$routes->post('/admin/page/tambah_cat', 'Pages::tambah_cat');
 $routes->post('/admin/page/update_cat', 'Pages::update_cat');
+$routes->post('/admin/page/update_subcat', 'Pages::update_subcat');
 $routes->post('/admin/page/hapus_cat', 'Pages::hapus_cat');
+$routes->post('/admin/page/hapus_subcat', 'Pages::hapus_subcat');
 $routes->post('/admin/page/tambah_subcat', 'Pages::tambah_subcat');
 // $routes->post('/login/test', 'Login::test');
 //menu

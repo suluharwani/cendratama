@@ -183,6 +183,29 @@ return json_encode($output);
               ->getResultArray();
       return json_encode($data);
      }
+      function tambah_cat(){
+      $this->access('operator');
+      $id = $_POST['id'];
+      $nama_page = $_POST['nama'];
+      $cat = $_POST['cat'];
+      $mdl = new \App\Models\MdlCategory();
+      //'category_id','sub_category','slug'
+      $data = [
+        "page_id" =>  $id,
+        "category" =>  $cat,
+        "slug" => $mdl->slugify($cat, "-")
+      ];
+      $mdl->insert($data);
+      if ($mdl->affectedRows()!=0) {
+        $riwayat = "Menambahkan sub kategori {$cat} pada halaman {$nama_page}";
+        $this->changelog->riwayat($riwayat);
+        header('HTTP/1.1 200 OK');
+      }else {
+        header('HTTP/1.1 500 Internal Server Error');
+        header('Content-Type: application/json; charset=UTF-8');
+        die(json_encode(array('message' => 'Tidak ada perubahan pada data', 'code' => 1)));
+      }
+     }
     function update_cat(){
       $this->access('operator');
       $id = $_POST['id'];
@@ -238,6 +261,46 @@ return json_encode($output);
       $mdl->delete();
       if ($mdl->affectedRows()!=0) {
         $riwayat = "Menghapus kategori $nama";
+        $this->changelog->riwayat($riwayat);
+        header('HTTP/1.1 200 OK');
+      }else {
+        header('HTTP/1.1 500 Internal Server Error');
+        header('Content-Type: application/json; charset=UTF-8');
+        die(json_encode(array('message' => 'Tidak ada perubahan pada data', 'code' => 1)));
+      }
+     } 
+      function update_subcat(){
+      $this->access('operator');
+      $id = $_POST['id'];
+      $subCategory = $_POST['subCategory'];
+      $catBefore = $_POST['catBefore'];
+      $mdl = new \App\Models\MdlSubCategory();
+      $data = [
+        "sub_category" =>  $_POST["subCategory"],
+        "slug" => $mdl->slugify($_POST["subCategory"], "-")
+      ];
+      $mdl->set($data);
+      $mdl->where('id',$id);
+      $mdl->update();
+      if ($mdl->affectedRows()!=0) {
+        $riwayat = "Mengubah sub kategori {$catBefore} menjadi {$subCategory}";
+        $this->changelog->riwayat($riwayat);
+        header('HTTP/1.1 200 OK');
+      }else {
+        header('HTTP/1.1 500 Internal Server Error');
+        header('Content-Type: application/json; charset=UTF-8');
+        die(json_encode(array('message' => 'Tidak ada perubahan pada data', 'code' => 1)));
+      }
+     } 
+      function hapus_subcat(){
+      $this->access('operator');
+      $id = $_POST['id'];
+      $nama = $_POST['nama'];
+      $mdl = new \App\Models\MdlSubCategory();
+      $mdl->where('id',$id);
+      $mdl->delete();
+      if ($mdl->affectedRows()!=0) {
+        $riwayat = "Menghapus sub kategori $nama";
         $this->changelog->riwayat($riwayat);
         header('HTTP/1.1 200 OK');
       }else {

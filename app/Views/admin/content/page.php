@@ -7,13 +7,12 @@
         <div class="row">
             <div class="col-12 col-md-6 order-md-1 order-last">
                 <h3>Pages</h3>
-                <p class="text-subtitle text-muted">Powerful interactive tables with datatables (jQuery required)</p>
+                <p class="text-subtitle text-muted">Manage Halaman dan Kategori</p>
             </div>
             <div class="col-12 col-md-6 order-md-2 order-first">
                 <nav aria-label="breadcrumb" class="breadcrumb-header float-start float-lg-end">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">DataTable Jquery</li>
+                    <ol class="breadcrumb" id="breadcrumb" >
+                        <!-- <div id = "breadCrumb"></div> -->
                     </ol>
                 </nav>
             </div>
@@ -30,21 +29,21 @@
             <div class="card-body">
                           <!-- table -->
           <div class="table-responsive">
-            <table id="tabel_serverside" class="table table-bordered display text-center" cellspacing="0" width="100%">
+            <table id="tabel_serverside" class="table table-bordered display text-left" cellspacing="0" width="100%">
               <thead>
                 <tr  class="text-center">
                   <th style="width: 5%; text-align: center;">NO</th>
-                  <th style="width: 20%;">Page</th>
-                  <th style="width: 5%; ">Detail</th>
-                  <th style="width: 40%; text-align: center;">ACTION</th>
+                  <th style="width: 20%; text-align: center;">HALAMAN</th>
+                  <th style="width: 20%; text-align: center;">DETAIL</th>
+                  <th style="width: 20%; text-align: center;">ACTION</th>
                 </tr>
               </thead>
               <tfoot>
                 <tr class="text-center">
                   <th style="width: 5%; text-align: center;">NO</th>
-                  <th style="width: 20%;">Page</th>
-                  <th style="width: 5%; ">Detail</th>
-                  <th style="width: 40%; text-align: center;">ACTION</th>
+                  <th style="width: 20%; text-align: center;">HALAMAN</th>
+                  <th style="width: 20%; text-align: center;">DETAIL</th>
+                  <th style="width: 20%; text-align: center;">ACTION</th>
                 </tr>
               </tr>
             </tfoot>
@@ -85,9 +84,12 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-
+            <div>
+                <a class="btn btn-success btn-sm tambahKategori"  >Tambah Kategori</a>
+            </div>
                           <div class="table-responsive">
             <table id="tabelKategori" class="table table-bordered display text-center" cellspacing="0" width="100%">
+              
               <thead>
                 <tr  class="text-center">
   
@@ -100,6 +102,7 @@
                     <!-- <th  style="width: 10%;">Action</th> -->
 
                 </tr>
+                <br>
               </thead>
                   <tbody id = isiCat>
 

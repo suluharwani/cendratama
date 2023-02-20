@@ -13,6 +13,7 @@
 <link rel="stylesheet" href="<?=base_url('assets/template/dist')?>/assets/css/shared/iconly.css">
 <link rel="stylesheet" href="<?=base_url('assets')?>/template/dist/assets/extensions/sweetalert2/sweetalert2.min.css">
 <script src="<?=base_url('assets')?>/template/dist/assets/extensions/sweetalert2/sweetalert2.min.js"></script>
+
 </head>
 
 <body>

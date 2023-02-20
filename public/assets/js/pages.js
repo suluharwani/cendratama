@@ -40,18 +40,19 @@ function tabel(){
       return  row[2];
     }},
     {mRender: function (data, type, row) {
-      return  row[1];
+      return   '<a href="javascript:void(0);" class="btn btn-success btn-sm view_data_category" nama_page = "'+row[2]+'" id="'+row[1]+'" >Category</a> <a href="javascript:void(0);" class="btn btn-info btn-sm view_data_menu"  id="'+row[1]+'" >View Data</a> ';
+
     }},
    
 
     {mRender: function (data, type, row) {
-    return   '<a href="javascript:void(0);" class="btn btn-success btn-sm view_data_category" nama_page = "'+row[2]+'" id="'+row[1]+'" >Category</a> <a href="javascript:void(0);" class="btn btn-info btn-sm view_data_menu"  id="'+row[1]+'" >View Data</a> <a href="javascript:void(0);" class="btn btn-warning btn-sm editPage"  id="'+row[1]+'"  nama = "'+row[2]+'" >Edit</a> <a href="javascript:void(0);" class="btn btn-danger btn-sm btn_hapus_menu" id="'+row[1]+'"  nama = "'+row[2]+'" >Hapus</a>';
+    return   ' <a href="javascript:void(0);" class="btn btn-warning btn-sm editPage"  id="'+row[1]+'"  nama = "'+row[2]+'" >Edit</a> <a href="javascript:void(0);" class="btn btn-danger btn-sm btn_hapus_menu" id="'+row[1]+'"  nama = "'+row[2]+'" >Hapus</a>';
 
     }
   }
   ],
   "columnDefs": [{
-    "targets": [0],
+    "targets": [0,2,3],
     "orderable": false
   }],
 
@@ -68,6 +69,8 @@ $('#tabel_serverside').on('click','.view_data_category',function(){
   let id = $(this).attr('id');
   let nama_page = $(this).attr('nama_page');
   dataCat(id);
+     $('.tambahKategori').attr({'id':`${id}`, 'nama':`${nama_page}`});
+     $('.modalCat').modal('show')
   $('#nama_kategori').html(nama_page);
 });
 function dataCat(id){
@@ -78,7 +81,7 @@ function dataCat(id){
     data:{id:id},
     success: function(data){
      tableCat(data);
-  $('.modalCat').modal('show')
+  
     },
     error: function(xhr){
       let d = JSON.parse(xhr.responseText);
@@ -118,7 +121,7 @@ function tableCat(data){
                 }
           table+=   `<td >${sub_cat}</td>`;
           if(s[m] !=null){
-           table+=   `<td><a href="javascript:void(0);" class="btn btn-warning btn-sm"  id="${id_sc[m]}" >Edit</a> <a href="javascript:void(0);" class="btn btn-danger btn-sm"  id="${id_sc[m]}">Delete</a></td>`;
+           table+=   `<td><a href="javascript:void(0);" class="btn btn-warning btn-sm editSubcat" page_id = "${d[k].page_id}" nama = "${sub_cat}"  id="${id_sc[m]}" >Edit</a> <a href="javascript:void(0);" class="btn btn-danger btn-sm deleteSubCat"  page_id = "${d[k].page_id}" nama = "${sub_cat}" id="${id_sc[m]}">Delete</a></td>`;
           }
           table+=   `</tr>`
 
@@ -127,6 +130,51 @@ function tableCat(data){
    })
  $('#isiCat').html(table)
 }
+$('.tambahKategori').on('click',function(){
+  let id = $(this).attr('id'); //id halaman
+  let nama = $(this).attr('nama'); //nama halaman
+  Swal.fire({
+    title: `Tambah kategori pada ${nama} `,
+    html: `<input type="text" id="cat" class="swal2-input" placeholder="Kategori">`,
+    confirmButtonText: 'Confirm',
+    focusConfirm: false,
+    preConfirm: () => {
+      const cat = Swal.getPopup().querySelector('#cat').value
+      if (!cat) {
+        Swal.showValidationMessage('Silakan lengkapi data')
+      }
+      return {cat: cat }
+    }
+  }).then((result) => {
+    $.ajax({
+      type : "POST",
+      url  : base_url+'admin/page/tambah_cat',
+      async : false,
+      // dataType : "JSON",
+      data : {nama:nama,id:id,cat:result.value.cat},
+      success: function(data){
+        dataCat(id)
+        Swal.fire({
+          position: 'center',
+          icon: 'success',
+          title: `Kategori <strong>${result.value.cat}</strong> berhasil ditambahkan pada halaman <strong>${nama}</strong>.`,
+          showConfirmButton: false,
+          timer: 2500
+        })
+      },
+      error: function(xhr){
+        let d = JSON.parse(xhr.responseText);
+        Swal.fire({
+          icon: 'error',
+          title: 'Oops...',
+          text: `${d.message}`,
+          footer: '<a href="">Why do I have this issue?</a>'
+        })
+      }
+    });
+
+  })
+});
 $('#isiCat').on('click','.editCat',function(){
   let id = $(this).attr('id');
   let page_id = $(this).attr('page_id');
@@ -263,6 +311,48 @@ $('#isiCat').on('click','.deleteCat',function(){
     }
   })
 })
+$('#isiCat').on('click','.deleteSubCat',function(){
+  let id = $(this).attr('id');
+  let page_id = $(this).attr('page_id');
+  let nama = $(this).attr('nama');
+  Swal.fire({
+    title: 'Apakah anda yakin?',
+    text: "Sub kategori "+nama+" akan dihapus!",
+    icon: 'warning',
+    showCancelButton: true,
+    confirmButtonColor: '#3085d6',
+    cancelButtonColor: '#d33',
+    confirmButtonText: 'Ya, hapus sub kategori!'
+  }).then((result) => {
+    if (result.isConfirmed) {
+      $.ajax({
+        type  : 'post',
+        url   : base_url+'/admin/page/hapus_subcat',
+        async : false,
+        // dataType : 'json',
+        data:{id:id, nama:nama},
+        success : function(data){
+          //reload table
+          dataCat(page_id)
+          Swal.fire(
+            'Deleted!',
+            'Sub kategori '+nama+' telah dihapus.',
+            'success'
+            )
+        },
+        error: function(xhr){
+          let d = JSON.parse(xhr.responseText);
+          Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: `${d.message}`,
+            footer: '<a href="">Why do I have this issue?</a>'
+          })
+        }
+      });
+    }
+  })
+})
 $('#tabel_serverside').on('click','.view_data_menu',function(){
   let id = $(this).attr('id');
 
@@ -293,7 +383,7 @@ $('#tabel_serverside').on('click','.view_data_menu',function(){
     </tr>
     <tr>
       <th scope="row">3</th>
-      <td>status</td>
+      <td>Halaman</td>
       <td>status</td>
     </tr>
   </tbody>
@@ -598,3 +688,51 @@ $('#tabelRestore').on('click','.restore_page',function(){
     }
   })
 })
+
+$('#isiCat').on('click','.editSubcat',function(){
+  let id = $(this).attr('id');
+  let page_id = $(this).attr('page_id');
+  let nama = $(this).attr('nama');
+
+  Swal.fire({
+    title: `Edit kategori ${nama} `,
+    html: `<input type="text" id="subCategory" class="swal2-input" placeholder="" value= "${nama}">`,
+    confirmButtonText: 'Confirm',
+    focusConfirm: false,
+    preConfirm: () => {
+      const subCategory = Swal.getPopup().querySelector('#subCategory').value
+      if (!subCategory) {
+        Swal.showValidationMessage('Silakan lengkapi data')
+      }
+      return {subCategory: subCategory }
+    }
+  }).then((result) => {
+    $.ajax({
+      type : "POST",
+      url  : base_url+'/admin/page/update_subcat',
+      async : false,
+      // dataType : "JSON",
+      data : {catBefore:nama,id:id,subCategory:result.value.subCategory},
+      success: function(data){
+        dataCat(page_id);
+        Swal.fire({
+          position: 'center',
+          icon: 'success',
+          title: `Kategori ${nama} berhasil diubah menjadi ${result.value.subCategory}.`,
+          showConfirmButton: false,
+          timer: 2500
+        })
+      },
+      error: function(xhr){
+        let d = JSON.parse(xhr.responseText);
+        Swal.fire({
+          icon: 'error',
+          title: 'Oops...',
+          text: `${d.message}`,
+          footer: '<a href="">Why do I have this issue?</a>'
+        })
+      }
+    });
+
+  })
+});
