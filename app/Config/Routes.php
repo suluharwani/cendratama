@@ -49,6 +49,7 @@ $routes->get('/pages', 'Pages::index');
 //admin
 $routes->get('/admin', 'Admin::index' , ['as' => 'admin']);
 $routes->get('/admin/manage/pages', 'Pages::manage');
+$routes->get('/admin/manage/static_pages', 'StaticPages::manage');
 $routes->get('/admin/login', 'Login::index');
 $routes->post('/admin/login', 'Login::index');
 $routes->get('/admin/register', 'Login::register');
@@ -76,6 +77,7 @@ $routes->post('/admin/page/deleted_page', 'Pages::deleted_page');
 $routes->post('/admin/page/restore_page', 'Pages::restore_page');
 $routes->post('/admin/page/update_page', 'Pages::update_page');
 $routes->post('/admin/page/cat_list', 'Pages::cat_list');
+$routes->post('/admin/page/subcat_list', 'Pages::subcat_list');
 //cat sub cat
 $routes->post('/admin/page/tambah_cat', 'Pages::tambah_cat');
 $routes->post('/admin/page/update_cat', 'Pages::update_cat');

@@ -40,7 +40,7 @@ function tabel(){
       return  row[2];
     }},
     {mRender: function (data, type, row) {
-      return   '<a href="javascript:void(0);" class="btn btn-success btn-sm view_data_category" nama_page = "'+row[2]+'" id="'+row[1]+'" >Category</a> <a href="javascript:void(0);" class="btn btn-info btn-sm view_data_menu"  id="'+row[1]+'" >View Data</a> ';
+      return   '<a href="javascript:void(0);" class="btn btn-success btn-sm view_data_category" nama_page = "'+row[2]+'" id="'+row[1]+'" >Category</a>  ';
 
     }},
    
@@ -80,6 +80,7 @@ function dataCat(id){
     async : false,
     data:{id:id},
     success: function(data){
+
      tableCat(data);
   
     },
@@ -116,7 +117,7 @@ function tableCat(data){
               if (m==0) {
               table+=   `<td rowspan = "${rowspan}">${no++}</td>`;
               table+=   `<td rowspan = "${rowspan}">${d[k].category}</td>`;
-              table+=   `<td rowspan = "${rowspan}"><a href="javascript:void(0);" class="btn btn-success btn-sm tambahSub"  id="${d[k].cat_id}" page_id = "${d[k].page_id}" nama = "${d[k].category}" >Tambah Sub</a> <a href="javascript:void(0);" class="btn btn-warning btn-sm editCat"  id="${d[k].cat_id}" page_id = "${d[k].page_id}" nama = "${d[k].category}">Edit</a> <a href="javascript:void(0);" class="btn btn-danger btn-sm deleteCat"  id="${d[k].cat_id}" page_id = "${d[k].page_id}" nama = "${d[k].category}" >Delete</a></td>`;
+              table+=   `<td rowspan = "${rowspan}"><a href="javascript:void(0);" class="btn btn-success btn-sm tambahSub"  id="${d[k].cat_id}" page_id = "${d[k].page_id}" nama = "${d[k].category}" >Tambah Sub</a> <a href="javascript:void(0);" class="btn btn-warning btn-sm editCat"  id="${d[k].cat_id}" page_id = "${d[k].page_id}" nama = "${d[k].category}">Edit</a> <a href="javascript:void(0);" class="btn btn-danger btn-sm deleteCat"  id="${d[k].cat_id}" page_id = "${d[k].page_id}" nama = "${d[k].category}" >Delete</a>`;
 
                 }
           table+=   `<td >${sub_cat}</td>`;
@@ -353,65 +354,110 @@ $('#isiCat').on('click','.deleteSubCat',function(){
     }
   })
 })
-$('#tabel_serverside').on('click','.view_data_menu',function(){
-  let id = $(this).attr('id');
+// $('#isiCat').on('click','.view_data_menu',function(){
+//   let id = $(this).attr('id');
 
-    $.ajax({
-      type : "POST",
-      url  : base_url+'/admin/page/detail',
-      async : false,
-      dataType : "JSON",
-      data : {id:id},
-      success: function(data){
-        // $('#tabel_serverside').DataTable().ajax.reload();
+//     $.ajax({
+//       type : "POST",
+//       url  : base_url+'/admin/page/detail',
+//       async : false,
+//       dataType : "JSON",
+//       data : {id:id},
+//       success: function(d){
+//         data = d['page']
+//         // $('#tabel_serverside').DataTable().ajax.reload();
+//         dataCat = d['category']
+//         tabelCat = ''
+//          $.each(dataCat, function(k, v){
+//           tabelCat +=  `<tr><td> ${dataCat[k].category} </td><td> <a href="javascript:void(0);" class="btn btn-info btn-sm showSub" onclick ="showSubTable(${dataCat[k].id})" >lihat sub kategori</a></td></tr>`
+//         })
+//         Swal.fire({
+//   title: `<strong>${data[0].page}</strong>`,
+//   icon: 'info',
+//     inputAttributes: {
+//           id: "tabelInfoHalaman",
+//         },
+//   html:
+//     `<table class="table">
+//   <tbody>
+//     <tr>
+//       <th scope="row">1</th>
+//       <td>Link</td>
+//       <td><a href = "${base_url+'page/'+data[0].slug}" target="_blank">${base_url+'page/'+data[0].slug}</a></td>
+//     </tr>
+//     <tr>
+//       <th scope="row">2</th>
+//       <td>Dibuat</td>
+//       <td>${data[0].created_at}</td>
+//     </tr>
+//     <tr>
+//       <th scope="row">3</th>
+//       <td>Halaman</td>
+//       <td>
+//                 <table class="table" border="2" width="100%"  bordercolor="blue">
+//                     <tr class="table-info">
+//                         <td>Category</td>
+//                         <td>Action</td>
+//                     </tr>
+//                     ${tabelCat}
+                   
+//                 </table>
+//       </td>
+    
+//     </tr>
+//        <tr id = "showSubCat">
+//        </tr>
+//   </tbody>
+// </table>`,
+//   showCloseButton: true,
+//   // confirmButtonText:
+//   //   '<i class="fa fa-thumbs-up"></i> Great!',
+// })
+//       },
+//       error: function(xhr){
+//         let d = JSON.parse(xhr.responseText);
+//         Swal.fire({
+//           icon: 'error',
+//           title: 'Oops...',
+//           text: `${d.message}`,
+//           footer: '<a href="">Why do I have this issue?</a>'
+//         })
+//       }
+//     });
+//     });
+// function showSubTable(id){
+//    $.ajax({
+//     type : "POST",
+//     url  : base_url+"admin/page/subcat_list",
+//     async : false,
+//     dataType : "JSON",
+//     data:{id:id},
+//     success: function(data){
+//        kolom = ' <th scope="row" ></th><td>Sub kategori</td><td><table class="table" width="100%"  bordercolor="blue"><tr class="table-info"><td>Sub Kategori</td></tr>'
+//       $.each(data, function(k, v){
 
-        Swal.fire({
-  title: `<strong>${data[0].page}</strong>`,
-  icon: 'info',
-  html:
-    `<table class="table">
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Link</td>
-      <td><a href = "${base_url+'page/'+data[0].slug}" target="_blank">${base_url+'page/'+data[0].slug}</a></td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Dibuat</td>
-      <td>${data[0].created_at}</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Halaman</td>
-      <td>status</td>
-    </tr>
-  </tbody>
-</table>`,
-  showCloseButton: true,
-  showCancelButton: true,
-  focusConfirm: false,
-  confirmButtonText:
-    '<i class="fa fa-thumbs-up"></i> Great!',
-  confirmButtonAriaLabel: 'Thumbs up, great!',
-  cancelButtonText:
-    '<i class="fa fa-thumbs-down"></i>',
-  cancelButtonAriaLabel: 'Thumbs down'
-})
-      },
-      error: function(xhr){
-        let d = JSON.parse(xhr.responseText);
-        Swal.fire({
-          icon: 'error',
-          title: 'Oops...',
-          text: `${d.message}`,
-          footer: '<a href="">Why do I have this issue?</a>'
-        })
-      }
-    });
-    });
+//        kolom += `<tr><td>${data[k].sub_category}</td></tr>`
+//      })
+//       kolom += ` </table></td>`
+//       if (data.length == 0) {
+//       $('#showSubCat').html(`<table class="table" width="100%"  bordercolor="blue"><tr><td colspan="4">Belum ada data</td></tr></table>`)
 
+//       }else{
+//       $('#showSubCat').html(kolom)
+//       }
+//     },
+//     error: function(xhr){
+//       let d = JSON.parse(xhr.responseText);
+//       Swal.fire({
+//         icon: 'error',
+//         title: 'Oops...',
+//         text: `${d.message}`,
+//         footer: '<a href="">Why do I have this issue?</a>'
+//       })
+//     }
+//   });
 
+// }
 
 $('#tabel_serverside').on('click','.aktifkanstatus',function(){
   let id = $(this).attr('id');

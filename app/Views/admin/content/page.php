@@ -86,6 +86,7 @@
       <div class="modal-body">
             <div>
                 <a class="btn btn-success btn-sm tambahKategori"  >Tambah Kategori</a>
+                
             </div>
                           <div class="table-responsive">
             <table id="tabelKategori" class="table table-bordered display text-center" cellspacing="0" width="100%">

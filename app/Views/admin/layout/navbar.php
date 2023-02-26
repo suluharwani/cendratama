@@ -24,58 +24,25 @@
                                     class="submenu ">
                                     <!-- Wrap to submenu-group-wrapper if you want 3-level submenu. Otherwise remove it. -->
                                     <div class="submenu-group-wrapper">
-                                        
-                                        
                                         <ul class="submenu-group">
-                                        <div class="p-3 mb-2 bg-info text-dark">Action</div>
+                                        <div class="p-3 mb-2 bg-info text-dark">Halaman Dinamis</div>
                                             <li
                                                 class="submenu-item  ">
                                                 <a href="<?=base_url('admin/manage/pages')?>"
-                                                    class='submenu-link btn btn-default'>Manage Pages</a>
-
-                                                
+                                                    class='submenu-link btn btn-default'>Manage Halaman</a>
                                             </li>
-                                    
-                                            <li
-                                                    class="submenu-item  ">
-                                                    <a href="<?=base_url('admin/view/pages')?>"
-                                                        class='submenu-link btn btn-default'>View Pages</a>
-
-                                                    
-                                            </li>
-                                        
-                                    
-                                            
                                         </ul>
-                                        
-                                        
-                                        
                                         <ul class="submenu-group bg-primary ">
-                                        <div class="p-3 mb-2 bg-info text-white">Pages List</div>
+                                        <div class="p-3 mb-2 bg-info text-white">Halaman statis</div>
                                             <li
                                                     class="submenu-item  ">
-                                                    <a href="<?=base_url('admin/manage/pages')?>"
-                                                        class='submenu-link btn btn-default text-white'>Manage Pages</a>
-
-                                                    
+                                                    <a href="<?=base_url('admin/manage/static_pages')?>"
+                                                        class='submenu-link btn btn-default text-white'>Manage Halaman</a>        
                                             </li>
-                                            <li
-                                                    class="submenu-item  ">
-                                                    <a href="<?=base_url('admin/manage/pages')?>"
-                                                        class='submenu-link btn btn-default text-white'>View Pages</a>
-
-                                                    
-                                            </li>
-                                        
-                                                           
                                         </ul>
-                                        
-                                        
                                     </div>
                                 </div>
-                            </li>
-                            
-                            
+                            </li>                           
                             
                             <li
                                 class="menu-item active has-sub">

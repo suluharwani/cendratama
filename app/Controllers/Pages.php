@@ -35,7 +35,7 @@ class Pages extends BaseController
     }
     public function index()
     {
-        echo"ok";
+        // echo"ok";
         // $data['content']=view('admin/content/page');
         // return view('admin/index', $data);
     }
@@ -105,8 +105,13 @@ return json_encode($output);
       $this->access('operator');
       $userInfo = $_SESSION['auth'];
       $id = $_POST['id'];
-      $model = new \App\Models\MdlPages();
-      return json_encode($model->where('id',$id)->get()->getResultArray());
+      $modelPage = new \App\Models\MdlPages();
+      $modelCat = new \App\Models\MdlCategory();
+      $modelSubCat = new \App\Models\MdlSubCategory();
+      $data['page'] = $modelPage->where('id',$id)->get()->getResultArray();
+      $data['category'] = $modelCat->where('page_id',$id)->get()->getResultArray();
+      // $data['subCategory'] = $modelSubCat->where('page_id',$id)->get()->getResultArray();
+      return json_encode($data);
   }
     function hapus_page(){
       $this->access('operator');
@@ -179,6 +184,16 @@ return json_encode($output);
               ->join('sub_category','category.id =sub_category.category_id', 'left')
               ->where('page_id', $page_id)
               ->groupBy('category.category')
+              ->get()
+              ->getResultArray();
+      return json_encode($data);
+     }
+          function subcat_list(){
+      $this->access('operator');
+      $cat_id = $_POST['id'];
+      $mdl = new \App\Models\MdlSubCategory();
+      $data = $mdl->select('sub_category')
+              ->where('category_id', $cat_id)
               ->get()
               ->getResultArray();
       return json_encode($data);
