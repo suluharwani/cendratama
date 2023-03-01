@@ -7,17 +7,17 @@ use CodeIgniter\Model;
 class Content extends Model
 {
     protected $DBGroup          = 'default';
-    protected $table            = 'contents';
+    protected $table            = 'content';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $insertID         = 0;
     protected $returnType       = 'array';
-    protected $useSoftDeletes   = false;
+    protected $useSoftDeletes   = true;
     protected $protectFields    = true;
-    protected $allowedFields    = [];
+    protected $allowedFields    = ["id","judul","thumbnail","slug","content","id_admin","id_page","id_cat","id_sub_cat","status","updated_at","deleted_at","created_at"];
 
     // Dates
-    protected $useTimestamps = false;
+    protected $useTimestamps = true;
     protected $dateFormat    = 'datetime';
     protected $createdField  = 'created_at';
     protected $updatedField  = 'updated_at';

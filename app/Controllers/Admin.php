@@ -41,4 +41,5 @@ class Admin extends BaseController
         $data['content']=view('admin/content/contentBlog');
         return view('admin/index', $data);
     }
+
 }

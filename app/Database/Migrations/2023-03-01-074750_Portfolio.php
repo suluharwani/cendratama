@@ -4,9 +4,9 @@ namespace App\Database\Migrations;
 
 use CodeIgniter\Database\Migration;
 
-class Gallery extends Migration
+class Portfolio extends Migration
 {
-    public function up()
+   public function up()
   {
     $this->forge->addField([
       'id' => [
@@ -15,34 +15,34 @@ class Gallery extends Migration
         'unsigned' => true,
         'auto_increment' => true,
       ],
-      'judul' => [
-        'type' => 'VARCHAR',
-        'constraint' => 600,
-        'null' => true,
-      ],
-       'thumbnail' => [
-        'type' => 'VARCHAR',
-        'constraint' => 600,
-        'null' => true,
-      ],
-      'slug' => [
-        'type' => 'VARCHAR',
-        'constraint' => 600,
-        'null' => true,
-      ],
-      'content' => [
-        'type' => 'VARCHAR',
-        'constraint' => 50000,
-        'null' => true,
-      ],
-      'id_admin' => [
+      'id_client' => [
         'type' => 'INT',
-        'constraint' => 20,
+        'constraint' => 10,
         'null' => true,
       ],
-      'id_cat' => [
+      'id_product' => [
         'type' => 'INT',
-        'constraint' => 20,
+        'constraint' => 10,
+        'null' => true,
+      ],
+      'company_logo' => [
+        'type' => 'VARCHAR',
+        'constraint' => 250,
+        'null' => true,
+      ],
+      'image' => [
+        'type' => 'VARCHAR',
+        'constraint' => 250,
+        'null' => true,
+      ],
+      'link' => [
+        'type' => 'VARCHAR',
+        'constraint' => 200,
+        'null' => true,
+      ],
+       'delivered_at' => [
+        'type' => 'VARCHAR',
+        'constraint' => 200,
         'null' => true,
       ],
       'status' => [
@@ -62,11 +62,11 @@ class Gallery extends Migration
 
     ]);
     $this->forge->addPrimaryKey('id');
-    $this->forge->createTable('gallery');
+    $this->forge->createTable('portfolio');
   }
 
   public function down()
   {
-    $this->forge->dropTable('gallery');
+    $this->forge->dropTable('portfolio');
   }
 }

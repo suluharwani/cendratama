@@ -4,7 +4,7 @@ namespace App\Database\Migrations;
 
 use CodeIgniter\Database\Migration;
 
-class Comments extends Migration
+class GalleryCat extends Migration
 {
       public function up()
   {
@@ -15,29 +15,14 @@ class Comments extends Migration
         'unsigned' => true,
         'auto_increment' => true,
       ],
-      'id_content' => [
-        'type' => 'INT',
-        'constraint' => 20,
-        'null' => true,
-      ],
-      'id_user' => [
-        'type' => 'INT',
-        'constraint' => 20,
-        'null' => true,
-      ],
-      'parent_comment_id' => [
-        'type' => 'INT',
-        'constraint' => 20,
-        'null' => true,
-      ],
-      'comment' => [
+      'category' => [
         'type' => 'VARCHAR',
-        'constraint' => 1000,
+        'constraint' => 200,
         'null' => true,
       ],
-      'status' => [
-        'type' => 'TINYINT',
-        'constraint' => 1,
+      'slug' => [
+        'type' => 'VARCHAR',
+        'constraint' => 200,
         'null' => true,
       ],
       'updated_at' => [
@@ -49,14 +34,13 @@ class Comments extends Migration
         'null' => true,
       ],
       'created_at datetime default current_timestamp',
-
     ]);
     $this->forge->addPrimaryKey('id');
-    $this->forge->createTable('comments');
+    $this->forge->createTable('gallery_category');
   }
 
   public function down()
   {
-    $this->forge->dropTable('comments');
+    $this->forge->dropTable('gallery_category');
   }
 }

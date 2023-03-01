@@ -4,7 +4,7 @@ namespace App\Database\Migrations;
 
 use CodeIgniter\Database\Migration;
 
-class Gallery extends Migration
+class Service extends Migration
 {
     public function up()
   {
@@ -30,17 +30,17 @@ class Gallery extends Migration
         'constraint' => 600,
         'null' => true,
       ],
-      'content' => [
+      'text' => [
         'type' => 'VARCHAR',
         'constraint' => 50000,
         'null' => true,
       ],
-      'id_admin' => [
-        'type' => 'INT',
-        'constraint' => 20,
+      'logo' => [
+        'type' => 'VARCHAR',
+        'constraint' => 200,
         'null' => true,
       ],
-      'id_cat' => [
+      'id_admin' => [
         'type' => 'INT',
         'constraint' => 20,
         'null' => true,
@@ -62,11 +62,11 @@ class Gallery extends Migration
 
     ]);
     $this->forge->addPrimaryKey('id');
-    $this->forge->createTable('gallery');
+    $this->forge->createTable('service');
   }
 
   public function down()
   {
-    $this->forge->dropTable('gallery');
+    $this->forge->dropTable('service');
   }
 }

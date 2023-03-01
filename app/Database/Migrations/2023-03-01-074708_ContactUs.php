@@ -4,9 +4,9 @@ namespace App\Database\Migrations;
 
 use CodeIgniter\Database\Migration;
 
-class Gallery extends Migration
+class ContactUs extends Migration
 {
-    public function up()
+     public function up()
   {
     $this->forge->addField([
       'id' => [
@@ -15,34 +15,25 @@ class Gallery extends Migration
         'unsigned' => true,
         'auto_increment' => true,
       ],
-      'judul' => [
+
+      'nama_contact' => [
         'type' => 'VARCHAR',
-        'constraint' => 600,
+        'constraint' => 200,
         'null' => true,
       ],
-       'thumbnail' => [
+      'logo' => [
         'type' => 'VARCHAR',
-        'constraint' => 600,
+        'constraint' => 250,
         'null' => true,
       ],
-      'slug' => [
+      'contact' => [
         'type' => 'VARCHAR',
-        'constraint' => 600,
+        'constraint' => 200,
         'null' => true,
       ],
-      'content' => [
+      'link' => [
         'type' => 'VARCHAR',
-        'constraint' => 50000,
-        'null' => true,
-      ],
-      'id_admin' => [
-        'type' => 'INT',
-        'constraint' => 20,
-        'null' => true,
-      ],
-      'id_cat' => [
-        'type' => 'INT',
-        'constraint' => 20,
+        'constraint' => 200,
         'null' => true,
       ],
       'status' => [
@@ -62,11 +53,11 @@ class Gallery extends Migration
 
     ]);
     $this->forge->addPrimaryKey('id');
-    $this->forge->createTable('gallery');
+    $this->forge->createTable('contact_us');
   }
 
   public function down()
   {
-    $this->forge->dropTable('gallery');
+    $this->forge->dropTable('contact_us');
   }
 }

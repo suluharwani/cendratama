@@ -4,17 +4,17 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class Gallery extends Model
+class MdlOffer extends Model
 {
     protected $DBGroup          = 'default';
-    protected $table            = 'galleries';
+    protected $table            = 'offer';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $insertID         = 0;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = true;
     protected $protectFields    = true;
-    protected $allowedFields    = ["id","judul","thumbnail","slug","content","id_admin","id_cat","status","updated_at","deleted_at","created_at"];
+    protected $allowedFields    = ["id","judul","text","image","id_admin","status","updated_at","deleted_at","created_at"];
 
     // Dates
     protected $useTimestamps = true;

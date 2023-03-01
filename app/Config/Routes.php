@@ -85,7 +85,8 @@ $routes->post('/admin/page/update_subcat', 'Pages::update_subcat');
 $routes->post('/admin/page/hapus_cat', 'Pages::hapus_cat');
 $routes->post('/admin/page/hapus_subcat', 'Pages::hapus_subcat');
 $routes->post('/admin/page/tambah_subcat', 'Pages::tambah_subcat');
-// $routes->post('/login/test', 'Login::test');
+
+$routes->get('/admin/test/(:any)', 'Admin::test/$1');
 //menu
 $routes->post('/home/menu', 'Home::menu');
 $routes->post('/home/menu_cat', 'Home::menu_cat');
@@ -99,6 +100,11 @@ $routes->get('/page/(:any)', 'Home::page/$1');
 $routes->get('/page', 'Home::page');
 
 $routes->post('/home/get_menu_array', 'Home::get_menu_array');
+
+//static pages
+$routes->get('/admin/static_page', 'StaticPages::crud');
+$routes->post('/admin/static_page/(:any)', 'StaticPages::crud/$1');
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing

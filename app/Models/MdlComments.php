@@ -7,17 +7,17 @@ use CodeIgniter\Model;
 class MdlComments extends Model
 {
     protected $DBGroup          = 'default';
-    protected $table            = 'mdlcomments';
+    protected $table            = 'comments';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $insertID         = 0;
     protected $returnType       = 'array';
-    protected $useSoftDeletes   = false;
+    protected $useSoftDeletes   = true;
     protected $protectFields    = true;
-    protected $allowedFields    = [];
+    protected $allowedFields    = ["id","id_content","id_user","parent_comment_id","comment","status","updated_at","deleted_at","created_at"];
 
     // Dates
-    protected $useTimestamps = false;
+    protected $useTimestamps = true;
     protected $dateFormat    = 'datetime';
     protected $createdField  = 'created_at';
     protected $updatedField  = 'updated_at';

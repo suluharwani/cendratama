@@ -4,17 +4,17 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class Gallery extends Model
+class MdlContactUs extends Model
 {
     protected $DBGroup          = 'default';
-    protected $table            = 'galleries';
+    protected $table            = 'contact_us';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $insertID         = 0;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = true;
     protected $protectFields    = true;
-    protected $allowedFields    = ["id","judul","thumbnail","slug","content","id_admin","id_cat","status","updated_at","deleted_at","created_at"];
+    protected $allowedFields    = ["id","nama_contact","logo","contact","link","status","updated_at","deleted_at","created_at"];
 
     // Dates
     protected $useTimestamps = true;

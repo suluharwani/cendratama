@@ -4,10 +4,10 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class MdlTestimonials extends Model
+class MdlSlider extends Model
 {
     protected $DBGroup          = 'default';
-    protected $table            = 'mdltestimonials';
+    protected $table            = 'mdlsliders';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $insertID         = 0;

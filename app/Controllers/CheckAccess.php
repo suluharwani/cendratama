@@ -32,6 +32,7 @@ class CheckAccess extends BaseController
     }
     else
     {
+        
         header('Location: '.base_url('/admin/login'));
         exit(); 
     }  
