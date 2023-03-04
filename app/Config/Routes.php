@@ -103,7 +103,9 @@ $routes->post('/home/get_menu_array', 'Home::get_menu_array');
 
 //static pages
 $routes->get('/admin/static_page', 'StaticPages::crud');
+$routes->get('/admin/manage/static_pages/(:any)', 'StaticPages::manage_static_page/$1');
 $routes->post('/admin/static_page/(:any)', 'StaticPages::crud/$1');
+$routes->post('/admin/static/ubah_status', 'StaticPages::ubah_status');
 
 /*
  * --------------------------------------------------------------------

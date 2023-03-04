@@ -7,7 +7,7 @@
         <div class="row">
             <div class="col-12 col-md-6 order-md-1 order-last">
                 <h3>Pages</h3>
-                <p class="text-subtitle text-muted">Manage Halaman dan Kategori</p>
+                <p class="text-subtitle text-muted">Manage Halaman</p>
             </div>
             <div class="col-12 col-md-6 order-md-2 order-first">
                 <nav aria-label="breadcrumb" class="breadcrumb-header float-start float-lg-end">
@@ -23,26 +23,25 @@
     <section class="section">
         <div class="card">
             <div class="card-header">
-                <button type="button" class="btn btn-primary tambah_data">Tambah Page</button>
-                <button type="button" class="btn btn-primary restore_data">Restore Halaman Terhapus</button>
             </div>
             <div class="card-body">
                           <!-- table -->
           <div class="table-responsive">
-            <table id="tabel_serverside" class="table table-bordered display text-left" cellspacing="0" width="100%">
+            <table  class="table table-bordered display text-left table-striped" cellspacing="0" width="100%">
               <thead>
                 <tr  class="text-center">
                   <th style="width: 5%; text-align: center;">NO</th>
                   <th style="width: 20%; text-align: center;">HALAMAN</th>
-                  <th style="width: 20%; text-align: center;">DETAIL</th>
+                  <th style="width: 20%; text-align: center;">STATUS</th>
                   <th style="width: 20%; text-align: center;">ACTION</th>
                 </tr>
               </thead>
+              <tbody id="tabel"></tbody>
               <tfoot>
                 <tr class="text-center">
                   <th style="width: 5%; text-align: center;">NO</th>
                   <th style="width: 20%; text-align: center;">HALAMAN</th>
-                  <th style="width: 20%; text-align: center;">DETAIL</th>
+                  <th style="width: 20%; text-align: center;">STATUS</th>
                   <th style="width: 20%; text-align: center;">ACTION</th>
                 </tr>
               </tr>

@@ -101,7 +101,7 @@ function crud($action = null){
     $mdl = new \App\Models\MdlTestimonial();
   }else  if ($page == 'partner') {
     $mdl = new \App\Models\MdlPartner();
-  }else  if ($page == 'contactUs') {
+  }else  if ($page == 'offer') {
     $mdl = new \App\Models\MdlOffer();
   }else{
       header('HTTP/1.1 500 Internal Server Error');
@@ -162,25 +162,40 @@ function crud($action = null){
         die(json_encode(array('message' => "Tidak ada aksi", 'code' => 1)));
     }
   }else{
-        $list_param ='';
-        $list_table = array('contact_us','slider','service','portfolio','testimonial','partner','contact_us' );
-        foreach ($list_table as  $value) {
-           $list_param  .=$this->list_param($value);
-        }
-        header('HTTP/1.1 500 Internal Server Error');
-        header('Content-Type: application/json; charset=UTF-8');
-        die(json_encode(array('message' => "{$list_param}", 'code' => 1)));
+      $mdl = new \App\Models\MdlStaticPage();
+      $output = $mdl->get()->getResultArray();
+      return json_encode($output);
     }
   }
-    function list_param($table){
 
-    $query = $this->db->query("SELECT * FROM $table");
-    $param = '';
-    echo($table.' = ');
-    foreach ($query->getFieldNames() as $field) {
-      $param .= '"'.$field.'",';
-    }
-    echo($param."\r\n");
+  function ubah_status(){
+  $this->access('operator');
+  $mdl = new \App\Models\MdlStaticPage();
+
+  $id = $_POST['id'];
+  $status = $_POST['status'];
+  if ($status == 1) {
+    $data['status'] = 0;
+  }else{
+    $data['status'] = 1;
+
+  }
+      $mdl->set($data);
+      $mdl->where('id',$id);
+      $mdl->update();
+      if ($mdl->affectedRows()>0) {
+        $riwayat = "Mengubah status halaman statis id = {$id} ke {$data['status']}" ;
+        $this->changelog->riwayat($riwayat);
+        header('HTTP/1.1 200 OK');
+      }else {
+        header('HTTP/1.1 500 Internal Server Error');
+        header('Content-Type: application/json; charset=UTF-8');
+        die(json_encode(array('message' => 'Tidak ada perubahan pada data', 'code' => 1)));
+      }
+
+  }
+  function manage_static_page($static){
+    echo $static;
   }
 
 }
