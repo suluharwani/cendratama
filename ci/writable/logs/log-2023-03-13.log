@@ -1,0 +1,81 @@
+CRITICAL - 2023-03-13 11:00:37 --> Undefined array key "page"
+in APPPATH\Controllers\StaticPages.php on line 89.
+ 1 APPPATH\Controllers\StaticPages.php(89): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "page"', 'APPPATH\\Controllers\\StaticPages.php', 89)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StaticPages->crud('tinymceUpload')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StaticPages))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-13 11:03:52 --> Undefined array key "page"
+in APPPATH\Controllers\StaticPages.php on line 89.
+ 1 APPPATH\Controllers\StaticPages.php(89): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "page"', 'APPPATH\\Controllers\\StaticPages.php', 89)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StaticPages->crud('tinymceUpload')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StaticPages))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-13 11:05:06 --> Undefined array key "page"
+in APPPATH\Controllers\StaticPages.php on line 89.
+ 1 APPPATH\Controllers\StaticPages.php(89): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "page"', 'APPPATH\\Controllers\\StaticPages.php', 89)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StaticPages->crud('tinymceUpload')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StaticPages))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-13 11:06:33 --> Undefined array key "page"
+in APPPATH\Controllers\StaticPages.php on line 89.
+ 1 APPPATH\Controllers\StaticPages.php(89): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "page"', 'APPPATH\\Controllers\\StaticPages.php', 89)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StaticPages->crud('tinymceUpload')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StaticPages))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-13 11:11:44 --> Undefined array key "page"
+in APPPATH\Controllers\StaticPages.php on line 89.
+ 1 APPPATH\Controllers\StaticPages.php(89): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "page"', 'APPPATH\\Controllers\\StaticPages.php', 89)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StaticPages->crud('tinymceUpload')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StaticPages))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-13 11:14:58 --> Unable to save the image. Please make sure the image and file directory are writable.
+in SYSTEMPATH\Images\Handlers\GDHandler.php on line 261.
+ 1 SYSTEMPATH\Images\Handlers\GDHandler.php(261): CodeIgniter\Images\Exceptions\ImageException::forSaveFailed()
+ 2 APPPATH\Controllers\StaticPages.php(387): CodeIgniter\Images\Handlers\GDHandler->save('../public/assets/upload/tinymce/1000/1678680898_f0a16bb00d1b05395241.png', 80)
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StaticPages->tinymceUpload()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StaticPages))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-13 11:17:19 --> fopen(http://cendratama.com/assets/upload/tinymce/image/index.html): Failed to open stream: HTTP wrapper does not support writeable connections
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 179.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(http://cendratama.com/assets/upload/tinymce/image/index.html): Failed to open stream: HTTP wrapper does not support writeable connections', 'SYSTEMPATH\\HTTP\\Files\\UploadedFile.php', 179)
+ 2 SYSTEMPATH\HTTP\Files\UploadedFile.php(179): fopen('http://cendratama.com/assets/upload/tinymce/image/index.html', 'x+b')
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(130): CodeIgniter\HTTP\Files\UploadedFile->setPath('http://cendratama.com/assets/upload/tinymce/image/')
+ 4 APPPATH\Controllers\StaticPages.php(389): CodeIgniter\HTTP\Files\UploadedFile->move('http://cendratama.com/assets/upload/tinymce/image/', '1678681038_32db2d2dbf4ec53b9bcd.png')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StaticPages->tinymceUpload()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StaticPages))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-13 12:07:05 --> syntax error, unexpected token "=>", expecting ")"
+in APPPATH\Controllers\StaticPages.php on line 401.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\StaticPages.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\StaticPages')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\StaticPages')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\StaticPages', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-13 12:09:54 --> json_encode(): Argument #2 ($flags) must be of type int, string given
+in APPPATH\Controllers\StaticPages.php on line 401.
+ 1 APPPATH\Controllers\StaticPages.php(401): json_encode('localtion', 'http://cendratama.com/assets/upload/tinymce/10001678684194_b5a4922df5de9da0bae0.jpg')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StaticPages->tinymceUpload()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StaticPages))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-13 12:18:06 --> Call to a member function display() on string
+in APPPATH\Controllers\StaticPages.php on line 400.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StaticPages->tinymceUpload()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StaticPages))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-13 12:18:27 --> Call to a member function _display() on string
+in APPPATH\Controllers\StaticPages.php on line 400.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StaticPages->tinymceUpload()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StaticPages))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

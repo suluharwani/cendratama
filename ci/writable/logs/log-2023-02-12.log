@@ -1,0 +1,56 @@
+ERROR - 2023-02-12 01:01:27 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:170
+Stack trace:
+#0 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(170): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'ci4', 3306, '', 0)
+#1 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\D\web\ci4FrontEndWisata\app\Controllers\Home.php(15): CodeIgniter\Model->__call('get', Array)
+#6 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Home->menu()
+#7 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\D\web\ci4FrontEndWisata\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\D\web\ci4FrontEndWisata\app\Controllers\Home.php(15): CodeIgniter\Model->__call('get', Array)
+#5 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Home->menu()
+#6 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\D\web\ci4FrontEndWisata\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-02-12 01:01:27 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `page`
+WHERE `id` != :id:
+AND `deleted_at` IS NULL', [...], false)
+ 3 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Home.php(15): CodeIgniter\Model->__call('get', [])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->menu()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-12 01:19:13 --> Undefined variable $slug
+in APPPATH\Controllers\Home.php on line 29.
+ 1 APPPATH\Controllers\Home.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $slug', 'APPPATH\\Controllers\\Home.php', 29)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->page('blog')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-12 01:36:05 --> Unmatched '}'
+in APPPATH\Controllers\Home.php on line 37.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Home.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

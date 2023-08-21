@@ -1,0 +1,200 @@
+ERROR - 2023-01-20 11:01:23 --> mysqli_sql_exception: Unknown table 'ci4.sub_category' in D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('DROP TABLE `sub...', 0)
+#1 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DROP TABLE `sub...')
+#2 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DROP TABLE `sub...')
+#3 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\Forge.php(600): CodeIgniter\Database\BaseConnection->query('DROP TABLE `sub...')
+#4 D:\D\web\ci4FrontEndWisata\app\Database\Migrations\2023-01-13-204437_SubCategory.php(44): CodeIgniter\Database\Forge->dropTable('sub_category')
+#5 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(868): App\Database\Migrations\SubCategory->down()
+#6 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(298): CodeIgniter\Database\MigrationRunner->migrate('down', Object(stdClass))
+#7 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Commands\Database\MigrateRollback.php(92): CodeIgniter\Database\MigrationRunner->regress(0)
+#8 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CLI\Commands.php(63): CodeIgniter\Commands\Database\MigrateRollback->run(Array)
+#9 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CLI\CommandRunner.php(65): CodeIgniter\CLI\Commands->run('migrate:rollbac...', Array)
+#10 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CLI\CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index(Array)
+#11 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CodeIgniter.php(920): CodeIgniter\CLI\CommandRunner->_remap('index', Array)
+#12 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#13 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CodeIgniter.php(347): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#14 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+#15 D:\D\web\ci4FrontEndWisata\spark(98): CodeIgniter\CLI\Console->run()
+#16 {main}
+ERROR - 2023-01-20 11:08:50 --> mysqli_sql_exception: Duplicate entry '1' for key 'list_access.PRIMARY' in D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `li...', 0)
+#1 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `li...')
+#2 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `li...')
+#3 D:\D\web\ci4FrontEndWisata\app\Database\Seeds\ListAccess.php(11): CodeIgniter\Database\BaseConnection->query('INSERT INTO `li...')
+#4 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\Seeder.php(146): App\Database\Seeds\ListAccess->run()
+#5 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#6 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CLI\Commands.php(63): CodeIgniter\Commands\Database\Seed->run(Array)
+#7 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CLI\CommandRunner.php(65): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#8 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CLI\CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index(Array)
+#9 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CodeIgniter.php(920): CodeIgniter\CLI\CommandRunner->_remap('index', Array)
+#10 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#11 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CodeIgniter.php(347): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+#13 D:\D\web\ci4FrontEndWisata\spark(98): CodeIgniter\CLI\Console->run()
+#14 {main}
+ERROR - 2023-01-20 11:10:11 --> mysqli_sql_exception: Duplicate entry '1' for key 'list_access.PRIMARY' in D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `li...', 0)
+#1 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `li...')
+#2 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `li...')
+#3 D:\D\web\ci4FrontEndWisata\app\Database\Seeds\ListAccess.php(11): CodeIgniter\Database\BaseConnection->query('INSERT INTO `li...')
+#4 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\Seeder.php(146): App\Database\Seeds\ListAccess->run()
+#5 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#6 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CLI\Commands.php(63): CodeIgniter\Commands\Database\Seed->run(Array)
+#7 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CLI\CommandRunner.php(65): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#8 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CLI\CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index(Array)
+#9 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CodeIgniter.php(920): CodeIgniter\CLI\CommandRunner->_remap('index', Array)
+#10 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#11 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CodeIgniter.php(347): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+#13 D:\D\web\ci4FrontEndWisata\spark(98): CodeIgniter\CLI\Console->run()
+#14 {main}
+ERROR - 2023-01-20 11:12:00 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''user' (`id`,  `nama_depan`,  `nama_belakang`,  `password`,  `email`, `profile_p' at line 1 in D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO 'us...', 0)
+#1 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO 'us...')
+#2 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO 'us...')
+#3 D:\D\web\ci4FrontEndWisata\app\Database\Seeds\ListAccess.php(15): CodeIgniter\Database\BaseConnection->query('INSERT INTO 'us...')
+#4 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\Seeder.php(146): App\Database\Seeds\ListAccess->run()
+#5 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#6 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CLI\Commands.php(63): CodeIgniter\Commands\Database\Seed->run(Array)
+#7 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CLI\CommandRunner.php(65): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#8 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CLI\CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index(Array)
+#9 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CodeIgniter.php(920): CodeIgniter\CLI\CommandRunner->_remap('index', Array)
+#10 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#11 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CodeIgniter.php(347): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+#13 D:\D\web\ci4FrontEndWisata\spark(98): CodeIgniter\CLI\Console->run()
+#14 {main}
+ERROR - 2023-01-20 11:14:12 --> mysqli_sql_exception: Duplicate entry '1' for key 'list_access.PRIMARY' in D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `li...', 0)
+#1 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `li...')
+#2 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `li...')
+#3 D:\D\web\ci4FrontEndWisata\app\Database\Seeds\ListAccess.php(11): CodeIgniter\Database\BaseConnection->query('INSERT INTO `li...')
+#4 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\Seeder.php(146): App\Database\Seeds\ListAccess->run()
+#5 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#6 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CLI\Commands.php(63): CodeIgniter\Commands\Database\Seed->run(Array)
+#7 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CLI\CommandRunner.php(65): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#8 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CLI\CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index(Array)
+#9 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CodeIgniter.php(920): CodeIgniter\CLI\CommandRunner->_remap('index', Array)
+#10 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#11 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CodeIgniter.php(347): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+#13 D:\D\web\ci4FrontEndWisata\spark(98): CodeIgniter\CLI\Console->run()
+#14 {main}
+CRITICAL - 2023-01-20 11:31:58 --> Undefined array key "id_registrasi_mahasiswa"
+in APPPATH\Controllers\Home.php on line 13.
+ 1 APPPATH\Controllers\Home.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_registrasi_mahasiswa"', 'APPPATH\\Controllers\\Home.php', 13)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->menu()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 15:06:52 --> Class "App\Models\MdlCategory" not found
+in APPPATH\Controllers\Home.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->menu_cat()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 15:07:44 --> Undefined array key "page_id"
+in APPPATH\Controllers\Home.php on line 18.
+ 1 APPPATH\Controllers\Home.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "page_id"', 'APPPATH\\Controllers\\Home.php', 18)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->menu_cat()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 21:44:26 --> Undefined variable $model
+in APPPATH\Controllers\Home.php on line 18.
+ 1 APPPATH\Controllers\Home.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $model', 'APPPATH\\Controllers\\Home.php', 18)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->menu()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 21:44:56 --> Undefined variable $modelmodelCat
+in APPPATH\Controllers\Home.php on line 18.
+ 1 APPPATH\Controllers\Home.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $modelmodelCat', 'APPPATH\\Controllers\\Home.php', 18)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->menu()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 21:45:09 --> Undefined variable $modelmodelCat
+in APPPATH\Controllers\Home.php on line 18.
+ 1 APPPATH\Controllers\Home.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $modelmodelCat', 'APPPATH\\Controllers\\Home.php', 18)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->menu()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 21:45:22 --> Cannot access offset of type string on string
+in APPPATH\Controllers\Home.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->menu()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 22:14:28 --> Cannot access offset of type string on string
+in APPPATH\Controllers\Home.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->menu()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 22:18:32 --> array_push(): Argument #1 ($array) must be of type array, null given
+in APPPATH\Controllers\Home.php on line 18.
+ 1 APPPATH\Controllers\Home.php(18): array_push(null, 'Contact')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->menu()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 22:21:19 --> array_push(): Argument #1 ($array) must be of type array, null given
+in APPPATH\Controllers\Home.php on line 18.
+ 1 APPPATH\Controllers\Home.php(18): array_push(null, 'Contact')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->menu()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 22:21:51 --> array_push(): Argument #1 ($array) must be of type array, null given
+in APPPATH\Controllers\Home.php on line 20.
+ 1 APPPATH\Controllers\Home.php(20): array_push(null, 'menu1')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->menu()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 22:24:56 --> array_push(): Argument #1 ($array) must be of type array, null given
+in APPPATH\Controllers\Home.php on line 22.
+ 1 APPPATH\Controllers\Home.php(22): array_push(null, 'menu1')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->menu()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 23:19:34 --> CodeIgniter\Database\BaseBuilder::get(): Argument #1 ($limit) must be of type ?int, string given, called in D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Model.php on line 772
+in SYSTEMPATH\Database\BaseBuilder.php on line 1577.
+ 1 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get('sub_category')
+ 2 APPPATH\Controllers\Home.php(24): CodeIgniter\Model->__call('get', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->menu_sub_cat()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 23:19:34 --> CodeIgniter\Database\BaseBuilder::get(): Argument #1 ($limit) must be of type ?int, string given, called in D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Model.php on line 772
+in SYSTEMPATH\Database\BaseBuilder.php on line 1577.
+ 1 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get('sub_category')
+ 2 APPPATH\Controllers\Home.php(24): CodeIgniter\Model->__call('get', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->menu_sub_cat()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 23:19:34 --> CodeIgniter\Database\BaseBuilder::get(): Argument #1 ($limit) must be of type ?int, string given, called in D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Model.php on line 772
+in SYSTEMPATH\Database\BaseBuilder.php on line 1577.
+ 1 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get('sub_category')
+ 2 APPPATH\Controllers\Home.php(24): CodeIgniter\Model->__call('get', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->menu_sub_cat()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 23:19:34 --> CodeIgniter\Database\BaseBuilder::get(): Argument #1 ($limit) must be of type ?int, string given, called in D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Model.php on line 772
+in SYSTEMPATH\Database\BaseBuilder.php on line 1577.
+ 1 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get('sub_category')
+ 2 APPPATH\Controllers\Home.php(24): CodeIgniter\Model->__call('get', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->menu_sub_cat()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

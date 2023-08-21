@@ -1,0 +1,137 @@
+CRITICAL - 2023-03-27 02:48:35 --> Undefined variable $userInfo
+in APPPATH\Controllers\Client.php on line 138.
+ 1 APPPATH\Controllers\Client.php(138): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userInfo', 'APPPATH\\Controllers\\Client.php', 138)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Client->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Client))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-27 04:00:06 --> Call to undefined method App\Models\MdlValidasi::getLastRow
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Controllers\Client.php(140): CodeIgniter\Model->__call('getLastRow', [])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Client->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Client))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-27 04:00:59 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\Client.php on line 140.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Client->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Client))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-27 04:18:28 --> syntax error, unexpected token "else", expecting "function" or "const"
+in APPPATH\Controllers\Client.php on line 321.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Client.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Client')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Client')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Client', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-27 04:19:10 --> syntax error, unexpected token "if", expecting ";" or "{"
+in APPPATH\Controllers\Client.php on line 341.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Client.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Client')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Client')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Client', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-27 04:19:12 --> syntax error, unexpected token "if", expecting ";" or "{"
+in APPPATH\Controllers\Client.php on line 341.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Client.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Client')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Client')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Client', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-27 04:29:03 --> syntax error, unexpected token ";", expecting ")"
+in APPPATH\Controllers\Client.php on line 94.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Client.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Client')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Client')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Client', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-27 04:29:05 --> syntax error, unexpected token ";", expecting ")"
+in APPPATH\Controllers\Client.php on line 94.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Client.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Client')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Client')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Client', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-27 04:31:24 --> Undefined variable $email
+in APPPATH\Controllers\Client.php on line 302.
+ 1 APPPATH\Controllers\Client.php(302): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $email', 'APPPATH\\Controllers\\Client.php', 302)
+ 2 APPPATH\Controllers\Client.php(346): App\Controllers\Client->sendEmail('suluharwani007@gmail.com')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Client->verifikasi('suluharwani007@gmail.com')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Client))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-27 04:31:49 --> Undefined variable $mdlValidasi
+in APPPATH\Controllers\Client.php on line 303.
+ 1 APPPATH\Controllers\Client.php(303): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $mdlValidasi', 'APPPATH\\Controllers\\Client.php', 303)
+ 2 APPPATH\Controllers\Client.php(346): App\Controllers\Client->sendEmail('suluharwani007@gmail.com')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Client->verifikasi('suluharwani007@gmail.com')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Client))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-27 04:32:18 --> Undefined variable $user
+in APPPATH\Controllers\Client.php on line 304.
+ 1 APPPATH\Controllers\Client.php(304): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user', 'APPPATH\\Controllers\\Client.php', 304)
+ 2 APPPATH\Controllers\Client.php(347): App\Controllers\Client->sendEmail('suluharwani007@gmail.com')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Client->verifikasi('suluharwani007@gmail.com')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Client))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-27 11:24:00 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-03-27 11:24:00 --> 220-iix40.idcloudhost.com ESMTP Exim 4.96 #2 Mon, 27 Mar 2023 11:23:57 +0700 
+220-We do not authorize the use of this system to transport unsolicited, 
+220 and/or bulk e-mail.
+
+hello: 250-iix40.idcloudhost.com Hello cendratama.com [103.105.27.119]
+250-SIZE 52428800
+250-8BITMIME
+250-PIPELINING
+250-PIPECONNECT
+250-AUTH PLAIN LOGIN
+250 HELP
+
+Failed to authenticate password. Error: 
+ERROR - 2023-03-27 12:16:26 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-03-27 12:16:26 --> 220-iix40.idcloudhost.com ESMTP Exim 4.96 #2 Mon, 27 Mar 2023 12:16:22 +0700 
+220-We do not authorize the use of this system to transport unsolicited, 
+220 and/or bulk e-mail.
+
+hello: 250-iix40.idcloudhost.com Hello cendratama.com [103.105.27.119]
+250-SIZE 52428800
+250-8BITMIME
+250-PIPELINING
+250-PIPECONNECT
+250-AUTH PLAIN LOGIN
+250 HELP
+
+Failed to authenticate password. Error: 
+CRITICAL - 2023-03-27 13:20:04 --> Unclosed '{' on line 82
+in APPPATH\Views\home\layout\header.php on line 104.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('home/layout/header.php', [], true)
+ 3 APPPATH\Views\home\index.php(3): view('home/layout/header.php')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\index.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('home/index', [], true)
+ 7 APPPATH\Controllers\Client.php(53): view('home/index', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Client->index()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Client))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-27 14:00:21 --> Undefined array key "level"
+in APPPATH\Controllers\Client.php on line 165.
+ 1 APPPATH\Controllers\Client.php(165): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "level"', 'APPPATH\\Controllers\\Client.php', 165)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Client->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Client))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

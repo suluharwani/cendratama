@@ -1,0 +1,125 @@
+ERROR - 2023-02-16 11:32:46 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:170
+Stack trace:
+#0 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(170): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'ci4', 3306, '', 0)
+#1 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\D\web\ci4FrontEndWisata\app\Controllers\Home.php(15): CodeIgniter\Model->__call('get', Array)
+#6 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Home->menu()
+#7 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\D\web\ci4FrontEndWisata\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\D\web\ci4FrontEndWisata\app\Controllers\Home.php(15): CodeIgniter\Model->__call('get', Array)
+#5 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Home->menu()
+#6 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\D\web\ci4FrontEndWisata\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-02-16 11:32:46 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `page`
+WHERE `id` != :id:
+AND `deleted_at` IS NULL', [...], false)
+ 3 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Home.php(15): CodeIgniter\Model->__call('get', [])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->menu()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-16 11:32:47 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:170
+Stack trace:
+#0 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(170): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'ci4', 3306, '', 0)
+#1 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 D:\D\web\ci4FrontEndWisata\app\Controllers\Login.php(250): CodeIgniter\Model->countAllResults()
+#6 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Login->index()
+#7 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\D\web\ci4FrontEndWisata\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#3 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#4 D:\D\web\ci4FrontEndWisata\app\Controllers\Login.php(250): CodeIgniter\Model->countAllResults()
+#5 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Login->index()
+#6 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\D\web\ci4FrontEndWisata\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-02-16 11:32:47 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `user`', [], false)
+ 3 SYSTEMPATH\Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 4 APPPATH\Controllers\Login.php(250): CodeIgniter\Model->countAllResults()
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Login->index()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-16 23:22:53 --> Undefined variable $model
+in APPPATH\Controllers\Pages.php on line 159.
+ 1 APPPATH\Controllers\Pages.php(159): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $model', 'APPPATH\\Controllers\\Pages.php', 159)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Pages->update_page()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-16 23:22:57 --> Undefined variable $model
+in APPPATH\Controllers\Pages.php on line 159.
+ 1 APPPATH\Controllers\Pages.php(159): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $model', 'APPPATH\\Controllers\\Pages.php', 159)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Pages->update_page()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-16 23:31:43 --> mysqli_sql_exception: Unknown column 'idx' in 'where clause' in D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `categor...', 0)
+#1 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `categor...')
+#2 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `categor...')
+#3 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `categor...', Array, false)
+#4 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Model.php(338): CodeIgniter\Database\BaseBuilder->update()
+#5 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\BaseModel.php(886): CodeIgniter\Model->doUpdate(NULL, Array)
+#6 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Model.php(693): CodeIgniter\BaseModel->update(NULL, Array)
+#7 D:\D\web\ci4FrontEndWisata\app\Controllers\Pages.php(198): CodeIgniter\Model->update()
+#8 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Pages->update_cat()
+#9 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#10 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\D\web\ci4FrontEndWisata\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-02-16 23:31:43 --> Unknown column 'idx' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `category` SET `category` = \'menu as\', `slug` = \'menu-as\', `updated_at` = \'2023-02-16 23:31:43\'
+WHERE `idx` = \'menu11\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `category` SET `category` = \'menu as\', `slug` = \'menu-as\', `updated_at` = \'2023-02-16 23:31:43\'
+WHERE `idx` = \'menu11\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `category` SET `category` = \'menu as\', `slug` = \'menu-as\', `updated_at` = \'2023-02-16 23:31:43\'
+WHERE `idx` = \'menu11\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `category` SET `category` = :category:, `slug` = :slug:, `updated_at` = :updated_at:
+WHERE `idx` = :idx:', [...], false)
+ 5 SYSTEMPATH\Model.php(338): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(886): CodeIgniter\Model->doUpdate(null, [...])
+ 7 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update(null, [...])
+ 8 APPPATH\Controllers\Pages.php(198): CodeIgniter\Model->update()
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Pages->update_cat()
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

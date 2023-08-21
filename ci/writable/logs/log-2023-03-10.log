@@ -1,0 +1,493 @@
+CRITICAL - 2023-03-10 08:35:28 --> Undefined array key "page"
+in APPPATH\Controllers\StaticPages.php on line 89.
+ 1 APPPATH\Controllers\StaticPages.php(89): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "page"', 'APPPATH\\Controllers\\StaticPages.php', 89)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StaticPages->crud('upload')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StaticPages))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-10 08:37:03 --> Undefined array key "page"
+in APPPATH\Controllers\StaticPages.php on line 89.
+ 1 APPPATH\Controllers\StaticPages.php(89): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "page"', 'APPPATH\\Controllers\\StaticPages.php', 89)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StaticPages->crud('upload')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StaticPages))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-10 08:41:03 --> Cannot access offset of type string on string
+in APPPATH\Controllers\StaticPages.php on line 162.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StaticPages->crud('upload')
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StaticPages))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-10 08:41:42 --> Cannot access offset of type string on string
+in APPPATH\Controllers\StaticPages.php on line 162.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StaticPages->crud('upload')
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StaticPages))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-10 08:43:00 --> Cannot access offset of type string on string
+in APPPATH\Controllers\StaticPages.php on line 162.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StaticPages->crud('upload')
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StaticPages))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-10 10:29:15 --> Cannot access offset of type string on string
+in APPPATH\Controllers\StaticPages.php on line 162.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StaticPages->crud('upload')
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StaticPages))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-10 10:29:16 --> Cannot access offset of type string on string
+in APPPATH\Controllers\StaticPages.php on line 162.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StaticPages->crud('upload')
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StaticPages))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-10 10:35:06 --> Call to a member function move() on null
+in APPPATH\Controllers\StaticPages.php on line 174.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StaticPages->crud('upload')
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StaticPages))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-10 10:35:48 --> Call to a member function move() on null
+in APPPATH\Controllers\StaticPages.php on line 174.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StaticPages->crud('upload')
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StaticPages))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-10 10:36:54 --> Cannot access offset of type string on string
+in APPPATH\Controllers\StaticPages.php on line 170.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StaticPages->crud('upload')
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StaticPages))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-10 10:37:39 --> Cannot access offset of type string on string
+in APPPATH\Controllers\StaticPages.php on line 170.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StaticPages->crud('upload')
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StaticPages))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-10 10:38:19 --> Cannot access offset of type string on string
+in APPPATH\Controllers\StaticPages.php on line 173.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StaticPages->crud('upload')
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StaticPages))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-10 10:39:22 --> Cannot access offset of type string on string
+in APPPATH\Controllers\StaticPages.php on line 173.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StaticPages->crud('upload')
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StaticPages))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-10 10:40:30 --> Cannot access offset of type string on string
+in APPPATH\Controllers\StaticPages.php on line 173.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StaticPages->crud('upload')
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StaticPages))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-10 10:41:00 --> Cannot access offset of type string on string
+in APPPATH\Controllers\StaticPages.php on line 173.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StaticPages->crud('upload')
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StaticPages))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-10 10:41:33 --> Cannot access offset of type string on string
+in APPPATH\Controllers\StaticPages.php on line 173.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StaticPages->crud('upload')
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StaticPages))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-10 10:42:34 --> Cannot access offset of type string on string
+in APPPATH\Controllers\StaticPages.php on line 173.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StaticPages->crud('upload')
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StaticPages))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-10 10:45:08 --> Cannot access offset of type string on string
+in APPPATH\Controllers\StaticPages.php on line 173.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StaticPages->crud('upload')
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StaticPages))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-10 10:45:52 --> Call to a member function move() on null
+in APPPATH\Controllers\StaticPages.php on line 174.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StaticPages->crud('upload')
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StaticPages))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-10 10:47:17 --> Cannot access offset of type string on string
+in APPPATH\Controllers\StaticPages.php on line 172.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StaticPages->crud('upload')
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StaticPages))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-10 10:58:00 --> Undefined array key "page"
+in APPPATH\Controllers\StaticPages.php on line 89.
+ 1 APPPATH\Controllers\StaticPages.php(89): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "page"', 'APPPATH\\Controllers\\StaticPages.php', 89)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StaticPages->crud('upload')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StaticPages))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-10 10:58:37 --> Undefined array key "page"
+in APPPATH\Controllers\StaticPages.php on line 89.
+ 1 APPPATH\Controllers\StaticPages.php(89): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "page"', 'APPPATH\\Controllers\\StaticPages.php', 89)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StaticPages->crud('upload')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StaticPages))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-10 11:00:41 --> Undefined array key "data"
+in APPPATH\Controllers\StaticPages.php on line 90.
+ 1 APPPATH\Controllers\StaticPages.php(90): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "data"', 'APPPATH\\Controllers\\StaticPages.php', 90)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StaticPages->crud('upload')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StaticPages))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-10 11:03:10 --> Undefined variable $save
+in APPPATH\Controllers\StaticPages.php on line 184.
+ 1 APPPATH\Controllers\StaticPages.php(184): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $save', 'APPPATH\\Controllers\\StaticPages.php', 184)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StaticPages->crud('upload')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StaticPages))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-10 11:03:31 --> Undefined variable $save
+in APPPATH\Controllers\StaticPages.php on line 184.
+ 1 APPPATH\Controllers\StaticPages.php(184): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $save', 'APPPATH\\Controllers\\StaticPages.php', 184)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StaticPages->crud('upload')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StaticPages))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-10 11:18:19 --> Could not move file phpDD6D.tmp to assets/upload/thumb1678421898_8e21a72b67a212128e50.jpeg/ (rename(D:\wamp64\tmp\phpDD6D.tmp,assets/upload/thumb1678421898_8e21a72b67a212128e50.jpeg/phpDD6D.tmp): The system cannot find the path specified (code: 3)).
+in SYSTEMPATH\Files\File.php on line 148.
+ 1 SYSTEMPATH\Files\File.php(148): CodeIgniter\Files\Exceptions\FileException::forUnableToMove('phpDD6D.tmp', 'assets/upload/thumb1678421898_8e21a72b67a212128e50.jpeg/', 'rename(D:\\wamp64\\tmp\\phpDD6D.tmp,assets/upload/thumb1678421898_8e21a72b67a212128e50.jpeg/phpDD6D.tmp): The system cannot find the path specified (code: 3)')
+ 2 SYSTEMPATH\Images\Handlers\BaseHandler.php(712): CodeIgniter\Files\File->move('assets/upload/thumb1678421898_8e21a72b67a212128e50.jpeg/')
+ 3 APPPATH\Controllers\StaticPages.php(182): CodeIgniter\Images\Handlers\BaseHandler->__call('move', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StaticPages->crud('upload')
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StaticPages))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-10 11:32:54 --> File not found: 
+in SYSTEMPATH\Files\File.php on line 46.
+ 1 SYSTEMPATH\Files\File.php(46): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound('ROOTPATH\\public')
+ 2 SYSTEMPATH\Images\Handlers\BaseHandler.php(148): CodeIgniter\Files\File->__construct('ROOTPATH\\public', true)
+ 3 APPPATH\Controllers\StaticPages.php(182): CodeIgniter\Images\Handlers\BaseHandler->withFile('ROOTPATH\\public')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StaticPages->crud('upload')
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StaticPages))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-10 11:44:07 --> Unable to save the image. Please make sure the image and file directory are writable.
+in SYSTEMPATH\Images\Handlers\GDHandler.php on line 251.
+ 1 SYSTEMPATH\Images\Handlers\GDHandler.php(251): CodeIgniter\Images\Exceptions\ImageException::forSaveFailed()
+ 2 APPPATH\Controllers\StaticPages.php(187): CodeIgniter\Images\Handlers\GDHandler->save('../public/assets/upload/200/1678423445_2fc46a8bc713418ead50.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StaticPages->crud('upload')
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StaticPages))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-10 11:44:09 --> Unable to save the image. Please make sure the image and file directory are writable.
+in SYSTEMPATH\Images\Handlers\GDHandler.php on line 251.
+ 1 SYSTEMPATH\Images\Handlers\GDHandler.php(251): CodeIgniter\Images\Exceptions\ImageException::forSaveFailed()
+ 2 APPPATH\Controllers\StaticPages.php(187): CodeIgniter\Images\Handlers\GDHandler->save('../public/assets/upload/200/1678423447_26b03dbd5ff3626cde5a.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StaticPages->crud('upload')
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StaticPages))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-10 14:25:55 --> Call to undefined function App\Controllers\validation_errors()
+in APPPATH\Controllers\StaticPages.php on line 205.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StaticPages->crud('upload')
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StaticPages))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-10 14:30:16 --> Undefined variable $validation
+in APPPATH\Controllers\StaticPages.php on line 208.
+ 1 APPPATH\Controllers\StaticPages.php(208): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $validation', 'APPPATH\\Controllers\\StaticPages.php', 208)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StaticPages->crud('upload')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StaticPages))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-10 14:30:38 --> Call to a member function getErrors() on bool
+in APPPATH\Controllers\StaticPages.php on line 208.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StaticPages->crud('upload')
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StaticPages))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-10 14:32:17 --> Call to a member function getErrors() on bool
+in APPPATH\Controllers\StaticPages.php on line 208.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StaticPages->crud('upload')
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StaticPages))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-10 14:33:13 --> Call to a member function getErrors() on bool
+in APPPATH\Controllers\StaticPages.php on line 208.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StaticPages->crud('upload')
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StaticPages))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-10 14:33:51 --> Call to a member function showError() on bool
+in APPPATH\Controllers\StaticPages.php on line 208.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StaticPages->crud('upload')
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StaticPages))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-10 14:36:37 --> Call to a member function hasError() on bool
+in APPPATH\Controllers\StaticPages.php on line 210.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StaticPages->crud('upload')
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StaticPages))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-10 14:42:34 --> Call to a member function hasError() on bool
+in APPPATH\Controllers\StaticPages.php on line 214.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StaticPages->crud('upload')
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StaticPages))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-10 14:44:31 --> Call to a member function hasError() on bool
+in APPPATH\Controllers\StaticPages.php on line 215.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StaticPages->crud('upload')
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StaticPages))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-10 14:47:18 --> Call to a member function hasError() on bool
+in APPPATH\Controllers\StaticPages.php on line 216.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StaticPages->crud('upload')
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StaticPages))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-10 14:47:44 --> Call to a member function hasError() on bool
+in APPPATH\Controllers\StaticPages.php on line 216.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StaticPages->crud('upload')
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StaticPages))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-10 14:48:44 --> Call to a member function hasErrors() on bool
+in APPPATH\Controllers\StaticPages.php on line 216.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StaticPages->crud('upload')
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StaticPages))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-10 14:52:11 --> Call to undefined method App\Controllers\StaticPages::form_validation()
+in APPPATH\Controllers\StaticPages.php on line 162.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StaticPages->crud('upload')
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StaticPages))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-10 14:52:47 --> syntax error, unexpected identifier "validation", expecting variable or "$"
+in APPPATH\Controllers\StaticPages.php on line 27.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\StaticPages.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\StaticPages')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\StaticPages')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\StaticPages', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-10 14:53:39 --> syntax error, unexpected identifier "validation", expecting variable or "$"
+in APPPATH\Controllers\StaticPages.php on line 27.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\StaticPages.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\StaticPages')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\StaticPages')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\StaticPages', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-10 14:55:59 --> The supplied file is not a supported image type.
+in SYSTEMPATH\Images\Image.php on line 103.
+ 1 SYSTEMPATH\Images\Image.php(103): CodeIgniter\Images\Exceptions\ImageException::forFileNotSupported()
+ 2 SYSTEMPATH\Images\Handlers\BaseHandler.php(150): CodeIgniter\Images\Image->getProperties(false)
+ 3 APPPATH\Controllers\StaticPages.php(184): CodeIgniter\Images\Handlers\BaseHandler->withFile('D:\\wamp64\\tmp\\php26B9.tmp')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StaticPages->crud('upload')
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StaticPages))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-10 14:57:21 --> The supplied file is not a supported image type.
+in SYSTEMPATH\Images\Image.php on line 103.
+ 1 SYSTEMPATH\Images\Image.php(103): CodeIgniter\Images\Exceptions\ImageException::forFileNotSupported()
+ 2 SYSTEMPATH\Images\Handlers\BaseHandler.php(150): CodeIgniter\Images\Image->getProperties(false)
+ 3 APPPATH\Controllers\StaticPages.php(184): CodeIgniter\Images\Handlers\BaseHandler->withFile('D:\\wamp64\\tmp\\php6797.tmp')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StaticPages->crud('upload')
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StaticPages))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-10 14:58:13 --> The supplied file is not a supported image type.
+in SYSTEMPATH\Images\Image.php on line 103.
+ 1 SYSTEMPATH\Images\Image.php(103): CodeIgniter\Images\Exceptions\ImageException::forFileNotSupported()
+ 2 SYSTEMPATH\Images\Handlers\BaseHandler.php(150): CodeIgniter\Images\Image->getProperties(false)
+ 3 APPPATH\Controllers\StaticPages.php(184): CodeIgniter\Images\Handlers\BaseHandler->withFile('D:\\wamp64\\tmp\\php3578.tmp')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StaticPages->crud('upload')
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StaticPages))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-10 14:59:59 --> The supplied file is not a supported image type.
+in SYSTEMPATH\Images\Image.php on line 103.
+ 1 SYSTEMPATH\Images\Image.php(103): CodeIgniter\Images\Exceptions\ImageException::forFileNotSupported()
+ 2 SYSTEMPATH\Images\Handlers\BaseHandler.php(150): CodeIgniter\Images\Image->getProperties(false)
+ 3 APPPATH\Controllers\StaticPages.php(184): CodeIgniter\Images\Handlers\BaseHandler->withFile('D:\\wamp64\\tmp\\phpD176.tmp')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StaticPages->crud('upload')
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StaticPages))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-10 19:32:35 --> Undefined array key "data"
+in APPPATH\Controllers\StaticPages.php on line 90.
+ 1 APPPATH\Controllers\StaticPages.php(90): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "data"', 'APPPATH\\Controllers\\StaticPages.php', 90)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StaticPages->crud('update')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StaticPages))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-10 19:33:27 --> Undefined array key "data"
+in APPPATH\Controllers\StaticPages.php on line 90.
+ 1 APPPATH\Controllers\StaticPages.php(90): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "data"', 'APPPATH\\Controllers\\StaticPages.php', 90)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StaticPages->crud('delete')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StaticPages))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-10 19:33:37 --> Undefined array key "data"
+in APPPATH\Controllers\StaticPages.php on line 90.
+ 1 APPPATH\Controllers\StaticPages.php(90): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "data"', 'APPPATH\\Controllers\\StaticPages.php', 90)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StaticPages->crud('delete')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StaticPages))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-10 19:33:39 --> Undefined array key "data"
+in APPPATH\Controllers\StaticPages.php on line 90.
+ 1 APPPATH\Controllers\StaticPages.php(90): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "data"', 'APPPATH\\Controllers\\StaticPages.php', 90)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StaticPages->crud('delete')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StaticPages))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-10 22:05:13 --> Undefined variable $berkas
+in APPPATH\Controllers\StaticPages.php on line 185.
+ 1 APPPATH\Controllers\StaticPages.php(185): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $berkas', 'APPPATH\\Controllers\\StaticPages.php', 185)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StaticPages->crud('purge')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StaticPages))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-10 22:05:37 --> unlink(D:\D\web\ppa-its\public\assets/upload/1000/): Is a directory
+in APPPATH\Controllers\StaticPages.php on line 192.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(D:\\D\\web\\ppa-its\\public\\assets/upload/1000/): Is a directory', 'APPPATH\\Controllers\\StaticPages.php', 192)
+ 2 APPPATH\Controllers\StaticPages.php(192): unlink('FCPATH\\assets\\upload\\1000')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StaticPages->crud('purge')
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StaticPages))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-10 22:06:38 --> unlink(D:\D\web\ppa-its\public\assets/upload/1000/): Is a directory
+in APPPATH\Controllers\StaticPages.php on line 192.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(D:\\D\\web\\ppa-its\\public\\assets/upload/1000/): Is a directory', 'APPPATH\\Controllers\\StaticPages.php', 192)
+ 2 APPPATH\Controllers\StaticPages.php(192): unlink('FCPATH\\assets\\upload\\1000')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StaticPages->crud('purge')
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StaticPages))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-10 22:15:18 --> Undefined variable $berkas
+in APPPATH\Controllers\StaticPages.php on line 205.
+ 1 APPPATH\Controllers\StaticPages.php(205): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $berkas', 'APPPATH\\Controllers\\StaticPages.php', 205)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StaticPages->crud('purge')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StaticPages))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-10 22:15:39 --> Undefined variable $mld
+in APPPATH\Controllers\StaticPages.php on line 205.
+ 1 APPPATH\Controllers\StaticPages.php(205): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $mld', 'APPPATH\\Controllers\\StaticPages.php', 205)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StaticPages->crud('purge')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StaticPages))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-10 22:16:10 --> Undefined variable $mld
+in APPPATH\Controllers\StaticPages.php on line 205.
+ 1 APPPATH\Controllers\StaticPages.php(205): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $mld', 'APPPATH\\Controllers\\StaticPages.php', 205)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StaticPages->crud('purge')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StaticPages))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-10 22:16:54 --> unlink(D:\D\web\ppa-its\public\assets/upload/1000/fb): No such file or directory
+in APPPATH\Controllers\StaticPages.php on line 193.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(D:\\D\\web\\ppa-its\\public\\assets/upload/1000/fb): No such file or directory', 'APPPATH\\Controllers\\StaticPages.php', 193)
+ 2 APPPATH\Controllers\StaticPages.php(193): unlink('FCPATH\\assets/upload/1000/fb')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StaticPages->crud('purge')
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StaticPages))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-10 22:16:57 --> unlink(D:\D\web\ppa-its\public\assets/upload/1000/fb): No such file or directory
+in APPPATH\Controllers\StaticPages.php on line 193.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(D:\\D\\web\\ppa-its\\public\\assets/upload/1000/fb): No such file or directory', 'APPPATH\\Controllers\\StaticPages.php', 193)
+ 2 APPPATH\Controllers\StaticPages.php(193): unlink('FCPATH\\assets/upload/1000/fb')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StaticPages->crud('purge')
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StaticPages))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-10 22:19:13 --> unlink(D:\D\web\ppa-its\public\assets/upload/1000/): Is a directory
+in APPPATH\Controllers\StaticPages.php on line 193.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(D:\\D\\web\\ppa-its\\public\\assets/upload/1000/): Is a directory', 'APPPATH\\Controllers\\StaticPages.php', 193)
+ 2 APPPATH\Controllers\StaticPages.php(193): unlink('FCPATH\\assets\\upload\\1000')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StaticPages->crud('purge')
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StaticPages))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-10 22:19:18 --> unlink(D:\D\web\ppa-its\public\assets/upload/1000/): Is a directory
+in APPPATH\Controllers\StaticPages.php on line 193.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(D:\\D\\web\\ppa-its\\public\\assets/upload/1000/): Is a directory', 'APPPATH\\Controllers\\StaticPages.php', 193)
+ 2 APPPATH\Controllers\StaticPages.php(193): unlink('FCPATH\\assets\\upload\\1000')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StaticPages->crud('purge')
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StaticPages))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-10 22:22:43 --> Undefined array key 0
+in APPPATH\Controllers\StaticPages.php on line 185.
+ 1 APPPATH\Controllers\StaticPages.php(185): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\StaticPages.php', 185)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StaticPages->crud('purge')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StaticPages))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-10 22:23:41 --> unlink(D:\D\web\ppa-its\public\assets/upload/1000/1678438463_c93186285f4e388061a4.png): No such file or directory
+in APPPATH\Controllers\StaticPages.php on line 194.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(D:\\D\\web\\ppa-its\\public\\assets/upload/1000/1678438463_c93186285f4e388061a4.png): No such file or directory', 'APPPATH\\Controllers\\StaticPages.php', 194)
+ 2 APPPATH\Controllers\StaticPages.php(194): unlink('FCPATH\\assets/upload/1000/1678438463_c93186285f4e388061a4.png')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StaticPages->crud('purge')
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StaticPages))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-10 22:24:06 --> unlink(D:\D\web\ppa-its\public\assets/upload/1000/1678438463_c93186285f4e388061a4.png): No such file or directory
+in APPPATH\Controllers\StaticPages.php on line 194.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(D:\\D\\web\\ppa-its\\public\\assets/upload/1000/1678438463_c93186285f4e388061a4.png): No such file or directory', 'APPPATH\\Controllers\\StaticPages.php', 194)
+ 2 APPPATH\Controllers\StaticPages.php(194): unlink('FCPATH\\assets/upload/1000/1678438463_c93186285f4e388061a4.png')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StaticPages->crud('purge')
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StaticPages))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-10 22:26:39 --> syntax error, unexpected token "catch"
+in APPPATH\Controllers\StaticPages.php on line 206.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\StaticPages.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\StaticPages')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\StaticPages')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\StaticPages', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-10 22:26:43 --> syntax error, unexpected token "catch"
+in APPPATH\Controllers\StaticPages.php on line 206.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\StaticPages.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\StaticPages')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\StaticPages')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\StaticPages', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-10 22:27:30 --> unlink(D:\D\web\ppa-its\public\assets/upload/1000/1678438463_c93186285f4e388061a4.png): No such file or directory
+in APPPATH\Controllers\StaticPages.php on line 195.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(D:\\D\\web\\ppa-its\\public\\assets/upload/1000/1678438463_c93186285f4e388061a4.png): No such file or directory', 'APPPATH\\Controllers\\StaticPages.php', 195)
+ 2 APPPATH\Controllers\StaticPages.php(195): unlink('FCPATH\\assets/upload/1000/1678438463_c93186285f4e388061a4.png')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StaticPages->crud('purge')
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StaticPages))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-10 22:29:07 --> unlink(D:\D\web\ppa-its\public\assets/upload/1000/1678438463_c93186285f4e388061a4.png): No such file or directory
+in APPPATH\Controllers\StaticPages.php on line 195.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(D:\\D\\web\\ppa-its\\public\\assets/upload/1000/1678438463_c93186285f4e388061a4.png): No such file or directory', 'APPPATH\\Controllers\\StaticPages.php', 195)
+ 2 APPPATH\Controllers\StaticPages.php(195): unlink('FCPATH\\assets/upload/1000/1678438463_c93186285f4e388061a4.png')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StaticPages->crud('purge')
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StaticPages))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-10 22:29:19 --> unlink(D:\D\web\ppa-its\public\assets/upload/1000/1678438463_c93186285f4e388061a4.png): No such file or directory
+in APPPATH\Controllers\StaticPages.php on line 195.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(D:\\D\\web\\ppa-its\\public\\assets/upload/1000/1678438463_c93186285f4e388061a4.png): No such file or directory', 'APPPATH\\Controllers\\StaticPages.php', 195)
+ 2 APPPATH\Controllers\StaticPages.php(195): unlink('FCPATH\\assets/upload/1000/1678438463_c93186285f4e388061a4.png')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StaticPages->crud('purge')
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StaticPages))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

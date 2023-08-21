@@ -1,0 +1,38 @@
+ERROR - 2023-01-27 17:15:55 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:170
+Stack trace:
+#0 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(170): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'ci4', 3306, '', 0)
+#1 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 D:\D\web\ci4FrontEndWisata\app\Controllers\Login.php(250): CodeIgniter\Model->countAllResults()
+#6 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Login->index()
+#7 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\D\web\ci4FrontEndWisata\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#3 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#4 D:\D\web\ci4FrontEndWisata\app\Controllers\Login.php(250): CodeIgniter\Model->countAllResults()
+#5 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Login->index()
+#6 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\D\web\ci4FrontEndWisata\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-27 17:15:55 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `user`', [], false)
+ 3 SYSTEMPATH\Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 4 APPPATH\Controllers\Login.php(250): CodeIgniter\Model->countAllResults()
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Login->index()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,419 @@
+CRITICAL - 2023-02-15 01:57:39 --> syntax error, unexpected identifier "join"
+in APPPATH\Controllers\Pages.php on line 175.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Pages.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Pages')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Pages')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Pages', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-15 01:57:55 --> mysqli_sql_exception: Unknown column 'sub_category.id ad' in 'field list' in D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `categor...', 0)
+#1 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `categor...')
+#2 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `categor...')
+#3 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `categor...', Array, false)
+#4 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\D\web\ci4FrontEndWisata\app\Controllers\Pages.php(177): CodeIgniter\Model->__call('get', Array)
+#6 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Pages->cat_list()
+#7 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#8 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\D\web\ci4FrontEndWisata\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-02-15 01:57:55 --> Unknown column 'sub_category.id ad' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `category`.`id` as `cat_id`, `category`.`category` as `category`, `sub_category`.`id ad` `sub_cat_id`, `sub_category`.`sub_category` as `sub_category`
+FROM `category`
+LEFT JOIN `sub_category` ON `category`.`id` =`sub_category`.`category_id`
+WHERE `page_id` = \'2\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `category`.`id` as `cat_id`, `category`.`category` as `category`, `sub_category`.`id ad` `sub_cat_id`, `sub_category`.`sub_category` as `sub_category`
+FROM `category`
+LEFT JOIN `sub_category` ON `category`.`id` =`sub_category`.`category_id`
+WHERE `page_id` = \'2\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `category`.`id` as `cat_id`, `category`.`category` as `category`, `sub_category`.`id ad` `sub_cat_id`, `sub_category`.`sub_category` as `sub_category`
+FROM `category`
+LEFT JOIN `sub_category` ON `category`.`id` =`sub_category`.`category_id`
+WHERE `page_id` = \'2\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `category`.`id` as `cat_id`, `category`.`category` as `category`, `sub_category`.`id ad` `sub_cat_id`, `sub_category`.`sub_category` as `sub_category`
+FROM `category`
+LEFT JOIN `sub_category` ON `category`.`id` =`sub_category`.`category_id`
+WHERE `page_id` = :page_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Pages.php(177): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Pages->cat_list()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-15 02:09:03 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'as sub_category)
+FROM `category`
+LEFT JOIN `sub_category` ON `category`.`id` =`s' at line 1 in D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `categor...', 0)
+#1 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `categor...')
+#2 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `categor...')
+#3 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `categor...', Array, false)
+#4 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\D\web\ci4FrontEndWisata\app\Controllers\Pages.php(177): CodeIgniter\Model->__call('get', Array)
+#6 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Pages->cat_list()
+#7 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#8 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\D\web\ci4FrontEndWisata\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-02-15 02:09:03 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'as sub_category)
+FROM `category`
+LEFT JOIN `sub_category` ON `category`.`id` =`s' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `category`.`id` as `cat_id`, `category`.`category` as `category`, `sub_category`.`id` as `sub_cat_id`, GROUP_CONCAT(sub_category.sub_category as sub_category)
+FROM `category`
+LEFT JOIN `sub_category` ON `category`.`id` =`sub_category`.`category_id`
+WHERE `page_id` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `category`.`id` as `cat_id`, `category`.`category` as `category`, `sub_category`.`id` as `sub_cat_id`, GROUP_CONCAT(sub_category.sub_category as sub_category)
+FROM `category`
+LEFT JOIN `sub_category` ON `category`.`id` =`sub_category`.`category_id`
+WHERE `page_id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `category`.`id` as `cat_id`, `category`.`category` as `category`, `sub_category`.`id` as `sub_cat_id`, GROUP_CONCAT(sub_category.sub_category as sub_category)
+FROM `category`
+LEFT JOIN `sub_category` ON `category`.`id` =`sub_category`.`category_id`
+WHERE `page_id` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `category`.`id` as `cat_id`, `category`.`category` as `category`, `sub_category`.`id` as `sub_cat_id`, GROUP_CONCAT(sub_category.sub_category as sub_category)
+FROM `category`
+LEFT JOIN `sub_category` ON `category`.`id` =`sub_category`.`category_id`
+WHERE `page_id` = :page_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Pages.php(177): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Pages->cat_list()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-15 02:13:41 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'GROUP(category.category) as category, `sub_category`.`id` as `sub_cat_id`, GROUP' at line 1 in D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `categor...', 0)
+#1 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `categor...')
+#2 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `categor...')
+#3 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `categor...', Array, false)
+#4 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\D\web\ci4FrontEndWisata\app\Controllers\Pages.php(177): CodeIgniter\Model->__call('get', Array)
+#6 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Pages->cat_list()
+#7 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#8 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\D\web\ci4FrontEndWisata\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-02-15 02:13:41 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'GROUP(category.category) as category, `sub_category`.`id` as `sub_cat_id`, GROUP' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `category`.`id` as `cat_id`, GROUP(category.category) as category, `sub_category`.`id` as `sub_cat_id`, GROUP_CONCAT(sub_category.sub_category) as sub_category
+FROM `category`
+LEFT JOIN `sub_category` ON `category`.`id` =`sub_category`.`category_id`
+WHERE `page_id` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `category`.`id` as `cat_id`, GROUP(category.category) as category, `sub_category`.`id` as `sub_cat_id`, GROUP_CONCAT(sub_category.sub_category) as sub_category
+FROM `category`
+LEFT JOIN `sub_category` ON `category`.`id` =`sub_category`.`category_id`
+WHERE `page_id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `category`.`id` as `cat_id`, GROUP(category.category) as category, `sub_category`.`id` as `sub_cat_id`, GROUP_CONCAT(sub_category.sub_category) as sub_category
+FROM `category`
+LEFT JOIN `sub_category` ON `category`.`id` =`sub_category`.`category_id`
+WHERE `page_id` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `category`.`id` as `cat_id`, GROUP(category.category) as category, `sub_category`.`id` as `sub_cat_id`, GROUP_CONCAT(sub_category.sub_category) as sub_category
+FROM `category`
+LEFT JOIN `sub_category` ON `category`.`id` =`sub_category`.`category_id`
+WHERE `page_id` = :page_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Pages.php(177): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Pages->cat_list()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-15 02:18:24 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(GROUP_CONCAT(sub_category.sub_category)) as sub_category
+FROM `category`
+LEFT J' at line 1 in D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `categor...', 0)
+#1 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `categor...')
+#2 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `categor...')
+#3 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `categor...', Array, false)
+#4 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\D\web\ci4FrontEndWisata\app\Controllers\Pages.php(178): CodeIgniter\Model->__call('get', Array)
+#6 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Pages->cat_list()
+#7 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#8 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\D\web\ci4FrontEndWisata\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-02-15 02:18:24 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(GROUP_CONCAT(sub_category.sub_category)) as sub_category
+FROM `category`
+LEFT J' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `category`.`id` as `cat_id`, `category`.`category` as `category`, `sub_category`.`id` as `sub_cat_id`, array(GROUP_CONCAT(sub_category.sub_category)) as sub_category
+FROM `category`
+LEFT JOIN `sub_category` ON `category`.`id` =`sub_category`.`category_id`
+WHERE `page_id` = \'1\'
+GROUP BY `category`.`category`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `category`.`id` as `cat_id`, `category`.`category` as `category`, `sub_category`.`id` as `sub_cat_id`, array(GROUP_CONCAT(sub_category.sub_category)) as sub_category
+FROM `category`
+LEFT JOIN `sub_category` ON `category`.`id` =`sub_category`.`category_id`
+WHERE `page_id` = \'1\'
+GROUP BY `category`.`category`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `category`.`id` as `cat_id`, `category`.`category` as `category`, `sub_category`.`id` as `sub_cat_id`, array(GROUP_CONCAT(sub_category.sub_category)) as sub_category
+FROM `category`
+LEFT JOIN `sub_category` ON `category`.`id` =`sub_category`.`category_id`
+WHERE `page_id` = \'1\'
+GROUP BY `category`.`category`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `category`.`id` as `cat_id`, `category`.`category` as `category`, `sub_category`.`id` as `sub_cat_id`, array(GROUP_CONCAT(sub_category.sub_category)) as sub_category
+FROM `category`
+LEFT JOIN `sub_category` ON `category`.`id` =`sub_category`.`category_id`
+WHERE `page_id` = :page_id:
+GROUP BY `category`.`category`', [...], false)
+ 5 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Pages.php(178): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Pages->cat_list()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-15 02:18:47 --> mysqli_sql_exception: Invalid use of group function in D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `categor...', 0)
+#1 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `categor...')
+#2 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `categor...')
+#3 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `categor...', Array, false)
+#4 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\D\web\ci4FrontEndWisata\app\Controllers\Pages.php(178): CodeIgniter\Model->__call('get', Array)
+#6 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Pages->cat_list()
+#7 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#8 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\D\web\ci4FrontEndWisata\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-02-15 02:18:47 --> Invalid use of group function
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `category`.`id` as `cat_id`, `category`.`category` as `category`, `sub_category`.`id` as `sub_cat_id`, JSON_ARRAYAGG(GROUP_CONCAT(sub_category.sub_category)) as sub_category
+FROM `category`
+LEFT JOIN `sub_category` ON `category`.`id` =`sub_category`.`category_id`
+WHERE `page_id` = \'1\'
+GROUP BY `category`.`category`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `category`.`id` as `cat_id`, `category`.`category` as `category`, `sub_category`.`id` as `sub_cat_id`, JSON_ARRAYAGG(GROUP_CONCAT(sub_category.sub_category)) as sub_category
+FROM `category`
+LEFT JOIN `sub_category` ON `category`.`id` =`sub_category`.`category_id`
+WHERE `page_id` = \'1\'
+GROUP BY `category`.`category`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `category`.`id` as `cat_id`, `category`.`category` as `category`, `sub_category`.`id` as `sub_cat_id`, JSON_ARRAYAGG(GROUP_CONCAT(sub_category.sub_category)) as sub_category
+FROM `category`
+LEFT JOIN `sub_category` ON `category`.`id` =`sub_category`.`category_id`
+WHERE `page_id` = \'1\'
+GROUP BY `category`.`category`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `category`.`id` as `cat_id`, `category`.`category` as `category`, `sub_category`.`id` as `sub_cat_id`, JSON_ARRAYAGG(GROUP_CONCAT(sub_category.sub_category)) as sub_category
+FROM `category`
+LEFT JOIN `sub_category` ON `category`.`id` =`sub_category`.`category_id`
+WHERE `page_id` = :page_id:
+GROUP BY `category`.`category`', [...], false)
+ 5 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Pages.php(178): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Pages->cat_list()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-15 02:26:27 --> mysqli_sql_exception: FUNCTION ci4.ARRAYAGG does not exist in D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `categor...', 0)
+#1 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `categor...')
+#2 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `categor...')
+#3 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `categor...', Array, false)
+#4 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\D\web\ci4FrontEndWisata\app\Controllers\Pages.php(178): CodeIgniter\Model->__call('get', Array)
+#6 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Pages->cat_list()
+#7 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#8 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\D\web\ci4FrontEndWisata\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-02-15 02:26:27 --> FUNCTION ci4.ARRAYAGG does not exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `category`.`id` as `cat_id`, `category`.`category` as `category`, `sub_category`.`id` as `sub_cat_id`, ARRAYAGG(sub_category.sub_category) as sub_category
+FROM `category`
+LEFT JOIN `sub_category` ON `category`.`id` =`sub_category`.`category_id`
+WHERE `page_id` = \'1\'
+GROUP BY `category`.`category`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `category`.`id` as `cat_id`, `category`.`category` as `category`, `sub_category`.`id` as `sub_cat_id`, ARRAYAGG(sub_category.sub_category) as sub_category
+FROM `category`
+LEFT JOIN `sub_category` ON `category`.`id` =`sub_category`.`category_id`
+WHERE `page_id` = \'1\'
+GROUP BY `category`.`category`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `category`.`id` as `cat_id`, `category`.`category` as `category`, `sub_category`.`id` as `sub_cat_id`, ARRAYAGG(sub_category.sub_category) as sub_category
+FROM `category`
+LEFT JOIN `sub_category` ON `category`.`id` =`sub_category`.`category_id`
+WHERE `page_id` = \'1\'
+GROUP BY `category`.`category`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `category`.`id` as `cat_id`, `category`.`category` as `category`, `sub_category`.`id` as `sub_cat_id`, ARRAYAGG(sub_category.sub_category) as sub_category
+FROM `category`
+LEFT JOIN `sub_category` ON `category`.`id` =`sub_category`.`category_id`
+WHERE `page_id` = :page_id:
+GROUP BY `category`.`category`', [...], false)
+ 5 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Pages.php(178): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Pages->cat_list()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-15 02:26:47 --> mysqli_sql_exception: FUNCTION ci4.OBJECT_ARRAYAGG does not exist in D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `categor...', 0)
+#1 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `categor...')
+#2 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `categor...')
+#3 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `categor...', Array, false)
+#4 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\D\web\ci4FrontEndWisata\app\Controllers\Pages.php(178): CodeIgniter\Model->__call('get', Array)
+#6 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Pages->cat_list()
+#7 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#8 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\D\web\ci4FrontEndWisata\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-02-15 02:26:47 --> FUNCTION ci4.OBJECT_ARRAYAGG does not exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `category`.`id` as `cat_id`, `category`.`category` as `category`, `sub_category`.`id` as `sub_cat_id`, OBJECT_ARRAYAGG(sub_category.sub_category) as sub_category
+FROM `category`
+LEFT JOIN `sub_category` ON `category`.`id` =`sub_category`.`category_id`
+WHERE `page_id` = \'1\'
+GROUP BY `category`.`category`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `category`.`id` as `cat_id`, `category`.`category` as `category`, `sub_category`.`id` as `sub_cat_id`, OBJECT_ARRAYAGG(sub_category.sub_category) as sub_category
+FROM `category`
+LEFT JOIN `sub_category` ON `category`.`id` =`sub_category`.`category_id`
+WHERE `page_id` = \'1\'
+GROUP BY `category`.`category`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `category`.`id` as `cat_id`, `category`.`category` as `category`, `sub_category`.`id` as `sub_cat_id`, OBJECT_ARRAYAGG(sub_category.sub_category) as sub_category
+FROM `category`
+LEFT JOIN `sub_category` ON `category`.`id` =`sub_category`.`category_id`
+WHERE `page_id` = \'1\'
+GROUP BY `category`.`category`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `category`.`id` as `cat_id`, `category`.`category` as `category`, `sub_category`.`id` as `sub_cat_id`, OBJECT_ARRAYAGG(sub_category.sub_category) as sub_category
+FROM `category`
+LEFT JOIN `sub_category` ON `category`.`id` =`sub_category`.`category_id`
+WHERE `page_id` = :page_id:
+GROUP BY `category`.`category`', [...], false)
+ 5 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Pages.php(178): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Pages->cat_list()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-15 02:28:30 --> mysqli_sql_exception: FUNCTION ci4.OBJECT_AGG does not exist in D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `categor...', 0)
+#1 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `categor...')
+#2 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `categor...')
+#3 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `categor...', Array, false)
+#4 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\D\web\ci4FrontEndWisata\app\Controllers\Pages.php(178): CodeIgniter\Model->__call('get', Array)
+#6 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Pages->cat_list()
+#7 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#8 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\D\web\ci4FrontEndWisata\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-02-15 02:28:30 --> FUNCTION ci4.OBJECT_AGG does not exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `category`.`id` as `cat_id`, `category`.`category` as `category`, `sub_category`.`id` as `sub_cat_id`, OBJECT_AGG(sub_category.sub_category) as sub_category
+FROM `category`
+LEFT JOIN `sub_category` ON `category`.`id` =`sub_category`.`category_id`
+WHERE `page_id` = \'1\'
+GROUP BY `category`.`category`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `category`.`id` as `cat_id`, `category`.`category` as `category`, `sub_category`.`id` as `sub_cat_id`, OBJECT_AGG(sub_category.sub_category) as sub_category
+FROM `category`
+LEFT JOIN `sub_category` ON `category`.`id` =`sub_category`.`category_id`
+WHERE `page_id` = \'1\'
+GROUP BY `category`.`category`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `category`.`id` as `cat_id`, `category`.`category` as `category`, `sub_category`.`id` as `sub_cat_id`, OBJECT_AGG(sub_category.sub_category) as sub_category
+FROM `category`
+LEFT JOIN `sub_category` ON `category`.`id` =`sub_category`.`category_id`
+WHERE `page_id` = \'1\'
+GROUP BY `category`.`category`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `category`.`id` as `cat_id`, `category`.`category` as `category`, `sub_category`.`id` as `sub_cat_id`, OBJECT_AGG(sub_category.sub_category) as sub_category
+FROM `category`
+LEFT JOIN `sub_category` ON `category`.`id` =`sub_category`.`category_id`
+WHERE `page_id` = :page_id:
+GROUP BY `category`.`category`', [...], false)
+ 5 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Pages.php(178): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Pages->cat_list()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-15 02:29:29 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') as sub_category
+FROM `category`
+LEFT JOIN `sub_category` ON `category`.`id` =`' at line 1 in D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `categor...', 0)
+#1 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `categor...')
+#2 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `categor...')
+#3 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `categor...', Array, false)
+#4 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\D\web\ci4FrontEndWisata\app\Controllers\Pages.php(178): CodeIgniter\Model->__call('get', Array)
+#6 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Pages->cat_list()
+#7 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#8 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\D\web\ci4FrontEndWisata\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-02-15 02:29:29 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') as sub_category
+FROM `category`
+LEFT JOIN `sub_category` ON `category`.`id` =`' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `category`.`id` as `cat_id`, `category`.`category` as `category`, `sub_category`.`id` as `sub_cat_id`, JSON_OBJECTAGG(sub_category.sub_category) as sub_category
+FROM `category`
+LEFT JOIN `sub_category` ON `category`.`id` =`sub_category`.`category_id`
+WHERE `page_id` = \'1\'
+GROUP BY `category`.`category`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `category`.`id` as `cat_id`, `category`.`category` as `category`, `sub_category`.`id` as `sub_cat_id`, JSON_OBJECTAGG(sub_category.sub_category) as sub_category
+FROM `category`
+LEFT JOIN `sub_category` ON `category`.`id` =`sub_category`.`category_id`
+WHERE `page_id` = \'1\'
+GROUP BY `category`.`category`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `category`.`id` as `cat_id`, `category`.`category` as `category`, `sub_category`.`id` as `sub_cat_id`, JSON_OBJECTAGG(sub_category.sub_category) as sub_category
+FROM `category`
+LEFT JOIN `sub_category` ON `category`.`id` =`sub_category`.`category_id`
+WHERE `page_id` = \'1\'
+GROUP BY `category`.`category`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `category`.`id` as `cat_id`, `category`.`category` as `category`, `sub_category`.`id` as `sub_cat_id`, JSON_OBJECTAGG(sub_category.sub_category) as sub_category
+FROM `category`
+LEFT JOIN `sub_category` ON `category`.`id` =`sub_category`.`category_id`
+WHERE `page_id` = :page_id:
+GROUP BY `category`.`category`', [...], false)
+ 5 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Pages.php(178): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Pages->cat_list()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-15 02:30:00 --> mysqli_sql_exception: FUNCTION ci4.JSON_OBJECT_AGG does not exist in D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `categor...', 0)
+#1 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `categor...')
+#2 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `categor...')
+#3 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `categor...', Array, false)
+#4 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\D\web\ci4FrontEndWisata\app\Controllers\Pages.php(178): CodeIgniter\Model->__call('get', Array)
+#6 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Pages->cat_list()
+#7 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#8 D:\D\web\ci4FrontEndWisata\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\D\web\ci4FrontEndWisata\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-02-15 02:30:00 --> FUNCTION ci4.JSON_OBJECT_AGG does not exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `category`.`id` as `cat_id`, `category`.`category` as `category`, `sub_category`.`id` as `sub_cat_id`, JSON_OBJECT_AGG(sub_category.sub_category) as sub_category
+FROM `category`
+LEFT JOIN `sub_category` ON `category`.`id` =`sub_category`.`category_id`
+WHERE `page_id` = \'1\'
+GROUP BY `category`.`category`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `category`.`id` as `cat_id`, `category`.`category` as `category`, `sub_category`.`id` as `sub_cat_id`, JSON_OBJECT_AGG(sub_category.sub_category) as sub_category
+FROM `category`
+LEFT JOIN `sub_category` ON `category`.`id` =`sub_category`.`category_id`
+WHERE `page_id` = \'1\'
+GROUP BY `category`.`category`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `category`.`id` as `cat_id`, `category`.`category` as `category`, `sub_category`.`id` as `sub_cat_id`, JSON_OBJECT_AGG(sub_category.sub_category) as sub_category
+FROM `category`
+LEFT JOIN `sub_category` ON `category`.`id` =`sub_category`.`category_id`
+WHERE `page_id` = \'1\'
+GROUP BY `category`.`category`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `category`.`id` as `cat_id`, `category`.`category` as `category`, `sub_category`.`id` as `sub_cat_id`, JSON_OBJECT_AGG(sub_category.sub_category) as sub_category
+FROM `category`
+LEFT JOIN `sub_category` ON `category`.`id` =`sub_category`.`category_id`
+WHERE `page_id` = :page_id:
+GROUP BY `category`.`category`', [...], false)
+ 5 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Pages.php(178): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Pages->cat_list()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

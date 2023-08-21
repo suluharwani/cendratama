@@ -1,0 +1,36 @@
+CRITICAL - 2023-03-08 10:13:16 --> There is no data to insert.
+in SYSTEMPATH\BaseModel.php on line 729.
+ 1 SYSTEMPATH\BaseModel.php(729): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([], true)
+ 3 APPPATH\Controllers\StaticPages.php(112): CodeIgniter\Model->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StaticPages->crud('create')
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StaticPages))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-08 10:21:57 --> There is no data to insert.
+in SYSTEMPATH\BaseModel.php on line 729.
+ 1 SYSTEMPATH\BaseModel.php(729): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([], true)
+ 3 APPPATH\Controllers\StaticPages.php(112): CodeIgniter\Model->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StaticPages->crud('create')
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StaticPages))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-08 10:24:00 --> There is no data to insert.
+in SYSTEMPATH\BaseModel.php on line 729.
+ 1 SYSTEMPATH\BaseModel.php(729): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([], true)
+ 3 APPPATH\Controllers\StaticPages.php(112): CodeIgniter\Model->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StaticPages->crud('create')
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StaticPages))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-08 11:14:42 --> Unclosed '{' on line 8
+in APPPATH\Controllers\Admin.php on line 52.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Admin.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Admin', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
