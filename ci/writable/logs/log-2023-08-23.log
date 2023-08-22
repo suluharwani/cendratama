@@ -1,0 +1,54 @@
+CRITICAL - 2023-08-23 04:32:08 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+in APPPATH\Controllers\Client.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-08-23 04:32:18 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+in APPPATH\Controllers\Client.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-08-23 04:44:39 --> Undefined array key "auth"
+in APPPATH\Controllers\Client.php on line 39.
+ 1 APPPATH\Controllers\Client.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "auth"', 'APPPATH\\Controllers\\Client.php', 39)
+ 2 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Client->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-23 04:46:15 --> Undefined array key "auth"
+in APPPATH\Controllers\Client.php on line 33.
+ 1 APPPATH\Controllers\Client.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "auth"', 'APPPATH\\Controllers\\Client.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Client->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-23 04:46:16 --> Undefined array key "auth"
+in APPPATH\Controllers\Client.php on line 33.
+ 1 APPPATH\Controllers\Client.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "auth"', 'APPPATH\\Controllers\\Client.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Client->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-23 04:46:18 --> Undefined array key "auth"
+in APPPATH\Controllers\Client.php on line 33.
+ 1 APPPATH\Controllers\Client.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "auth"', 'APPPATH\\Controllers\\Client.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Client->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-23 04:48:48 --> Constant expression contains invalid operations
+in APPPATH\Config\Email.php on line 64.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2023-08-23 04:58:54 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): SSL: Handshake timed out in D:\Suluh\Kerja\cendratama\ci\vendor\codeigniter4\framework\system\Email\Email.php:1868
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): SS...', 'D:\\Suluh\\Kerja\\...', 1868)
+#1 D:\Suluh\Kerja\cendratama\ci\vendor\codeigniter4\framework\system\Email\Email.php(1868): fsockopen('tls://cendratam...', 465, NULL, NULL, 5)
+#2 D:\Suluh\Kerja\cendratama\ci\vendor\codeigniter4\framework\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 D:\Suluh\Kerja\cendratama\ci\vendor\codeigniter4\framework\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 D:\Suluh\Kerja\cendratama\ci\vendor\codeigniter4\framework\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 D:\Suluh\Kerja\cendratama\ci\app\Controllers\Client.php(337): CodeIgniter\Email\Email->send()
+#6 D:\Suluh\Kerja\cendratama\ci\app\Controllers\Client.php(116): App\Controllers\Client->sendEmail('suluh@gmail.com')
+#7 D:\Suluh\Kerja\cendratama\ci\app\Controllers\Client.php(66): App\Controllers\Client->loginForm()
+#8 D:\Suluh\Kerja\cendratama\ci\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Client->index()
+#9 D:\Suluh\Kerja\cendratama\ci\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Client))
+#10 D:\Suluh\Kerja\cendratama\ci\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Suluh\Kerja\cendratamapublic\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-08-23 04:58:54 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-08-23 04:58:54 --> 

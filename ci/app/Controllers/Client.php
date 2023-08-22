@@ -30,20 +30,7 @@ class Client extends BaseController
     $this->userValidation = new \App\Controllers\LoginValidation();
     $this->changelog = new \App\Controllers\Changelog();
     helper('form');
-  }
-  function access(){
-    $check = new \App\Controllers\CheckAccess();
-    return $check->clientAccess();
-  }
-  public function index()
-  {
-
-    //end login & sign up with google
-    //view page login register
-
-    if ($this->access()) {
-
-      $data['content'] = view('home/content/dashboard');
+    if (isset($_SESSION['auth'])) {
       $this->session->set('logoutButton', '
  <div class="dropdown">
   <button class="btn btn-outline btn-rounded btn-primary btn-4 btn-icon-effect-1 dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
@@ -52,26 +39,47 @@ class Client extends BaseController
   <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
     <li><a class="dropdown-item" disabled">'.$_SESSION['auth']['nama_depan']." ".$_SESSION['auth']['nama_belakang'].'</a></li>
     <li><a class="btn btn-outline btn-rounded btn-primary dropdown-item" href="'.base_url("client").'">Dashboard</a></li>
+    <li><a class="btn btn-outline btn-rounded btn-primary dropdown-item" href="'.base_url("client/services").'">Services</a></li>
+    <li><a class="btn btn-outline btn-rounded btn-primary dropdown-item" href="'.base_url("client/billing").'">Billing</a></li>
+    <li><a class="btn btn-outline btn-rounded btn-primary dropdown-item" href="'.base_url("client/support").'">Support</a></li>
+    <li><a class="btn btn-outline btn-rounded btn-primary dropdown-item" href="'.base_url("client/promotion").'">Promotion</a></li>
+    <li><a class="btn btn-outline btn-rounded btn-primary dropdown-item" href="'.base_url("client/program").'">Program</a></li>
     <li><a class="btn btn-outline btn-rounded btn-primary dropdown-item" href="'.base_url("clientlogout").'">Log out</a></li>
   </ul>
 </div>
 ');
+    }
+    
+  }
+  function access(){
+    if ($check = new \App\Controllers\CheckAccess()) {
+      return $check->clientAccess();
+    }
+  }
+  
+  public function index()
+  {
+    if ($this->access()) {
+      $data['content'] = view('home/content/dashboard');
       $view = view('home/index', $data);
     }else{
-
-        // login and register
+    $view = $this->loginForm();
+    }
+    return $view;
+  }
+  
+  function loginForm(){
       $mdlValidasi = new \App\Models\MdlValidasi();
-
+      
       $userModel = new \App\Models\MdlClient();
       $banyak_user = 0;
       $data['title'] = "Client Area Login";
-    //login dengan input
-    //Register
+      
       if ($this->request->getPost("submit") == "submit") {
-
+        
         $token_generate = $this->request->getPost("token_generate");
         if ($this->userValidation->recaptchaValidation($token_generate)->success) {
-
+          
           $this->form_validation->setRules(
             [
               'email' => [
@@ -109,31 +117,30 @@ class Client extends BaseController
               $riwayat = "User {$_POST['nama_depan']} {$_POST['nama_belakang']} berhasil mendaftar sebagai client";
               $this->changelog->riwayat($riwayat);
               $this->session->setFlashdata('message', "Email verifikasi telah dikirim ke {$_POST['email']}");
-
+              
               return redirect()->to('client');
             }
           } else {
           //  validation not ok
-
+            
             $this->session->setFlashdata('login_error', $this->form_validation->getErrors());
           }
-
+        
         } else {
         //  validation recaptcha not ok
-
+          
           $this->session->setFlashdata('login_error',  array('recaptcha' => "Recaptcha not valid" ));
-
+        
         }
       }
-    //end register
-    //login
+  
       if ($this->request->getPost("submit") == "login") {
-
+        
         $token_generate = $this->request->getPost("token_generate");
         if ($this->userValidation->recaptchaValidation($token_generate)->success) {
         // validation ok
         //password
-
+          
           $this->form_validation->setRules(
             [
               'email' => [
@@ -150,7 +157,7 @@ class Client extends BaseController
             $email = $_POST['email'];
             $password = $_POST['password'];
             $user = $userModel->get_cipherpass($email);
-
+  
             if ($user >0) {
               if ($user['status'] == 0) {
                 $this->session->setFlashdata('login_error', array('notValid'=>"Akun belum aktif, verifikasi akun anda melalaui email"));
@@ -158,7 +165,7 @@ class Client extends BaseController
               }else{
                 if ($user['password'] != NULL || $user['password'] != '' ) {
                   if ($this->bcrypt->verify($password, $user['password'])) {
-
+  
                     $data_user = [
                       'id' => $user['id'],
                       'nama_depan'=> $user['nama_depan'],
@@ -167,13 +174,13 @@ class Client extends BaseController
                       'email'=> $user['email'],
                       'picture'=> $user['profile_picture'],
                     ];
-
+                    
                     $userModel->where("email", $email);
                     $profile = $userModel->get()->getResultArray();
                     $this->session->set('c_profile', $profile);
                     $this->session->set('c_logged', true);
                     $this->session->set('auth', $data_user);
-
+                    
                     return redirect()->to('/client');
                   }else{
                     $this->session->setFlashdata('login_error',  array("failed"=>"Login Failed: Incorrect username or password"));
@@ -182,7 +189,7 @@ class Client extends BaseController
                   $this->session->setFlashdata('login_error', array("failed"=>"Password tidak ada: Silakan login dengan google account"));
                 }
               }
-
+            
             }else{
               $this->session->setFlashdata('login_error', array("notActive"=>"User tidak ada/tidakaktif, silakan hubungi Administrator"));
             }
@@ -190,25 +197,24 @@ class Client extends BaseController
           //  validation not ok
             $this->session->setFlashdata('login_error', $this->form_validation->getErrors());
           }
-
+  
         } else {
         //  validation recaptcha not ok
-
+  
           $this->session->setFlashdata('login_error',  array('recaptcha' => "Recaptcha not valid" ));
-
+  
         }
       }
-    //end login
-    //login & sign up with google
+      
       $data['error'] = "";
       $google_client = new \Google_Client();
       //isi
-
+      
       $google_client->setClientId($_ENV['ClientID']); //Define ClientID
       $google_client->setClientSecret($_ENV['ClientSecret']); //Define Client Secret Key
       $google_client->setRedirectUri(site_url('client')); //Define Redirect Uri
       $google_client->addScope('email');
-
+      
       $google_client->addScope('profile');
       //link buat login
       $data['login_link'] = $google_client->createAuthUrl();
@@ -220,12 +226,12 @@ class Client extends BaseController
           $Oauth = new \Google_Service_Oauth2($google_client);
           $userInfo = $Oauth->userinfo->get();
           Session()->auth = $userInfo;
-
-
+          
+  
           if ($userInfo) {
-
+  
             if ($userModel->where(array('email' => $userInfo['email'],'deleted_at'=>NULL))->countAllResults() > 0) {
-
+  
               if ($userModel->where(array('email' => $userInfo['email'],'deleted_at'=>NULL, 'status'=>0))->countAllResults()==0 ) {
                 $data_user_select = $userModel->where(array('email' => $userInfo['email'], 'deleted_at'=>NULL))->get()->getResultArray()[0];
                 if (($data_user_select['nama_depan'] != $userInfo['givenName']) or ($data_user_select['profile_picture'] != $userInfo['picture'])) {
@@ -238,7 +244,7 @@ class Client extends BaseController
                 }
                 $userModel->where(array("email"=> $_SESSION['auth']['email'],'deleted_at'=>NULL));
                 $profile = $userModel->where(array('email' => $userInfo['email'], 'deleted_at'=>NULL))->get()->getResultArray();
-
+                
                 $riwayat = "User ".$userInfo['name']." berhasil login kembali";
                 $this->changelog->riwayat($riwayat);
                 $this->session->set('c_profile', $profile);
@@ -247,11 +253,11 @@ class Client extends BaseController
               }else{
                 $this->session->setFlashdata('login_error', array('notValid'=>"Akun belum aktif, verifikasi akun anda melalaui email"));
                 $this->session->setFlashdata('buttonVerify', "<a href='".base_url('client/verifikasi/').$userInfo['email']."' class='btn btn-primary'>Kirim Verifikasi</a>");
-
+  
               }
               //login
-
-
+  
+            
             }else{
               //register
               if ($userModel->where(array('email' => $userInfo['email'], 'deleted_at'=>NULL))->countAllResults() == 0) {
@@ -280,11 +286,11 @@ class Client extends BaseController
                 $this->changelog->riwayat($riwayat);
                 $this->session->setFlashdata('login_error', array('notValid'=>"Sudah memiliki akun, silakan login"));
                 return redirect()->to('/client');
-
+              
               }
             }
           }
-
+          
           return redirect()->to('/client');
         }
       }
@@ -295,10 +301,8 @@ class Client extends BaseController
       } else {
         $view =  view('login/clientLogin', $data);
       }
-    }
-
-    return $view;
-
+    
+  return $view;
   }
 
   function clientlogout()

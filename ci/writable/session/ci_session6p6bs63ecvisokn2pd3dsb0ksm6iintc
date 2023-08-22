@@ -1,0 +1,17 @@
+__ci_last_regenerate|i:1692742608;_ci_previous_url|s:28:"http://cendratama.com/client";auth|a:10:{s:2:"id";s:1:"4";s:10:"nama_depan";s:5:"qwdqd";s:13:"nama_belakang";s:7:"qwdqdqd";s:8:"password";s:60:"$2a$10$nne4wq/VrpK6UnVJevXnJ.XxT8nmWrVjg7sxTqEaJlJCW82KnJR5m";s:5:"email";s:18:"suluh007@gmail.com";s:15:"profile_picture";N;s:6:"status";s:1:"1";s:10:"updated_at";s:19:"2023-08-23 05:03:44";s:10:"deleted_at";N;s:10:"created_at";s:19:"2023-08-23 04:59:19";}c_profile|a:1:{i:0;a:10:{s:2:"id";s:1:"4";s:10:"nama_depan";s:3:"arw";s:13:"nama_belakang";s:3:"com";s:8:"password";s:60:"$2a$10$nne4wq/VrpK6UnVJevXnJ.XxT8nmWrVjg7sxTqEaJlJCW82KnJR5m";s:5:"email";s:18:"suluh007@gmail.com";s:15:"profile_picture";s:92:"https://lh3.googleusercontent.com/a/AAcHTtcZDECOPW4FDfeebEC2hd_1ZOabMcvP8ym0TRIeaViXqQ=s96-c";s:6:"status";s:1:"1";s:10:"updated_at";s:19:"2023-08-23 05:16:57";s:10:"deleted_at";N;s:10:"created_at";s:19:"2023-08-23 04:59:19";}}c_logged|b:1;logoutButton|s:1338:"
+ <div class="dropdown">
+  <button class="btn btn-outline btn-rounded btn-primary btn-4 btn-icon-effect-1 dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+    Cliet Area
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+    <li><a class="dropdown-item" disabled">qwdqd qwdqdqd</a></li>
+    <li><a class="btn btn-outline btn-rounded btn-primary dropdown-item" href="http://cendratama.com/client">Dashboard</a></li>
+    <li><a class="btn btn-outline btn-rounded btn-primary dropdown-item" href="http://cendratama.com/client/services">Services</a></li>
+    <li><a class="btn btn-outline btn-rounded btn-primary dropdown-item" href="http://cendratama.com/client/billing">Billing</a></li>
+    <li><a class="btn btn-outline btn-rounded btn-primary dropdown-item" href="http://cendratama.com/client/support">Support</a></li>
+    <li><a class="btn btn-outline btn-rounded btn-primary dropdown-item" href="http://cendratama.com/client/promotion">Promotion</a></li>
+    <li><a class="btn btn-outline btn-rounded btn-primary dropdown-item" href="http://cendratama.com/client/program">Program</a></li>
+    <li><a class="btn btn-outline btn-rounded btn-primary dropdown-item" href="http://cendratama.com/clientlogout">Log out</a></li>
+  </ul>
+</div>
+";
