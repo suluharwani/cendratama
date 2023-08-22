@@ -1,4 +1,4 @@
 *.env
 env
 envlocal
-Email.php
+ci\app\Config\Email.php
