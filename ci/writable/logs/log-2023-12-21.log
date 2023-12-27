@@ -1,0 +1,104 @@
+ERROR - 2023-12-21 01:09:45 --> mysqli_sql_exception: Duplicate entry '1' for key 'PRIMARY' in /Users/suluh/Documents/GitHub/cendratama/ci/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /Users/suluh/Documents/GitHub/cendratama/ci/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `us...', 0)
+#1 /Users/suluh/Documents/GitHub/cendratama/ci/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 /Users/suluh/Documents/GitHub/cendratama/ci/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 /Users/suluh/Documents/GitHub/cendratama/ci/app/Database/Seeds/ListAccess.php(15): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...')
+#4 /Users/suluh/Documents/GitHub/cendratama/ci/vendor/codeigniter4/framework/system/Database/Seeder.php(146): App\Database\Seeds\ListAccess->run()
+#5 /Users/suluh/Documents/GitHub/cendratama/ci/vendor/codeigniter4/framework/system/Commands/Database/Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#6 /Users/suluh/Documents/GitHub/cendratama/ci/vendor/codeigniter4/framework/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#7 /Users/suluh/Documents/GitHub/cendratama/ci/vendor/codeigniter4/framework/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#8 /Users/suluh/Documents/GitHub/cendratama/ci/spark(97): CodeIgniter\CLI\Console->run()
+#9 {main}
+ERROR - 2023-12-21 01:10:50 --> mysqli_sql_exception: Duplicate entry '1' for key 'PRIMARY' in /Users/suluh/Documents/GitHub/cendratama/ci/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /Users/suluh/Documents/GitHub/cendratama/ci/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `li...', 0)
+#1 /Users/suluh/Documents/GitHub/cendratama/ci/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `li...')
+#2 /Users/suluh/Documents/GitHub/cendratama/ci/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `li...')
+#3 /Users/suluh/Documents/GitHub/cendratama/ci/app/Database/Seeds/ListAccess.php(11): CodeIgniter\Database\BaseConnection->query('INSERT INTO `li...')
+#4 /Users/suluh/Documents/GitHub/cendratama/ci/vendor/codeigniter4/framework/system/Database/Seeder.php(146): App\Database\Seeds\ListAccess->run()
+#5 /Users/suluh/Documents/GitHub/cendratama/ci/vendor/codeigniter4/framework/system/Commands/Database/Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#6 /Users/suluh/Documents/GitHub/cendratama/ci/vendor/codeigniter4/framework/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#7 /Users/suluh/Documents/GitHub/cendratama/ci/vendor/codeigniter4/framework/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#8 /Users/suluh/Documents/GitHub/cendratama/ci/spark(97): CodeIgniter\CLI\Console->run()
+#9 {main}
+CRITICAL - 2023-12-21 01:12:46 --> Unable to save the image. Please make sure the image and file directory are writable.
+in SYSTEMPATH/Images/Handlers/GDHandler.php on line 251.
+ 1 SYSTEMPATH/Images/Handlers/GDHandler.php(251): CodeIgniter\Images\Exceptions\ImageException::forSaveFailed()
+ 2 APPPATH/Controllers/StaticPages.php(229): CodeIgniter\Images\Handlers\GDHandler->save('../public/assets/upload/thumb/1703095966_4b591015c44a96ea8ac2.jpeg')
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\StaticPages->crud('upload')
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StaticPages))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 01:13:10 --> Unable to save the image. Please make sure the image and file directory are writable.
+in SYSTEMPATH/Images/Handlers/GDHandler.php on line 251.
+ 1 SYSTEMPATH/Images/Handlers/GDHandler.php(251): CodeIgniter\Images\Exceptions\ImageException::forSaveFailed()
+ 2 APPPATH/Controllers/StaticPages.php(229): CodeIgniter\Images\Handlers\GDHandler->save('../public/assets/upload/thumb/1703095990_65753045f25bfd4a60c2.jpeg')
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\StaticPages->crud('upload')
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StaticPages))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 01:19:18 --> Unable to save the image. Please make sure the image and file directory are writable.
+in SYSTEMPATH/Images/Handlers/GDHandler.php on line 251.
+ 1 SYSTEMPATH/Images/Handlers/GDHandler.php(251): CodeIgniter\Images\Exceptions\ImageException::forSaveFailed()
+ 2 APPPATH/Controllers/StaticPages.php(229): CodeIgniter\Images\Handlers\GDHandler->save('../public/assets/upload/thumb/1703096358_c1d9981214e33f527990.jpeg')
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\StaticPages->crud('upload')
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StaticPages))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 01:20:49 --> Unable to save the image. Please make sure the image and file directory are writable.
+in SYSTEMPATH/Images/Handlers/GDHandler.php on line 251.
+ 1 SYSTEMPATH/Images/Handlers/GDHandler.php(251): CodeIgniter\Images\Exceptions\ImageException::forSaveFailed()
+ 2 APPPATH/Controllers/StaticPages.php(229): CodeIgniter\Images\Handlers\GDHandler->save('../public/assets/upload/thumb/1703096449_5f27d5c4dbe45b3a260c.jpeg')
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\StaticPages->crud('upload')
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StaticPages))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 01:21:03 --> Unable to save the image. Please make sure the image and file directory are writable.
+in SYSTEMPATH/Images/Handlers/GDHandler.php on line 251.
+ 1 SYSTEMPATH/Images/Handlers/GDHandler.php(251): CodeIgniter\Images\Exceptions\ImageException::forSaveFailed()
+ 2 APPPATH/Controllers/StaticPages.php(229): CodeIgniter\Images\Handlers\GDHandler->save('../public/assets/upload/thumb/1703096463_9079caa3195c9514264d.jpeg')
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\StaticPages->crud('upload')
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StaticPages))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 01:25:02 --> Unable to save the image. Please make sure the image and file directory are writable.
+in SYSTEMPATH/Images/Handlers/GDHandler.php on line 251.
+ 1 SYSTEMPATH/Images/Handlers/GDHandler.php(251): CodeIgniter\Images\Exceptions\ImageException::forSaveFailed()
+ 2 APPPATH/Controllers/StaticPages.php(229): CodeIgniter\Images\Handlers\GDHandler->save('../public/assets/upload/thumb/1703096702_eeabea501556fc0373bb.jpeg')
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\StaticPages->crud('upload')
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StaticPages))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 01:25:03 --> Unable to save the image. Please make sure the image and file directory are writable.
+in SYSTEMPATH/Images/Handlers/GDHandler.php on line 251.
+ 1 SYSTEMPATH/Images/Handlers/GDHandler.php(251): CodeIgniter\Images\Exceptions\ImageException::forSaveFailed()
+ 2 APPPATH/Controllers/StaticPages.php(229): CodeIgniter\Images\Handlers\GDHandler->save('../public/assets/upload/thumb/1703096703_e99530e98d1b942e9ee4.jpeg')
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\StaticPages->crud('upload')
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StaticPages))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 01:26:31 --> Unable to save the image. Please make sure the image and file directory are writable.
+in SYSTEMPATH/Images/Handlers/GDHandler.php on line 251.
+ 1 SYSTEMPATH/Images/Handlers/GDHandler.php(251): CodeIgniter\Images\Exceptions\ImageException::forSaveFailed()
+ 2 APPPATH/Controllers/StaticPages.php(229): CodeIgniter\Images\Handlers\GDHandler->save('../public/assets/upload/thumb/1703096791_2b1443dc6c391dcf26ed.jpeg')
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\StaticPages->crud('upload')
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StaticPages))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 01:26:31 --> Unable to save the image. Please make sure the image and file directory are writable.
+in SYSTEMPATH/Images/Handlers/GDHandler.php on line 251.
+ 1 SYSTEMPATH/Images/Handlers/GDHandler.php(251): CodeIgniter\Images\Exceptions\ImageException::forSaveFailed()
+ 2 APPPATH/Controllers/StaticPages.php(229): CodeIgniter\Images\Handlers\GDHandler->save('../public/assets/upload/thumb/1703096791_f6ade50af7ec632cf5a6.jpeg')
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\StaticPages->crud('upload')
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StaticPages))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 01:29:05 --> Unable to save the image. Please make sure the image and file directory are writable.
+in SYSTEMPATH/Images/Handlers/GDHandler.php on line 251.
+ 1 SYSTEMPATH/Images/Handlers/GDHandler.php(251): CodeIgniter\Images\Exceptions\ImageException::forSaveFailed()
+ 2 APPPATH/Controllers/StaticPages.php(229): CodeIgniter\Images\Handlers\GDHandler->save('../public/assets/upload/thumb/1703096944_9dc53dfbc0c5cc3f218b.jpeg')
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\StaticPages->crud('upload')
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StaticPages))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

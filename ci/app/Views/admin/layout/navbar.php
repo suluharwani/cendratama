@@ -60,8 +60,8 @@
                                             
                                             <li
                                                 class="submenu-item  ">
-                                                <a href="layout-default.html"
-                                                    class='submenu-link'>Manage</a>
+                                                <a href="<?=base_url('admin/product')?>"
+                                                    class='submenu-link'>Product</a>
 
                                                 
                                             </li>

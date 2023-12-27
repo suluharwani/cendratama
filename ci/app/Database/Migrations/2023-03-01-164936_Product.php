@@ -15,6 +15,11 @@ class Product extends Migration
         'unsigned' => true,
         'auto_increment' => true,
       ],
+      'id_group' => [
+        'type' => 'INT',
+        'constraint' => 20,
+        'null' => true,
+      ],
       'judul' => [
         'type' => 'VARCHAR',
         'constraint' => 600,

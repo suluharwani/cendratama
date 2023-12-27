@@ -38,6 +38,7 @@ $routes->set404Override();
 //home
 //alt_login
 $routes->get('/altlogin', 'Login::altlogin');
+
 // alt login
 $routes->get('/', 'Home::index');
 $routes->get('/contact', 'Contact::index');
@@ -46,6 +47,19 @@ $routes->get('/blog/(:any)', 'Blog::content/$1');
 $routes->get('/informations', 'Informations::index');
 $routes->get('/informations/(:any)', 'Informations::info/$1');
 $routes->get('/pages', 'Pages::index');
+//product
+$routes->get('/admin/product', 'Product::index');
+$routes->post('/admin/product/tambah_group', 'Product::tambah_group');
+$routes->post('/admin/product/select_group', 'Product::select_group');
+$routes->post('/admin/product/deleted_group', 'Product::deleted_group');
+$routes->post('/admin/product/purge_group', 'Product::purge_group');
+$routes->post('/admin/product/upload', 'Product::upload');
+$routes->post('/admin/product/update_cat', 'Product::update_cat');
+$routes->post('/admin/product/hapus_cat', 'Product::hapus_cat');
+$routes->post('/admin/product/restore_cat', 'Product::restore_cat');
+$routes->post('/admin/product/create', 'Product::create');
+
+
 //admin
 $routes->get('/admin', 'Admin::index' , ['as' => 'admin']);
 $routes->get('/admin/manage/pages', 'Pages::manage');
@@ -55,6 +69,10 @@ $routes->post('/admin/login', 'Login::index');
 $routes->get('/admin/register', 'Login::register');
 $routes->get('/logout', 'Login::logout');
 $routes->get('/admin/user/(:any)', 'User::user/$1');
+//datatables post product
+
+$routes->post('/product/listdataProduct', 'Product::listdataProduct');
+
 //datatables post user admin
 $routes->post('/admin/listdata_user', 'User::listdata_user');
 $routes->post('/admin/user/tambah_admin', 'User::tambah_admin');
@@ -130,7 +148,7 @@ $routes->post('/home/getPortfolio', 'Home::getPortfolio');
 $routes->post('/home/getTestimonial', 'Home::getTestimonial');
 $routes->post('/home/getPartner', 'Home::getPartner');
 $routes->post('/home/getOffer', 'Home::getOffer');
-
+$routes->post('/home/getGroupProduct', 'Home::getGroupProduct');
 
 
 /*

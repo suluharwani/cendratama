@@ -1,0 +1,78 @@
+ERROR - 2023-12-24 00:13:33 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'ci4.category.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in /Users/suluh/Documents/GitHub/cendratama/ci/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /Users/suluh/Documents/GitHub/cendratama/ci/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `categor...', 0)
+#1 /Users/suluh/Documents/GitHub/cendratama/ci/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `categor...')
+#2 /Users/suluh/Documents/GitHub/cendratama/ci/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `categor...')
+#3 /Users/suluh/Documents/GitHub/cendratama/ci/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `categor...', Array, false)
+#4 /Users/suluh/Documents/GitHub/cendratama/ci/vendor/codeigniter4/framework/system/Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/suluh/Documents/GitHub/cendratama/ci/app/Controllers/Pages.php(187): CodeIgniter\Model->__call('get', Array)
+#6 /Users/suluh/Documents/GitHub/cendratama/ci/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Pages->cat_list()
+#7 /Users/suluh/Documents/GitHub/cendratama/ci/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#8 /Users/suluh/Documents/GitHub/cendratama/ci/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/suluh/Documents/GitHub/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-24 00:13:33 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'ci4.category.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `category`.`id` as `cat_id`, `category`.`page_id` as `page_id`, `category`.`category` as `category`, JSON_ARRAYAGG(sub_category.id) as sub_cat_id, JSON_ARRAYAGG(sub_category.sub_category)  as sub_category
+FROM `category`
+LEFT JOIN `sub_category` ON `category`.`id` =`sub_category`.`category_id`
+WHERE `page_id` = :page_id:
+GROUP BY `category`.`category`', [...], false)
+ 2 SYSTEMPATH/Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/Pages.php(187): CodeIgniter\Model->__call('get', [])
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pages->cat_list()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-24 00:13:37 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'ci4.category.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in /Users/suluh/Documents/GitHub/cendratama/ci/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /Users/suluh/Documents/GitHub/cendratama/ci/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `categor...', 0)
+#1 /Users/suluh/Documents/GitHub/cendratama/ci/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `categor...')
+#2 /Users/suluh/Documents/GitHub/cendratama/ci/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `categor...')
+#3 /Users/suluh/Documents/GitHub/cendratama/ci/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `categor...', Array, false)
+#4 /Users/suluh/Documents/GitHub/cendratama/ci/vendor/codeigniter4/framework/system/Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/suluh/Documents/GitHub/cendratama/ci/app/Controllers/Pages.php(187): CodeIgniter\Model->__call('get', Array)
+#6 /Users/suluh/Documents/GitHub/cendratama/ci/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Pages->cat_list()
+#7 /Users/suluh/Documents/GitHub/cendratama/ci/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#8 /Users/suluh/Documents/GitHub/cendratama/ci/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/suluh/Documents/GitHub/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-24 00:13:37 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'ci4.category.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `category`.`id` as `cat_id`, `category`.`page_id` as `page_id`, `category`.`category` as `category`, JSON_ARRAYAGG(sub_category.id) as sub_cat_id, JSON_ARRAYAGG(sub_category.sub_category)  as sub_category
+FROM `category`
+LEFT JOIN `sub_category` ON `category`.`id` =`sub_category`.`category_id`
+WHERE `page_id` = :page_id:
+GROUP BY `category`.`category`', [...], false)
+ 2 SYSTEMPATH/Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/Pages.php(187): CodeIgniter\Model->__call('get', [])
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pages->cat_list()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-24 00:14:05 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'ci4.category.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in /Users/suluh/Documents/GitHub/cendratama/ci/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /Users/suluh/Documents/GitHub/cendratama/ci/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `categor...', 0)
+#1 /Users/suluh/Documents/GitHub/cendratama/ci/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `categor...')
+#2 /Users/suluh/Documents/GitHub/cendratama/ci/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `categor...')
+#3 /Users/suluh/Documents/GitHub/cendratama/ci/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `categor...', Array, false)
+#4 /Users/suluh/Documents/GitHub/cendratama/ci/vendor/codeigniter4/framework/system/Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/suluh/Documents/GitHub/cendratama/ci/app/Controllers/Pages.php(187): CodeIgniter\Model->__call('get', Array)
+#6 /Users/suluh/Documents/GitHub/cendratama/ci/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Pages->cat_list()
+#7 /Users/suluh/Documents/GitHub/cendratama/ci/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#8 /Users/suluh/Documents/GitHub/cendratama/ci/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/suluh/Documents/GitHub/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-24 00:14:05 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'ci4.category.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `category`.`id` as `cat_id`, `category`.`page_id` as `page_id`, `category`.`category` as `category`, JSON_ARRAYAGG(sub_category.id) as sub_cat_id, JSON_ARRAYAGG(sub_category.sub_category)  as sub_category
+FROM `category`
+LEFT JOIN `sub_category` ON `category`.`id` =`sub_category`.`category_id`
+WHERE `page_id` = :page_id:
+GROUP BY `category`.`category`', [...], false)
+ 2 SYSTEMPATH/Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/Pages.php(187): CodeIgniter\Model->__call('get', [])
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pages->cat_list()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

@@ -4,17 +4,17 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class MdlProduct extends Model
+class MdlProductGroup extends Model
 {
     protected $DBGroup          = 'default';
-    protected $table            = 'product';
+    protected $table            = 'product_group';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $insertID         = 0;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = true;
     protected $protectFields    = true;
-    protected $allowedFields    = ["id","judul","id_group","nama","picture","slug","text","id_admin","status","updated_at","deleted_at","created_at"];
+    protected $allowedFields    = ["id","group","created_at","updated_at","deleted_at"];
 
     // Dates
     protected $useTimestamps = true;

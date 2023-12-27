@@ -76,4 +76,9 @@ class Home extends BaseController
       $data->where(array('status' =>1 ,'deleted_at'=>null ));
       return json_encode($data->get()->getResultArray());
   }
+  function getGroupProduct(){
+      $mdl = new \App\Models\MdlProductGroup();
+      $data = $mdl->where('deleted_at',null)->get()->getResult();
+      return json_encode($data);
+  }
 }

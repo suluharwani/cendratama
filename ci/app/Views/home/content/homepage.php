@@ -136,8 +136,8 @@
 			</div>
 			<div class="row mb-4">
 				<div class="col">
-					<ul class="nav sort-source justify-content-center appear-animation" data-sort-id="portfolio" data-option-key="filter" data-plugin-options="{'layoutMode': 'masonry', 'filter': '*'}" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="300">
-						<li class="nav-item" data-option-value="*"><a href="#" class="nav-link active">SHOW ALL</a></li>
+					<ul class="nav sort-source justify-content-center appear-animation groupProductList" data-sort-id="portfolio" data-option-key="filter" data-plugin-options="{'layoutMode': 'masonry', 'filter': '*'}" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="300">
+						<!-- <li class="nav-item" data-option-value="*"><a href="#" class="nav-link active">SHOW ALL</a></li>
 
 						<li class="nav-item" data-option-value=".brands"><a class="nav-link text-uppercase" href="#">brands</a></li>
 
@@ -145,7 +145,7 @@
 
 						<li class="nav-item" data-option-value=".web"><a class="nav-link text-uppercase" href="#">web</a></li>
 
-						<li class="nav-item" data-option-value=".ads"><a class="nav-link text-uppercase" href="#">ads</a></li>
+						<li class="nav-item" data-option-value=".ads"><a class="nav-link text-uppercase" href="#">ads</a></li> -->
 
 					</ul>
 				</div>

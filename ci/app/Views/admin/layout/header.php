@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Layout Horizontal - Mazer Admin Dashboard</title>
+    <title> Admin Dashboard</title>
     
     <link rel="stylesheet" href="<?=base_url('assets/template/dist')?>/assets/css/main/app.css">
     <link rel="shortcut icon" href="<?=base_url('assets/template/dist')?>/assets/images/logo/favicon.svg" type="image/x-icon">
@@ -23,7 +23,7 @@
                 <div class="header-top">
                     <div class="container">
                         <div class="logo">
-                            <a href="index.html"><img src="<?=base_url('assets/template/dist')?>/assets/images/logo/logo.svg" alt="Logo"></a>
+                            <a href="<?=base_url('admin')?>"><img src="<?=base_url('assets/template/dist')?>/assets/images/logo/logo.svg" alt="Logo"></a>
                         </div>
                         <div class="header-top-right">
 
